@@ -7,4 +7,9 @@ module.exports.index = ((req, res, next) => {
       res.render('index', { title: 'Boardgamia games', games })
     })
     .catch(next)
-}); 
+});
+
+module.exports.register = ((req, res, next) => {
+      res.render('auth/register', { title: 'Boardgamia games', games })
+    })
+});
