@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const authConroller = require('../controllers/auth.controller')
+const authController = require('../controllers/auth.controller')
  
 /* GET home page. */
-router.get('/', authConroller.index)
+router.get('/', authController.index)
 
 module.exports = router;
