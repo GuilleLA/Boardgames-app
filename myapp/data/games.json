@@ -1,133 +1,2429 @@
 [
-  {
-      "id": "yPwGVk8lB2",
-      "name": "Gaia Project",
-      "year_published": 2017,
-      "min_players": 1,
-      "max_players": 4,
-      "min_playtime": 60,
-      "max_playtime": 150,
-      "min_age": 14,
-      "description": "&quot;Set your sights on distant stars and strive to colonize the galaxy in Gaia project, the follow-up to the smash hit Terra Mystica! true to the foundations that made Terra Mystica a massive success, this box invites one to four players to forge their own galactic empires. Explore the vast reaches of space and convert planets to meet your faction unique environmental needs as you seek to tighten your grasp on the galaxy. Fourteen unique factions stand ready to boldly take their first steps into the cosmos while building structures to generate resources, researching new technology, and uniting planets to form powerful federations. Chart your course and remake planets as you see fit in Gaia project. In the end, only the most advanced faction will win.&quot;",
-      "description_preview": "\"Set your sights on distant stars and strive to colonize the galaxy in Gaia project, the follow-up to the smash hit Terra Mystica! true to the foundations that made Terra Mystica a massive success, this box invites one to four players to forge their own galactic empires. Explore the vast reaches of space and convert planets to meet your faction unique environmental needs as you seek to tighten your grasp on the galaxy. Fourteen unique factions stand ready to boldly take their first steps into the cosmos while building structures to generate resources, researching new technology, and uniting planets to form powerful federations. Chart your course and remake planets as you see fit in Gaia project. In the end, only the most advanced faction will win.\"",
-      "image_url": "https://images-na.ssl-images-amazon.com/images/I/6180cLr3gZL.jpg",
-      "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/6180cLr3gZL.jpg",
-      "url": "https://www.boardgameatlas.com/search/game/yPwGVk8lB2",
-      "price": "79.99",
-      "msrp": "84.99",
-      "discount": "0.06",
-      "primary_publisher": "Z-Man Games",
-      "publishers": [
-          "Z-Man Games"
-      ],
-      "mechanics": [
-          {
-              "id": "05zCZoLvQJ"
-          },
-          {
-              "id": "c6gkRM7rSy"
-          }
-      ],
-      "categories": [
-          {
-              "id": "N0TkEGfEsF"
-          },
-          {
-              "id": "3B3QpKvXD3"
-          },
-          {
-              "id": "buDTYyPw4D"
-          }
-      ],
-      "designers": [
-          "Jens Drögemüller",
-          "Helge Ostertag"
-      ],
-      "developers": [],
-      "artists": [
-          "Dennis Lohausen"
-      ],
-      "names": [
-          "Gaia Project: A Terra Mystica Game",
-          "Progetto Gaia "
-      ],
-      "num_user_ratings": 22,
-      "average_user_rating": 4.1818181818181825,
-      "official_url": "https://www.zmangames.com/en/products/gaia-project/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=5cc_ads",
-      "rules_url": "https://howdoyouplayit.com/gaia-project-rules-directions-instructions/",
-      "weight_amount": 7,
-      "weight_units": "lbs ",
-      "size_height": 11.8,
-      "size_width": 14.4,
-      "size_depth": 2.7,
-      "size_units": "inches ",
-      "matches_specs": null,
-      "spec": [],
-      "reddit_all_time_count": 238,
-      "reddit_week_count": 3,
-      "reddit_day_count": 2
-  },
-  {
-      "id": "ilkKd5gDhg",
-      "name": "A Feast For Odin",
-      "year_published": 2016,
-      "min_players": 1,
-      "max_players": 4,
-      "min_playtime": 30,
-      "max_playtime": 120,
-      "min_age": 12,
-      "description": "Delve into the world of Vikings and dabble in trading, hunting, raiding, pillaging, plundering, and raiding some more. Build houses, explore new worlds, and every round, have a feast in Odin's name. <br />\r\n<br />\r\nThe large variety of actions and occupations guarantees your Notherners long-lasting fun, with each game creating a new world on your player board!",
-      "description_preview": "Delve into the world of Vikings and dabble in trading, hunting, raiding, pillaging, plundering, and raiding some more. Build houses, explore new worlds, and every round, have a feast in Odin's name.  \r\n \r\nThe large variety of actions and occupations guarantees your Notherners long-lasting fun, with each game creating a new world on your player board!",
-      "image_url": "https://images-na.ssl-images-amazon.com/images/I/51FVPlTTtoL.jpg",
-      "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/51FVPlTTtoL.jpg",
-      "url": "https://www.boardgameatlas.com/search/game/ilkKd5gDhg",
-      "price": "79.99",
-      "msrp": "99.99",
-      "discount": "0.20",
-      "primary_publisher": "Z-Man Games",
-      "publishers": [
-          "Z-Man Games"
-      ],
-      "mechanics": [
-          {
-              "id": "R0bGq4cAl4"
-          },
-          {
-              "id": "8PN2HE86wg"
-          },
-          {
-              "id": "fBOTEBUAmV"
-          }
-      ],
-      "categories": [
-          {
-              "id": "N0TkEGfEsF"
-          },
-          {
-              "id": "QAYkTHK1Dd"
-          }
-      ],
-      "designers": [
-          " Uwe Rosenberg"
-      ],
-      "developers": [],
-      "artists": [
-          " Dennis Lohausen"
-      ],
-      "names": [],
-      "num_user_ratings": 32,
-      "average_user_rating": 3.7500000000000004,
-      "official_url": "https://www.zmangames.com/en/products/feast-odin/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=5cc_ads",
-      "rules_url": "https://images-cdn.zmangames.com/us-east-1/filer_public/8f/91/8f91d9ae-edde-426b-a237-72877647958e/affo-rules.pdf",
-      "weight_amount": 7,
-      "weight_units": "lbs",
-      "size_height": 4.6,
-      "size_width": 12.3,
-      "size_depth": 8.8,
-      "size_units": "inches ",
-      "matches_specs": null,
-      "spec": [],
-      "reddit_all_time_count": 223,
-      "reddit_week_count": 8,
-      "reddit_day_count": 5
-  }]
+    {
+        "id": "ciDXeBRCzk",
+        "name": "Ticket To Ride First Journey",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 4,
+        "min_playtime": 15,
+        "max_playtime": 30,
+        "min_age": 6,
+        "description": "Players of all ages can now venture across America by train in Alan R. Moon’s Ticket to Ride: First Journey. With a brand new map and simplfied rules, First Journey is the perfect way to introduce new players to the game of cross-country travel. Just like in Ticket to Ride, players collect train cards, claim routes, and try to connect cities coast-to-coast. In First Journey, though, routes are shorter, train cards are drawn straight from the deck, and the game ends when one player completes six tickets, claiming the Golden Ticket as their prize. Climb aboard, travelers, your incredible First Journey awaits!",
+        "description_preview": "Players of all ages can now venture across America by train in Alan R. Moon’s Ticket to Ride: First Journey. With a brand new map and simplfied rules, First Journey is the perfect way to introduce new players to the game of cross-country travel. Just like in Ticket to Ride, players collect train cards, claim routes, and try to connect cities coast-to-coast. In First Journey, though, routes are shorter, train cards are drawn straight from the deck, and the game ends when one player completes six tickets, claiming the Golden Ticket as their prize. Climb aboard, travelers, your incredible First Journey awaits!",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61WYjeG8jNL.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/61WYjeG8jNL.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/ciDXeBRCzk",
+        "price": "27.99",
+        "msrp": "34.99",
+        "discount": "0.20",
+        "primary_publisher": "Days of Wonder",
+        "publishers": [
+            "Days of Wonder"
+        ],
+        "mechanics": [
+            {
+                "id": "WPytek5P8l"
+            },
+            {
+                "id": "c6gkRM7rSy"
+            },
+            {
+                "id": "lA3KUtVFCy"
+            }
+        ],
+        "categories": [
+            {
+                "id": "HKaYVNIxAJ"
+            },
+            {
+                "id": "JwHcKqxh33"
+            }
+        ],
+        "designers": [
+            "Alan R. Moon"
+        ],
+        "developers": [],
+        "artists": [
+            "Cyrille Daujean",
+            "Jean-Baptiste Reynaud"
+        ],
+        "names": [
+            "Ticket to Ride: First Journey - North America",
+            "Ticket to Ride: 1st Journey - North America",
+            "Ticket to Ride: First Journey (U.S.) "
+        ],
+        "num_user_ratings": 5,
+        "average_user_rating": 2.8,
+        "official_url": null,
+        "rules_url": null,
+        "weight_amount": 2.52,
+        "weight_units": "lbs",
+        "size_height": 10.9,
+        "size_width": 10.9,
+        "size_depth": 2.1,
+        "size_units": "inches",
+        "matches_specs": null,
+        "spec": [
+            {
+                "id": "FbhyxVWcOu"
+            }
+        ],
+        "reddit_all_time_count": 12,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "SQ6Sws1RuT",
+        "name": "The U.S. Civil War",
+        "year_published": null,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": 13,
+        "description": "The U.S. Civil War is a 2-player strategic-level war game of the American Civil War. The game covers the entire war from 1861-65 on a large 30&quot; x 44&quot; map area (2 mounted maps) of the Southeastern United States. Turns represent 3 months during the winter and 2 months during the summer, with four Action Phases to each turn.<br />\r\n<br />\r\nMilitary forces are represented by generals and strength-points (SPs). Each SP represents approximately 5,000 soldiers. Game mechanics stress strategy, maneuver and leadership but details like ironclads, naval battles, leader promotions, forts, and commerce raiders are included.<br />\r\n<br />\r\nShorter scenarios are included that cover just 1861, 1862 and 1863. <br />\r\n<br />\r\nPlayers of Eric Lee Smith's The Civil War (VG) and Mark Herman's For the People (AH and GMT)  will see many similarities between this game and those two benchmark games. Those two wonderful games inspired many of the rules and concepts used in this game.",
+        "description_preview": "The U.S. Civil War is a 2-player strategic-level war game of the American Civil War. The game covers the entire war from 1861-65 on a large 30\" x 44\" map area (2 mounted maps) of the Southeastern United States. Turns represent 3 months during the winter and 2 months during the summer, with four Action Phases to each turn. \r\n \r\nMilitary forces are represented by generals and strength-points (SPs). Each SP represents approximately 5,000 soldiers. Game mechanics stress strategy, maneuver and leadership but details like ironclads, naval battles, leader promotions, forts, and commerce raiders are included. \r\n \r\nShorter scenarios are included that cover just 1861, 1862 and 1863.  \r\n \r\nPlayers of Eric Lee Smith's The Civil War (VG) and Mark Herman's For the People (AH and GMT)  will see many similarities between this game and those two benchmark games. Those two wonderful games inspired many of the rules and concepts used in this game.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51VK0pfOXuL.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/51VK0pfOXuL.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/SQ6Sws1RuT",
+        "price": "199.95",
+        "msrp": "74.99",
+        "discount": "-1.67",
+        "primary_publisher": "GMT Games",
+        "publishers": [
+            "GMT Games"
+        ],
+        "mechanics": [
+            {
+                "id": "R0bGq4cAl4"
+            },
+            {
+                "id": "eRe1jJCBFe"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 2,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "Zn7wqvbi1L",
+        "name": "Silent Victory: U.S. Submarines in the Pacific, 1941-45",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 1,
+        "min_playtime": 120,
+        "max_playtime": 150,
+        "min_age": 12,
+        "description": "Silent Victory is a solitaire tactical level game placing you in command of an American submarine during WWII in the Pacific. Your mission is to destroy as much Japanese shipping and as many warships as possible while advancing your crew quality and decorations - all while remembering you have to make it home.<br />\r\n<br />\r\nSilent Victory is purposely designed to deliver a brisk yet intensive gaming experience that forces many decisions upon you as you take command of one of the major U.S. Fleet submarine types in service. Patrols will take you to differing parts of the Pacific as time progresses in the war. The most successful commanders will be those that can manage the risks they take while prosecuting as many targets as possible.<br />\r\n<br />\r\nThe game engine is built upon the successful The Hunters design and has proven to be a solid, playable experience. All the major U.S. Fleet boat types are accounted for with every level of detail including period of service, armaments, crew makeup, damage capacity, and more.<br />\r\n<br />\r\nAs a Fleet submarine commander, you will be confronting many decisions during your patrols. To begin with, seven U.S. Fleet submarines are profiled and available for you to choose from. Patrol zones reflect the changing operational areas as the war progresses, from the Philippines to Midway, the Solomons, and even patrols to the waters just off the coast of Japan and China.<br />\r\n<br />\r\nConducting patrols is the heart of the system, as you will be resolving encounters against individual ships, convoys, or even enemy aircraft and submarines. Situations you face and decisions you make suddenly come in quick succession. The major U.S. Fleet submarine types are represented and accurately profiled for the patrols you will undertake. The game delivers an historical narrative as 720 ship targets are uniquely identified (including tonnage) with their historical counterparts that were sunk during the war, including freighters, tankers, Japanese submarines, and warships.",
+        "description_preview": "Silent Victory is a solitaire tactical level game placing you in command of an American submarine during WWII in the Pacific. Your mission is to destroy as much Japanese shipping and as many warships as possible while advancing your crew quality and decorations - all while remembering you have to make it home. \r\n \r\nSilent Victory is purposely designed to deliver a brisk yet intensive gaming experience that forces many decisions upon you as you take command of one of the major U.S. Fleet submarine types in service. Patrols will take you to differing parts of the Pacific as time progresses in the war. The most successful commanders will be those that can manage the risks they take while prosecuting as many targets as possible. \r\n \r\nThe game engine is built upon the successful The Hunters design and has proven to be a solid, playable experience. All the major U.S. Fleet boat types are accounted for with every level of detail including period of service, armaments, crew makeup, damage capacity, and more. \r\n \r\nAs a Fleet submarine commander, you will be confronting many decisions during your patrols. To begin with, seven U.S. Fleet submarines are profiled and available for you to choose from. Patrol zones reflect the changing operational areas as the war progresses, from the Philippines to Midway, the Solomons, and even patrols to the waters just off the coast of Japan and China. \r\n \r\nConducting patrols is the heart of the system, as you will be resolving encounters against individual ships, convoys, or even enemy aircraft and submarines. Situations you face and decisions you make suddenly come in quick succession. The major U.S. Fleet submarine types are represented and accurately profiled for the patrols you will undertake. The game delivers an historical narrative as 720 ship targets are uniquely identified (including tonnage) with their historical counterparts that were sunk during the war, including freighters, tankers, Japanese submarines, and warships.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/5155ymr6EZL.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/5155ymr6EZL.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/Zn7wqvbi1L",
+        "price": "49.99",
+        "msrp": "49.99",
+        "discount": "0.00",
+        "primary_publisher": "Consim Press",
+        "publishers": [
+            "Consim Press"
+        ],
+        "mechanics": [
+            {
+                "id": "R0bGq4cAl4"
+            },
+            {
+                "id": "hmipYN1R1I"
+            },
+            {
+                "id": "eRe1jJCBFe"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 1,
+        "average_user_rating": 4,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 1,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "CR0cJ8cPeq",
+        "name": "U-Boat Leader",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 1,
+        "min_playtime": 90,
+        "max_playtime": 90,
+        "min_age": 12,
+        "description": "<i>&quot;The only thing that ever frightened me during the war was the U-Boat peril.&quot;</i><br />\r\n - Winston Churchill<br />\r\n<br />\r\nThe Battle of the Atlantic was the longest continuous campaign of World War II running from 1939 through to the defeat of Germany in 1945. It involved thousands of ships, stretched over hundreds of miles of ocean, and involved hundreds of convoy battles and single-ship encounters. During the struggle advantage switched back and forth between the U-boats and Allies as new weapons, tactics, and countermeasures were developed and implemented.<br />\r\n<br />\r\nU-Boat Leader takes the Leader series to new depths, letting players control a group of U-boats on missions in the Atlantic. The core system of the game will be familiar to players of other Leader games, allowing them to quickly get into the game. <br />\r\n<br />\r\nA major portion of the game is determining where to send your submarines. Do you concentrate your submarines in one or two areas to form wolfpacks or spread them out in the shipping lanes to increase the chances of finding contacts, or do you send them on special missions (such as mine-laying)? You can also spend Special Operations Points to support your submarines by adding search planes to help find enemy ships or by sending supply ships and subs (Milk Cows) to extend the endurance of the submarines. During longer campaigns you need to manage the U-boat patrol rotation to keep subs on station.<br />\r\n<br />\r\nWhen a patrolling U-boat comes into contact with an enemy force it can call other boats in the same patrol zone to form a wolfpack or attack alone. The action then shifts to the tactical display where the U-boats try to close with and attack merchants while avoiding the escorting warships. When an attack starts you will have an idea of the number and general type of ships in the group, but you have to close with the ships to actually identify the ships.<br />\r\n<br />\r\nU-Boat Leader includes four campaigns covering different stages of the Battle of the Atlantic.",
+        "description_preview": " \"The only thing that ever frightened me during the war was the U-Boat peril.\"  \r\n - Winston Churchill \r\n \r\nThe Battle of the Atlantic was the longest continuous campaign of World War II running from 1939 through to the defeat of Germany in 1945. It involved thousands of ships, stretched over hundreds of miles of ocean, and involved hundreds of convoy battles and single-ship encounters. During the struggle advantage switched back and forth between the U-boats and Allies as new weapons, tactics, and countermeasures were developed and implemented. \r\n \r\nU-Boat Leader takes the Leader series to new depths, letting players control a group of U-boats on missions in the Atlantic. The core system of the game will be familiar to players of other Leader games, allowing them to quickly get into the game.  \r\n \r\nA major portion of the game is determining where to send your submarines. Do you concentrate your submarines in one or two areas to form wolfpacks or spread them out in the shipping lanes to increase the chances of finding contacts, or do you send them on special missions (such as mine-laying)? You can also spend Special Operations Points to support your submarines by adding search planes to help find enemy ships or by sending supply ships and subs (Milk Cows) to extend the endurance of the submarines. During longer campaigns you need to manage the U-boat patrol rotation to keep subs on station. \r\n \r\nWhen a patrolling U-boat comes into contact with an enemy force it can call other boats in the same patrol zone to form a wolfpack or attack alone. The action then shifts to the tactical display where the U-boats try to close with and attack merchants while avoiding the escorting warships. When an attack starts you will have an idea of the number and general type of ships in the group, but you have to close with the ships to actually identify the ships. \r\n \r\nU-Boat Leader includes four campaigns covering different stages of the Battle of the Atlantic.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51JF1KeO3ML.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/51JF1KeO3ML.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/CR0cJ8cPeq",
+        "price": "75.10",
+        "msrp": "50.49",
+        "discount": "-0.49",
+        "primary_publisher": "Dan Verssen Games",
+        "publishers": [
+            "Dan Verssen Games"
+        ],
+        "mechanics": [
+            {
+                "id": "iWODHwRGuU"
+            },
+            {
+                "id": "R0bGq4cAl4"
+            },
+            {
+                "id": "eRe1jJCBFe"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 1,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "QhATJMrIbp",
+        "name": "DVG: U-Boat Leader & Gato Leader Miniatures Set [Miniatures set plus game kit material; requires base game(s) to play]",
+        "year_published": null,
+        "min_players": null,
+        "max_players": null,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "Kit. Set of 14 naval miniatures intended for use in DVG's solitaire games. Set includes 1 CV, 1 BB, 1 CA, 3 DDs, 6 transports & 2 subs ranging in size from 25-50mm. Also includes an 11x17\" mounted sonar mapboard as a players aid. '16",
+        "description_preview": "Kit. Set of 14 naval miniatures intended for use in DVG's solitaire games. Set includes 1 CV, 1 BB, 1 CA, 3 DDs, 6 transports & 2 subs ranging in size from 25-50mm. Also includes an 11x17\" mounted sonar mapboard as a players aid. '16",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51H%2BSfEBPgL.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/51H%2BSfEBPgL._SL75_.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/QhATJMrIbp",
+        "price": "39.99",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "DVG Dan Verssen Games",
+        "publishers": [
+            "DVG Dan Verssen Games"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 1,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "FY8S7sMOQ7",
+        "name": "The Hunters: German U-Boats at War, 1939-43",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 1,
+        "min_playtime": 120,
+        "max_playtime": 180,
+        "min_age": 12,
+        "description": "<b>2nd Printing</b><br />\r\n<br />\r\nThe Hunters is a solitaire tactical level game placing you in command of a German U-boat during WWII. Your mission is to destroy as much Allied Shipping and as many Capital ships as possible while advancing your crew quality and increasing your commander rank culminating in special decoration ‒ all while remembering you have to make it home.<br />\r\n<br />\r\nThe Hunters is purposely designed to deliver a brisk yet intensive gaming experience that forces many decisions upon you as you will take command among the major German U-boat models in service during WWII, and try to complete an entire tour. If you ultimately survive all patrols from 1939 to 1943, you will be transferred to the U-boat Training Command for the remainder of the war, having successfully carried out your service for the Fatherland. <br />\r\n<br />\r\nThose familiar with the classic Avalon Hill game title, B-17: Queen of the Skies, will come to enjoy the same type of gaming experience of the German U-boat War. All major U-boat models are accounted for with every level of detail including period of service, armaments, crew make-up, damage capacity, and more.<br />\r\n<br />\r\nAs U-Boat commander, you will be confronting many decisions during your patrol. To begin with, eight German U-Boat models are profiled and available for you to choose from. Patrol zones reflect the time period during the war at sea and will shift as the war progresses. All stages of the U-Boat campaign are represented as missions become increasingly more difficult as your adversary makes advances in anti-submarine warfare.<br />\r\n<br />\r\nConducting patrols is the heart of the system as you will be resolving encounters against individual ships, convoys, or even enemy aircraft. Situations you face and decisions you make suddenly come in quick succession:<br />\r\n<br />\r\n* How will you engage a convoy once spotted?<br />\r\n* Do you close the initial target range at increased risk of detection for a more lethal attack?<br />\r\n* If your engagement is at night, will you conduct a surface attack?<br />\r\n* Do you launch one or two fire salvos, and how many torpedoes do you fire?<br />\r\n* Will you try to follow a convoy or ship to engage in additional rounds of combat?<br />\r\n* How will you slip away from escorts to avoid or minimize damage?<br />\r\n* What evasive maneuvers do you undertake?<br />\r\n<br />\r\nThe game delivers an historical narrative as 350+ ship targets are uniquely identified (including tonnage) with their historical counterparts that were sunk during the war, including freighters, tankers, and American ships.",
+        "description_preview": " 2nd Printing  \r\n \r\nThe Hunters is a solitaire tactical level game placing you in command of a German U-boat during WWII. Your mission is to destroy as much Allied Shipping and as many Capital ships as possible while advancing your crew quality and increasing your commander rank culminating in special decoration ‒ all while remembering you have to make it home. \r\n \r\nThe Hunters is purposely designed to deliver a brisk yet intensive gaming experience that forces many decisions upon you as you will take command among the major German U-boat models in service during WWII, and try to complete an entire tour. If you ultimately survive all patrols from 1939 to 1943, you will be transferred to the U-boat Training Command for the remainder of the war, having successfully carried out your service for the Fatherland.  \r\n \r\nThose familiar with the classic Avalon Hill game title, B-17: Queen of the Skies, will come to enjoy the same type of gaming experience of the German U-boat War. All major U-boat models are accounted for with every level of detail including period of service, armaments, crew make-up, damage capacity, and more. \r\n \r\nAs U-Boat commander, you will be confronting many decisions during your patrol. To begin with, eight German U-Boat models are profiled and available for you to choose from. Patrol zones reflect the time period during the war at sea and will shift as the war progresses. All stages of the U-Boat campaign are represented as missions become increasingly more difficult as your adversary makes advances in anti-submarine warfare. \r\n \r\nConducting patrols is the heart of the system as you will be resolving encounters against individual ships, convoys, or even enemy aircraft. Situations you face and decisions you make suddenly come in quick succession: \r\n \r\n* How will you engage a convoy once spotted? \r\n* Do you close the initial target range at increased risk of detection for a more lethal attack? \r\n* If your engagement is at night, will you conduct a surface attack? \r\n* Do you launch one or two fire salvos, and how many torpedoes do you fire? \r\n* Will you try to follow a convoy or ship to engage in additional rounds of combat? \r\n* How will you slip away from escorts to avoid or minimize damage? \r\n* What evasive maneuvers do you undertake? \r\n \r\nThe game delivers an historical narrative as 350+ ship targets are uniquely identified (including tonnage) with their historical counterparts that were sunk during the war, including freighters, tankers, and American ships.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51dSxYzImdL.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/51dSxYzImdL.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/FY8S7sMOQ7",
+        "price": "49.99",
+        "msrp": "49.99",
+        "discount": "0.00",
+        "primary_publisher": "Consim Press",
+        "publishers": [
+            "Consim Press"
+        ],
+        "mechanics": [
+            {
+                "id": "R0bGq4cAl4"
+            },
+            {
+                "id": "hmipYN1R1I"
+            },
+            {
+                "id": "eRe1jJCBFe"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "Jxzg9dJvBL",
+        "name": "Star Trek the Next Generation Collectable Dice Game U.S.S. Enterprise NCC-1701E Starter Set",
+        "year_published": null,
+        "min_players": null,
+        "max_players": null,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "You are in command of the U.S.S. Enterprise(TM) NCC-1701-E, Starfleet's newest vessel.  As Captain, your mission is to explore the vast reaches of Space. A diplomatic emissary for the Federation, you strive for peaceful contact whenever possible.  Yet when you encounter the Borg(TM), battle is your only option.  You must stand and fight, commanding complex ship systems and personnel in an effort to save the Enterprise!  The fate of Humanity rests in your hands.  Are you up to the task, Captain?  STAR TREK: The Next Generation(TM) collectible dice game is easy to learn.  You can teach your friends to play in minutes.  Play is fast.  The average game lasts 30 to 45 minutes.  May be played with two or more players.  Fleet battles are no problem.  Develop your own unique tactics based on dice combinations.",
+        "description_preview": "You are in command of the U.S.S. Enterprise(TM) NCC-1701-E, Starfleet's newest vessel.  As Captain, your mission is to explore the vast reaches of Space. A diplomatic emissary for the Federation, you strive for peaceful contact whenever possible.  Yet when you encounter the Borg(TM), battle is your only option.  You must stand and fight, commanding complex ship systems and personnel in an effort to save the Enterprise!  The fate of Humanity rests in your hands.  Are you up to the task, Captain?  STAR TREK: The Next Generation(TM) collectible dice game is easy to learn.  You can teach your friends to play in minutes.  Play is fast.  The average game lasts 30 to 45 minutes.  May be played with two or more players.  Fleet battles are no problem.  Develop your own unique tactics based on dice combinations.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61iU3d8OdKL.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/61iU3d8OdKL._SL75_.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/Jxzg9dJvBL",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Five Rings Publishing",
+        "publishers": [
+            "Five Rings Publishing"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "Mtu1czTubQ",
+        "name": "Railways of the Western U.S. Expansion",
+        "year_published": null,
+        "min_players": 2,
+        "max_players": 6,
+        "min_playtime": 120,
+        "max_playtime": 180,
+        "min_age": 13,
+        "description": "Railways of the Western U.S. is an expansion for Railways of the World. Designed by Rick Holzgrafe, this expansion map uses the score track, pieces, tiles, money, trains, bonds and rules of the original game, but comes with a new map, featuring the Western half of the United States. The basic mechanics and gameplay of the original game are unchanged, as players build track and deliver goods to increase their income and earn points, but the expansion also includes new pieces and rules. These extras may optionally be used with this expansion as well as with the base game and all other expansions.<br>\n<br>\n<b>This expansion is also compatible with Railroad Tycoon.</b>",
+        "description_preview": "Railways of the Western U.S. is an expansion for Railways of the World. Designed by Rick Holzgrafe, this expansion map uses the score track, pieces, tiles, money, trains, bonds and rules of the original game, but comes with a new map, featuring the Western half of the United States. The basic mechanics and gameplay of the original game are unchanged, as players build track and deliver goods to increase their income and earn points, but the expansion also includes new pieces and rules. These extras may optionally be used with this expansion as well as with the base game and all other expansions. \n \n This expansion is also compatible with Railroad Tycoon. ",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/613jxbYZlGL.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/613jxbYZlGL._SL75_.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/Mtu1czTubQ",
+        "price": "34.99",
+        "msrp": "34.99",
+        "discount": "0.00",
+        "primary_publisher": "Eagle-Gryphon Games",
+        "publishers": [
+            "Eagle-Gryphon Games"
+        ],
+        "mechanics": [],
+        "categories": [
+            {
+                "id": "v4SfYtS2Lr"
+            }
+        ],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [
+            "Railways of the Western U.S."
+        ],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "ZbrBLAhre3",
+        "name": "U-Build Monopoly (age: 8 years and up)",
+        "year_published": null,
+        "min_players": null,
+        "max_players": null,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "Create different courses for each individual game using the different shapes provided. Durations from 30 up to 90 minutes. Modern 3D-Buildings like Skyscrapers, stadiums or parks create a \"real\" miniature city. Play using rules similar to Monopoly with some notable changes.",
+        "description_preview": "Create different courses for each individual game using the different shapes provided. Durations from 30 up to 90 minutes. Modern 3D-Buildings like Skyscrapers, stadiums or parks create a \"real\" miniature city. Play using rules similar to Monopoly with some notable changes.",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/51Lfr5IPWnL.jpg",
+        "thumb_url": "https://images-na.ssl-images-amazon.com/images/I/51Lfr5IPWnL._SL75_.jpg",
+        "url": "https://www.boardgameatlas.com/search/game/ZbrBLAhre3",
+        "price": "27.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Monopoly  Monopoly",
+        "publishers": [
+            "Monopoly  Monopoly"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [
+            "U-Build Monopoly"
+        ],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "FzG3QZnkkU",
+        "name": "Gato Leader and U-Boat Leader Miniatures",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 1,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 12,
+        "description": "The <a href=\"p/227969\">Gato Leader</a> and <a href=\"p/136648\">U-Boat Leader</a> Ship Miniatures pack adds 14 plastic ship miniatures as well as an 11&quot; x 17&quot; Mounted Sonar game board to your submarine missions.<br />\n<br />\nInstead of using the normal Sonar sheet and counters, players can now carry out their deadly attacks in a larger scale using these awesome components!",
+        "description_preview": "The  Gato Leader  and  U-Boat Leader  Ship Miniatures pack adds 14 plastic ship miniatures as well as an 11\" x 17\" Mounted Sonar game board to your submarine missions. \n \nInstead of using the normal Sonar sheet and counters, players can now carry out their deadly attacks in a larger scale using these awesome components!",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540937163374",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540937163374",
+        "url": "https://www.boardgameatlas.com/search/game/FzG3QZnkkU",
+        "price": "39.99",
+        "msrp": "39.99",
+        "discount": "0.00",
+        "primary_publisher": "Dan Verssen Games",
+        "publishers": [
+            "Dan Verssen Games"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "CE1FHicoky",
+        "name": "U-Boat Leader & Gato Leader: Ship Miniatures & Battle Board",
+        "year_published": null,
+        "min_players": null,
+        "max_players": null,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "This upgrade enhances your <i>Gato Leader</i> and <i>U-Boat Leader</i> gaming experience by replacing the counters with plastic miniatures and a huge Sonar Display! The miniatures range in size from 25mm to 50mm.<br /><br /><b>Contents:</b><br />14 Ship Miniatures<i><br />- 1 Aircraft Carrier<br />- 1 Battleship<br />- 1 Cruiser<br />- 3 Destroyers<br />- 6 Transports<br />- 2 Submarines</i><br />1 Mounted Board (11&quot; x 17&quot;)<p><br /><b>This is not a stand-alone game. This is an accessory for <i>U-Boat</i> and <i>Gato Leader</i>.</b>\t\t\t\t\t\t\t\t\t\t\t\t</p><p>\n\t\t\t\t\t<br /><br /><strong>STAY ORGANIZED!</strong></p><p><a href=\"https://www.miniaturemarket.com/accessories/card-game-supplies/accessories-card-sleeves/game-plus-products.html\"> </a><a href=\"https://www.miniaturemarket.com/searchresults?q=zen+bins\">\t\t\t\t</a></p><a href=\"https://www.miniaturemarket.com/searchresults?q=zen+bins\">\n\t\t\t  </a>",
+        "description_preview": "This upgrade enhances your  Gato Leader  and  U-Boat Leader  gaming experience by replacing the counters with plastic miniatures and a huge Sonar Display! The miniatures range in size from 25mm to 50mm.   Contents:  14 Ship Miniatures  - 1 Aircraft Carrier - 1 Battleship - 1 Cruiser - 3 Destroyers - 6 Transports - 2 Submarines  1 Mounted Board (11\" x 17\")   This is not a stand-alone game. This is an accessory for  U-Boat  and  Gato Leader . \t\t\t\t\t\t\t\t\t\t\t\t  \n\t\t\t\t\t   STAY ORGANIZED!       \t\t\t\t   \n\t\t\t   ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1541175674741",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1541175674741",
+        "url": "https://www.boardgameatlas.com/search/game/CE1FHicoky",
+        "price": "39.99",
+        "msrp": "39.99",
+        "discount": "0.00",
+        "primary_publisher": "Dan Verssen Games",
+        "publishers": [
+            "Dan Verssen Games"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "WGxW4QVGCR",
+        "name": "Raiders of the Deep: U-Boats of the Great War",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 1,
+        "min_playtime": 120,
+        "max_playtime": 120,
+        "min_age": 12,
+        "description": "<i>Raiders of the Deep</i> is a solitaire, tactical level game placing you in command of a German U-boat during WWI (known at the time as The Great War). Your mission is to destroy as much Allied shipping as possible, while advancing your crew quality, increasing your Commander rank, and attempting to survive until the Armistice and the end of the war.<br /><br /><i>Raiders of the Deep</i> is based on the popular Hunters game system by Gregory M. Smith and marks the first dedicated boardgame treatment covering WWI U-Boat warfare.<br /><br /><b>Contents:</b><br />1 Countersheet<br />10 U-Boat Display Mats<br />7 Player Aid Cards<br />1 Combat Display Mat<br />8 U-boat Kommandant Card Tiles<br />1 Rules Booklet<br />1 German U-Boats and Target Roster Booklet<br />1 Patrol Logsheet<br />5 Dice<p></p>",
+        "description_preview": " Raiders of the Deep  is a solitaire, tactical level game placing you in command of a German U-boat during WWI (known at the time as The Great War). Your mission is to destroy as much Allied shipping as possible, while advancing your crew quality, increasing your Commander rank, and attempting to survive until the Armistice and the end of the war.   Raiders of the Deep  is based on the popular Hunters game system by Gregory M. Smith and marks the first dedicated boardgame treatment covering WWI U-Boat warfare.   Contents:  1 Countersheet 10 U-Boat Display Mats 7 Player Aid Cards 1 Combat Display Mat 8 U-boat Kommandant Card Tiles 1 Rules Booklet 1 German U-Boats and Target Roster Booklet 1 Patrol Logsheet 5 Dice  ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1541177858590",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1541177858590",
+        "url": "https://www.boardgameatlas.com/search/game/WGxW4QVGCR",
+        "price": "84.15",
+        "msrp": "99.00",
+        "discount": "0.15",
+        "primary_publisher": "Compass Games",
+        "publishers": [
+            "Compass Games"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "f6AighjeAA",
+        "name": "Railways of the Eastern U.S.",
+        "year_published": null,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": 120,
+        "max_playtime": 120,
+        "min_age": 10,
+        "description": "This expansion to <i>Railways of the World</i> depicts the eastern half of the United States. New cards and rulebook are also included.<p></p>",
+        "description_preview": "This expansion to  Railways of the World  depicts the eastern half of the United States. New cards and rulebook are also included.  ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1541189283940",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1541189283940",
+        "url": "https://www.boardgameatlas.com/search/game/f6AighjeAA",
+        "price": "30.99",
+        "msrp": "30.99",
+        "discount": "0.00",
+        "primary_publisher": "Eagle-Gryphon Games",
+        "publishers": [
+            "Eagle-Gryphon Games"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "jpsSjQF70a",
+        "name": "U.S. Telegraph",
+        "year_published": 2018,
+        "min_players": 2,
+        "max_players": 4,
+        "min_playtime": 45,
+        "max_playtime": 60,
+        "min_age": 10,
+        "description": "<p><em><strong>U.S. Telegraph</strong></em>, first released as <em>Attika</em>, is set in the United States of the 19th century when the first transcontinental telegraph was built. Each player develops their own city to participate in the telegraph construction, trying to take the choicest (i.e., least expensive) plots of land for themselves.</p>",
+        "description_preview": "   U.S. Telegraph  , first released as  Attika , is set in the United States of the 19th century when the first transcontinental telegraph was built. Each player develops their own city to participate in the telegraph construction, trying to take the choicest (i.e., least expensive) plots of land for themselves. ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1549325248575",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1549325248575",
+        "url": "https://www.boardgameatlas.com/search/game/jpsSjQF70a",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "dV Giochi",
+        "publishers": [
+            "dV Giochi",
+            "Maldito Games",
+            "Super Meeple"
+        ],
+        "mechanics": [
+            {
+                "id": "U3zhCQH7Et"
+            },
+            {
+                "id": "c6gkRM7rSy"
+            },
+            {
+                "id": "8PN2HE86wg"
+            }
+        ],
+        "categories": [],
+        "designers": [
+            "Marcel-André Casasola Merkle"
+        ],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "vIauB4m2Ig",
+        "name": "Catan Geographies: U.S.A. - Georgia Expansion",
+        "year_published": null,
+        "min_players": 3,
+        "max_players": 3,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 10,
+        "description": "You`ve Got Georgia on Your Mind! Settle the Peach State, with its diverse topography and rich resources to control the large paper and cloth industries that made the state so strong.<br /><br /><b>Contents:</b><br />1 Georgia Map<p></p>",
+        "description_preview": "You`ve Got Georgia on Your Mind! Settle the Peach State, with its diverse topography and rich resources to control the large paper and cloth industries that made the state so strong.   Contents:  1 Georgia Map  ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1541115105458",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1541115105458",
+        "url": "https://www.boardgameatlas.com/search/game/vIauB4m2Ig",
+        "price": "4.25",
+        "msrp": "5.00",
+        "discount": "0.15",
+        "primary_publisher": "Catan Studio",
+        "publishers": [
+            "Catan Studio"
+        ],
+        "mechanics": [],
+        "categories": [
+            {
+                "id": "v4SfYtS2Lr"
+            }
+        ],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [
+            "Catan Geographies: U.S.A. - Georgia"
+        ],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "rCcxNJkHuA",
+        "name": "U-Build Mouse Trap",
+        "year_published": 2010,
+        "min_players": 2,
+        "max_players": 4,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": 6,
+        "description": "<p>In the <em>U-Build Mouse Trap</em> game, the traditional game of <em>Mouse Trap</em> is heading into space. Players begin by adding and stacking U-Build bricks that look like cheese in a location of their choice. Use the Action dice to move the marble mice around the game board and use the boot to launch your mouse onto the moon made of cheese to collect the most pieces of cheese to win!</p>",
+        "description_preview": " In the  U-Build Mouse Trap  game, the traditional game of  Mouse Trap  is heading into space. Players begin by adding and stacking U-Build bricks that look like cheese in a location of their choice. Use the Action dice to move the marble mice around the game board and use the boot to launch your mouse onto the moon made of cheese to collect the most pieces of cheese to win! ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1545169835088",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1545169835088",
+        "url": "https://www.boardgameatlas.com/search/game/rCcxNJkHuA",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Hasbro",
+        "publishers": [
+            "Hasbro"
+        ],
+        "mechanics": [
+            {
+                "id": "R0bGq4cAl4"
+            },
+            {
+                "id": "U3zhCQH7Et"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 1,
+        "average_user_rating": 1,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "r3n0L8Q6hJ",
+        "name": "Star Trek: Attack Wing – U.S.S. Enterprise-E Expansion Pack",
+        "year_published": 2014,
+        "min_players": null,
+        "max_players": null,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1554409796197",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1554409796197",
+        "url": "https://www.boardgameatlas.com/search/game/r3n0L8Q6hJ",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": null,
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "jnjYk1GAAn",
+        "name": "Raiders of the Deep: U-boats of the Great War, 1914-18",
+        "year_published": 2018,
+        "min_players": 1,
+        "max_players": 2,
+        "min_playtime": 120,
+        "max_playtime": 120,
+        "min_age": 12,
+        "description": "<p>Raiders of the Deep: U-boats of the Great War, 1914-18 is a new game inspired by Gregory Smith's The Hunters: German U-Boats at War, 1939-43 that places the player in command of a German U-boat during WWI. Completely re-written rules and reworked charts simulate all the major aspects of the First U-boat War, while all-new artwork immerses the player in the atmosphere of the period.</p>\r\n\r\n<p>Your mission is to destroy as much entente shipping and as many capital ships as possible, while advancing your crew quality, winning awards and increasing your commander rank - all while attempting to make it home amidst diminishing odds of survival as the war progresses.</p>\r\n\r\n<p>Conducting patrols is the heart of the system: each game turn you will resolve encounters against individual ships, convoys, Q-ships and enemy aircraft. Situations you will face will demand  decisions such as...<br />\r\nHow will you engage a convoy?<br />\r\nDo you risk closing range for a potentially more lethal attack?<br />\r\nIf the engagement is at night, will you conduct a surface attack?<br />\r\nWith ammunition dwindling, will you try to follow a convoy, or will you look for easier targets?</p>\r\n\r\n<p>Every decision you make during the U-boat war determines whether you and your crew come home as heroes, failures - or not at all.</p>",
+        "description_preview": " Raiders of the Deep: U-boats of the Great War, 1914-18 is a new game inspired by Gregory Smith's The Hunters: German U-Boats at War, 1939-43 that places the player in command of a German U-boat during WWI. Completely re-written rules and reworked charts simulate all the major aspects of the First U-boat War, while all-new artwork immerses the player in the atmosphere of the period. \r\n\r\n Your mission is to destroy as much entente shipping and as many capital ships as possible, while advancing your crew quality, winning awards and increasing your commander rank - all while attempting to make it home amidst diminishing odds of survival as the war progresses. \r\n\r\n Conducting patrols is the heart of the system: each game turn you will resolve encounters against individual ships, convoys, Q-ships and enemy aircraft. Situations you will face will demand  decisions such as... \r\nHow will you engage a convoy? \r\nDo you risk closing range for a potentially more lethal attack? \r\nIf the engagement is at night, will you conduct a surface attack? \r\nWith ammunition dwindling, will you try to follow a convoy, or will you look for easier targets? \r\n\r\n Every decision you make during the U-boat war determines whether you and your crew come home as heroes, failures - or not at all. ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547148847047",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547148847047",
+        "url": "https://www.boardgameatlas.com/search/game/jnjYk1GAAn",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Compass Games",
+        "publishers": [
+            "Compass Games"
+        ],
+        "mechanics": [
+            {
+                "id": "R0bGq4cAl4"
+            },
+            {
+                "id": "eRe1jJCBFe"
+            }
+        ],
+        "categories": [],
+        "designers": [
+            "Ian B. Cooper"
+        ],
+        "developers": [],
+        "artists": [
+            "Ian B. Cooper",
+            "Knut Grünitz"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": "https://www.compassgames.com/preorders/raiders-of-the-deep.html?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=5cc_ads",
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "PJr2oEJCyM",
+        "name": "U-Build Connect 4",
+        "year_published": 2010,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": 6,
+        "description": "<p><em>U-Buld Connect 4</em> combines the family favorite of <em>Connect 4</em> with customizable U-Build bricks that create a unique game experience every time the game is played. Start by building a grid using U-Build bricks that snap into the game unit. Once the grid is built, players drop their red and yellow checkers into the top of the game and watch as the checker bounces down into a row. Add U-Build bumper arms to the top of the grid to help to steer a checker into a chosen row in your attempt to get four in a row. Bumper bricks can be used to assist a score or used as a defensive move to keep the opponent from scoring. Drop the checkers and see where they land – slide, bump and block your way to victory!</p>",
+        "description_preview": "  U-Buld Connect 4  combines the family favorite of  Connect 4  with customizable U-Build bricks that create a unique game experience every time the game is played. Start by building a grid using U-Build bricks that snap into the game unit. Once the grid is built, players drop their red and yellow checkers into the top of the game and watch as the checker bounces down into a row. Add U-Build bumper arms to the top of the grid to help to steer a checker into a chosen row in your attempt to get four in a row. Bumper bricks can be used to assist a score or used as a defensive move to keep the opponent from scoring. Drop the checkers and see where they land – slide, bump and block your way to victory! ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547308555286",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547308555286",
+        "url": "https://www.boardgameatlas.com/search/game/PJr2oEJCyM",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Hasbro",
+        "publishers": [
+            "Hasbro"
+        ],
+        "mechanics": [
+            {
+                "id": "U3zhCQH7Et"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "pObJuiRlZo",
+        "name": "U-Build Battleship",
+        "year_published": 2010,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": 7,
+        "description": "<p>A new way to play the classic game of <em>Battleship</em>, in <em>U-Build Battleship</em> players can build and customize their fleet of ships, including Battleships, Aircraft Carriers, Destroyers, Submarines and PT Boats, and stack weapons on the ships to increase the power of their hits. Destruction is the name of the game as players work to blow their opponent's ships &quot;out of the water&quot; by firing shots across the battle zone, while keeping their ships hidden and safe. Sink all of the &quot;enemy's&quot; ships to win!</p>",
+        "description_preview": " A new way to play the classic game of  Battleship , in  U-Build Battleship  players can build and customize their fleet of ships, including Battleships, Aircraft Carriers, Destroyers, Submarines and PT Boats, and stack weapons on the ships to increase the power of their hits. Destruction is the name of the game as players work to blow their opponent's ships \"out of the water\" by firing shots across the battle zone, while keeping their ships hidden and safe. Sink all of the \"enemy's\" ships to win! ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547591014166",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547591014166",
+        "url": "https://www.boardgameatlas.com/search/game/pObJuiRlZo",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Hasbro",
+        "publishers": [
+            "Hasbro"
+        ],
+        "mechanics": [
+            {
+                "id": "RwgEONzIzc"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "Wvd4mJCqoF",
+        "name": "Star Wars: X-Wing Miniatures Game – U-Wing Expansion Pack",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 4,
+        "min_playtime": 30,
+        "max_playtime": 45,
+        "min_age": 14,
+        "description": "<p>The Rebel Alliance used the U-wing to deploy troops under the cover of darkness or into the midst of dangerous situations. You can use the <em><strong>U-wing Expansion Pack</strong></em> for <em>X-Wing</em> to transport Jyn Erso and the other heroes of Rogue One: A Star Wars Story straight to your tabletop. It features one highly detailed and pre-painted miniature U-wing with articulated wings that can pivot back and forth, along with four ship cards and fourteen upgrades. Conduct espionage. Promote Rebel bravery. Pivot your ship’s wings to real effect. The U-wing Expansion Pack makes it all possible.</p>",
+        "description_preview": " The Rebel Alliance used the U-wing to deploy troops under the cover of darkness or into the midst of dangerous situations. You can use the   U-wing Expansion Pack   for  X-Wing  to transport Jyn Erso and the other heroes of Rogue One: A Star Wars Story straight to your tabletop. It features one highly detailed and pre-painted miniature U-wing with articulated wings that can pivot back and forth, along with four ship cards and fourteen upgrades. Conduct espionage. Promote Rebel bravery. Pivot your ship’s wings to real effect. The U-wing Expansion Pack makes it all possible. ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547660853885",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547660853885",
+        "url": "https://www.boardgameatlas.com/search/game/Wvd4mJCqoF",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Fantasy Flight Games",
+        "publishers": [
+            "Fantasy Flight Games",
+            "Edge Entertainment",
+            "Galakta",
+            "Giochi Uniti",
+            "Heidelberger Spieleverlag"
+        ],
+        "mechanics": [
+            {
+                "id": "PGjmKGi26h"
+            },
+            {
+                "id": "R0bGq4cAl4"
+            },
+            {
+                "id": "BGrhzIN69D"
+            },
+            {
+                "id": "DEvPj5twid"
+            },
+            {
+                "id": "XM2FYZmBHH"
+            }
+        ],
+        "categories": [],
+        "designers": [
+            "Frank Brooks",
+            "Jason Little"
+        ],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "UzpqTOsAYT",
+        "name": "U.S. Patent No. 1",
+        "year_published": 2001,
+        "min_players": 3,
+        "max_players": 6,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 10,
+        "description": "<p>U.S, Patent Number 1 is a racing game. Every player is a scientist who has invented time travel, and now everyone is racing to the Patent Office to prove who invented it first. Because you have a time machine, it's not enough to get to the Patent Office fast. You actually have to go back in time, to the day the Patent Office opened!</p>\r\n\r\n<p>During this race you will upgrade your machine with some gadgets, including a power plant, a chassis, a weapon, and a shield. You can invent these things on your own, you can buy them, or you can steal them from the other players. Only a machine with all four upgrades qualifies to earn the patent, and you have a limited supply of money and power to spend.</p>\r\n\r\n<p><a name=\"Awards\"></a>\t\t\t\t</p><div>\r\n\t\t\t\t\tAwards<p></p>\r\n\r\n<ul>\r\n    <li>2001 Origins Award Nominee: Best Science Fiction / Fantasy board game</li>\r\n</ul>\r\n\r\n</div>",
+        "description_preview": " U.S, Patent Number 1 is a racing game. Every player is a scientist who has invented time travel, and now everyone is racing to the Patent Office to prove who invented it first. Because you have a time machine, it's not enough to get to the Patent Office fast. You actually have to go back in time, to the day the Patent Office opened! \r\n\r\n During this race you will upgrade your machine with some gadgets, including a power plant, a chassis, a weapon, and a shield. You can invent these things on your own, you can buy them, or you can steal them from the other players. Only a machine with all four upgrades qualifies to earn the patent, and you have a limited supply of money and power to spend. \r\n\r\n   \t\t\t\t  \r\n\t\t\t\t\tAwards  \r\n\r\n \r\n     2001 Origins Award Nominee: Best Science Fiction / Fantasy board game \r\n \r\n\r\n ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547794393501",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547794393501",
+        "url": "https://www.boardgameatlas.com/search/game/UzpqTOsAYT",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Cheapass Games",
+        "publishers": [
+            "Cheapass Games"
+        ],
+        "mechanics": [
+            {
+                "id": "oeg6wN9Eoc"
+            },
+            {
+                "id": "lA3KUtVFCy"
+            },
+            {
+                "id": "XM2FYZmBHH"
+            }
+        ],
+        "categories": [],
+        "designers": [
+            "James Ernest",
+            "Falko Goettsch"
+        ],
+        "developers": [],
+        "artists": [
+            "James Ernest"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "7XsMu0JSn5",
+        "name": "Picket Duty: Kamikaze Attacks against U.S. Destroyers – Okinawa, 1945",
+        "year_published": 2013,
+        "min_players": 1,
+        "max_players": 1,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "<p>By the time of the invasion of Okinawa in April 1945, the US Navy devised a plan to help ward off the expected kamikaze attacks during the battle for the island. In order to provide an early warning system for impending kamikaze attacks, the US Navy established 16 radar picket stations around the island  Picket Duty is a solitaire game where you - as the captain of a Fletcher Class destroyer - fend off kamikaze attacks while performing picket duty off Okinawa. The game covers the time period from late March 1945 to late June 1945. Your goal is simple - survive.</p>\r\n\r\nThe game comes with a basic game, advanced game, six historical scenarios, two hypothetical scenarios, a mini-campaign and a full campaign. Optional rules are also included. Each game turn is divided into three phases, each depicting an eight hour period. Key crew members are depicted with certain functions, as well damage control teams. 27 types of Japanese planes are represented. Some planes have special attack capabilities.<br />\r\n <p>Game features include: Weather - Damage Control - Ammo and Fuel Consumption - Ship Trim and Listing - Land and Ship Radar - Air and Surface Fire Support - Ohka attacks, and more.</p>",
+        "description_preview": " By the time of the invasion of Okinawa in April 1945, the US Navy devised a plan to help ward off the expected kamikaze attacks during the battle for the island. In order to provide an early warning system for impending kamikaze attacks, the US Navy established 16 radar picket stations around the island  Picket Duty is a solitaire game where you - as the captain of a Fletcher Class destroyer - fend off kamikaze attacks while performing picket duty off Okinawa. The game covers the time period from late March 1945 to late June 1945. Your goal is simple - survive. \r\n\r\nThe game comes with a basic game, advanced game, six historical scenarios, two hypothetical scenarios, a mini-campaign and a full campaign. Optional rules are also included. Each game turn is divided into three phases, each depicting an eight hour period. Key crew members are depicted with certain functions, as well damage control teams. 27 types of Japanese planes are represented. Some planes have special attack capabilities. \r\n  Game features include: Weather - Damage Control - Ammo and Fuel Consumption - Ship Trim and Listing - Land and Ship Radar - Air and Surface Fire Support - Ohka attacks, and more. ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1548104235383",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1548104235383",
+        "url": "https://www.boardgameatlas.com/search/game/7XsMu0JSn5",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Legion Wargames LLC",
+        "publishers": [
+            "Legion Wargames LLC"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Steve Dixon"
+        ],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "EcTk4R8kj5",
+        "name": "U-Build Sorry!",
+        "year_published": 2010,
+        "min_players": 2,
+        "max_players": 4,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": 6,
+        "description": "<p>The <em>U-Build Sorry!</em> game brings new life to the classic family game of sweet revenge, and gives players an exciting game play experience that is ever-changing. During a game of <em>U-Build Sorry!</em>, players weave through the brick maze in a race to the center of the game board. Along the way, players will bust down and build up U-Build Walls, and &quot;claw&quot; their way from Start to Home using the customizable Claw pawn-grabber. Be the first player to get all three pawns Home to win. Watch out – your opponent could be out for sweet revenge and use their Claw to send you back to Home in a flash!</p>",
+        "description_preview": " The  U-Build Sorry!  game brings new life to the classic family game of sweet revenge, and gives players an exciting game play experience that is ever-changing. During a game of  U-Build Sorry! , players weave through the brick maze in a race to the center of the game board. Along the way, players will bust down and build up U-Build Walls, and \"claw\" their way from Start to Home using the customizable Claw pawn-grabber. Be the first player to get all three pawns Home to win. Watch out – your opponent could be out for sweet revenge and use their Claw to send you back to Home in a flash! ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1548194621450",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1548194621450",
+        "url": "https://www.boardgameatlas.com/search/game/EcTk4R8kj5",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Hasbro",
+        "publishers": [
+            "Hasbro"
+        ],
+        "mechanics": [
+            {
+                "id": "U3zhCQH7Et"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "hDBaWvPzBp",
+        "name": "Star Trek: Attack Wing – Federation U.S.S. Enterprise-E Expansion Pack",
+        "year_published": 2014,
+        "min_players": null,
+        "max_players": null,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209852526",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209852526",
+        "url": "https://www.boardgameatlas.com/search/game/hDBaWvPzBp",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "IfiubSzBRD",
+        "name": "Star Trek: Attack Wing – U.S.S. Defiant Expansion Pack",
+        "year_published": 2013,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209952570",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209952570",
+        "url": "https://www.boardgameatlas.com/search/game/IfiubSzBRD",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild",
+            "Andrew Parks"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "wNOKz5aya1",
+        "name": "Star Trek: Attack Wing – U.S.S. Cairo Expansion Pack",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209953633",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209953633",
+        "url": "https://www.boardgameatlas.com/search/game/wNOKz5aya1",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "Zf3giYvkCV",
+        "name": "Star Trek: Attack Wing – U.S.S. Bellerophon Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209954959",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209954959",
+        "url": "https://www.boardgameatlas.com/search/game/Zf3giYvkCV",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "2iD9rm8F7n",
+        "name": "Star Trek: Attack Wing – U.S.S. Constellation Expansion Pack",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209955844",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209955844",
+        "url": "https://www.boardgameatlas.com/search/game/2iD9rm8F7n",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "BgWMt8mYeh",
+        "name": "Star Trek: Attack Wing – U.S.S. Excelsior Expansion Pack",
+        "year_published": 2013,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209956362",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209956362",
+        "url": "https://www.boardgameatlas.com/search/game/BgWMt8mYeh",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild",
+            "Andrew Parks"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "hGXeFohFIR",
+        "name": "Star Trek: Attack Wing – U.S.S. Dauntless Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 12,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209956933",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209956933",
+        "url": "https://www.boardgameatlas.com/search/game/hGXeFohFIR",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "pefDYlxUI6",
+        "name": "Star Trek: Attack Wing – U.S.S. Enterprise (Refit) Expansion Pack",
+        "year_published": 2014,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209957922",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209957922",
+        "url": "https://www.boardgameatlas.com/search/game/pefDYlxUI6",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild",
+            "Christopher Parks"
+        ],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "P9srFB3THZ",
+        "name": "Star Trek: Attack Wing – U.S.S. Montgolfier Expansion Pack",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209959523",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209959523",
+        "url": "https://www.boardgameatlas.com/search/game/P9srFB3THZ",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "szEEu1OkMs",
+        "name": "Star Trek: Attack Wing – U.S.S. Pasteur Federation Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 12,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209960033",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209960033",
+        "url": "https://www.boardgameatlas.com/search/game/szEEu1OkMs",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "m7xqpKJ2im",
+        "name": "Star Trek: Attack Wing – U.S.S. Equinox Expansion Pack",
+        "year_published": 2014,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209961364",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209961364",
+        "url": "https://www.boardgameatlas.com/search/game/m7xqpKJ2im",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild",
+            "Andrew Parks"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "HdwEMiBQGY",
+        "name": "Star Trek: Attack Wing – U.S.S. Enterprise-A Expansion Pack",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209961954",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209961954",
+        "url": "https://www.boardgameatlas.com/search/game/HdwEMiBQGY",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "MsjOA8LO8C",
+        "name": "Star Trek: Attack Wing – U.S.S. Phoenix Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209962423",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209962423",
+        "url": "https://www.boardgameatlas.com/search/game/MsjOA8LO8C",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "QUB0MTo5EC",
+        "name": "Star Trek: Attack Wing – U.S.S. Hood Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209962837",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209962837",
+        "url": "https://www.boardgameatlas.com/search/game/QUB0MTo5EC",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "PGkn2H5c66",
+        "name": "Star Trek: Attack Wing – U.S.S. Pegasus Federation Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 12,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209963662",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209963662",
+        "url": "https://www.boardgameatlas.com/search/game/PGkn2H5c66",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild",
+            "Christopher Parks"
+        ],
+        "developers": [],
+        "artists": [],
+        "names": [
+            "Star Trek: Attack Wing – U.S.S. Pegasus Expansion Pack"
+        ],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "ChvBNIrh7z",
+        "name": "Star Trek: Attack Wing – U.S.S. Intrepid Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209964278",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209964278",
+        "url": "https://www.boardgameatlas.com/search/game/ChvBNIrh7z",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "BlQOaNhacq",
+        "name": "Star Trek: Attack Wing – U.S.S. Delta Flyer Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209965092",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209965092",
+        "url": "https://www.boardgameatlas.com/search/game/BlQOaNhacq",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "q8PvKqauYO",
+        "name": "Star Trek: Attack Wing – U.S.S. Hathaway Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209966986",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209966986",
+        "url": "https://www.boardgameatlas.com/search/game/q8PvKqauYO",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "Jok1CphY3N",
+        "name": "Star Trek: Attack Wing – U.S.S. Enterprise Expansion Pack",
+        "year_published": 2013,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209967299",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209967299",
+        "url": "https://www.boardgameatlas.com/search/game/Jok1CphY3N",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild",
+            "Andrew Parks"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "kdUXhq00H1",
+        "name": "Star Trek: Attack Wing – U.S.S. Sutherland Expansion Pack",
+        "year_published": 2013,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209969052",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209969052",
+        "url": "https://www.boardgameatlas.com/search/game/kdUXhq00H1",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "UtbiSjcYHn",
+        "name": "Star Trek: Attack Wing – U.S.S. Raven Federation Expansion Pack",
+        "year_published": 2014,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209969390",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209969390",
+        "url": "https://www.boardgameatlas.com/search/game/UtbiSjcYHn",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "ybdYBscyoM",
+        "name": "Star Trek: Attack Wing – U.S.S. Prometheus Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 12,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209970133",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209970133",
+        "url": "https://www.boardgameatlas.com/search/game/ybdYBscyoM",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "RtICTCIFmg",
+        "name": "Star Trek: Attack Wing – U.S.S. Yeager Federation Expansion Pack",
+        "year_published": 2014,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209970573",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209970573",
+        "url": "https://www.boardgameatlas.com/search/game/RtICTCIFmg",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "X1ZcLhTuYd",
+        "name": "Star Trek: Attack Wing – U.S.S. Reliant Expansion Pack",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209971333",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209971333",
+        "url": "https://www.boardgameatlas.com/search/game/X1ZcLhTuYd",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "TzfpwGdAa7",
+        "name": "Star Trek: Attack Wing – U.S.S. Thunderchild Expansion Pack",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 12,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209972107",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209972107",
+        "url": "https://www.boardgameatlas.com/search/game/TzfpwGdAa7",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "wiK6jiyLj7",
+        "name": "Star Trek: Attack Wing – U.S.S. Stargazer Federation Expansion Pack",
+        "year_published": 2014,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209972755",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209972755",
+        "url": "https://www.boardgameatlas.com/search/game/wiK6jiyLj7",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "jdZmCNOshh",
+        "name": "Star Trek: Attack Wing – U.S.S. Voyager Expansion Pack",
+        "year_published": 2014,
+        "min_players": 2,
+        "max_players": 2,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209973347",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209973347",
+        "url": "https://www.boardgameatlas.com/search/game/jdZmCNOshh",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild",
+            "Andrew Parks"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "HM3hqSfLyB",
+        "name": "Star Trek: Attack Wing – U.S.S. Venture Expansion Pack",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209974912",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209974912",
+        "url": "https://www.boardgameatlas.com/search/game/HM3hqSfLyB",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "HbPo3uBXdG",
+        "name": "Star Trek: Attack Wing – U.S.S. Reliant Expansion Pack",
+        "year_published": 2013,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209975684",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209975684",
+        "url": "https://www.boardgameatlas.com/search/game/HbPo3uBXdG",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild",
+            "Andrew Parks"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "jyyRALB86e",
+        "name": "Star Trek: Attack Wing – U.S.S. Valiant Expansion Pack",
+        "year_published": 2016,
+        "min_players": 2,
+        "max_players": 99,
+        "min_playtime": 60,
+        "max_playtime": 60,
+        "min_age": 14,
+        "description": "",
+        "description_preview": "",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209977161",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550209977161",
+        "url": "https://www.boardgameatlas.com/search/game/jyyRALB86e",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "publishers": [
+            "WizKids"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Christopher Guild"
+        ],
+        "developers": [],
+        "artists": [
+            "Christina Gugliada",
+            "Chris Raimo"
+        ],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "Ul0vaSJkSV",
+        "name": "Operation F.A.U.S.T.",
+        "year_published": 2015,
+        "min_players": 3,
+        "max_players": 8,
+        "min_playtime": 30,
+        "max_playtime": 30,
+        "min_age": 13,
+        "description": "<p>In <em><strong>Operation F.A.U.S.T.</strong></em> <em>(Fine Art Underground: Stolen Treasures)</em>, players take on roles of independent art patrons in occupied France during WWII. This was a period when Europe's greatest treasures were at risk of being looted by the Einsatzstab Reichsleiter Rosenberg (ERR), a special unit of the Third Reich tasked with plundering cultural valuables.</p>\r\n\r\n<p>Each player will work to acquire the most prestigious collection of art treasures through bluffing and deception. The first player to reach $1,000,000 in black market art value immediately wins the game.</p>\r\n\r\n<p>Players execute one of multiple possible actions on each turn with the goal of gaining enough intelligence to recover at risk master works.\u2028</p>\r\n\r\n<p>Player’s may use deception to advance their goals, but risk losing their intel if caught in a lie. When a player earns enough intel, they may acquire a piece of art that has a specific, but secret black market value. Art gained may be forged or considered “degenerate” making it more easily confiscated.</p>\r\n\r\n<p>To win this highly interactive game, a player must take risks, use cunning misdirection, uncover and remember where valuable art resides, and employ strategies to acquire the most valuable collection more quickly than the competition.</p>",
+        "description_preview": " In   Operation F.A.U.S.T.    (Fine Art Underground: Stolen Treasures) , players take on roles of independent art patrons in occupied France during WWII. This was a period when Europe's greatest treasures were at risk of being looted by the Einsatzstab Reichsleiter Rosenberg (ERR), a special unit of the Third Reich tasked with plundering cultural valuables. \r\n\r\n Each player will work to acquire the most prestigious collection of art treasures through bluffing and deception. The first player to reach $1,000,000 in black market art value immediately wins the game. \r\n\r\n Players execute one of multiple possible actions on each turn with the goal of gaining enough intelligence to recover at risk master works.\u2028 \r\n\r\n Player’s may use deception to advance their goals, but risk losing their intel if caught in a lie. When a player earns enough intel, they may acquire a piece of art that has a specific, but secret black market value. Art gained may be forged or considered “degenerate” making it more easily confiscated. \r\n\r\n To win this highly interactive game, a player must take risks, use cunning misdirection, uncover and remember where valuable art resides, and employ strategies to acquire the most valuable collection more quickly than the competition. ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1545440786622",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1545440786622",
+        "url": "https://www.boardgameatlas.com/search/game/Ul0vaSJkSV",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Robert Burke Games",
+        "publishers": [
+            "Robert Burke Games"
+        ],
+        "mechanics": [],
+        "categories": [],
+        "designers": [
+            "Robert Burke"
+        ],
+        "developers": [],
+        "artists": [
+            "Luis Francisco"
+        ],
+        "names": [],
+        "num_user_ratings": 3,
+        "average_user_rating": 2.6666666666666665,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "BQ6iZpVFNB",
+        "name": "Raiders of the Deep: U-boats of the Great War 1914-1918",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 2,
+        "min_playtime": 120,
+        "max_playtime": 180,
+        "min_age": 12,
+        "description": "Raiders of the Deep: U-boats of the Great War, 1914-18 is a solitaire, tactical level game placing you in command of a German U-boat during WWI (known at the time as The Great War). Your mission is to destroy as much Allied shipping as possible, while advancing your crew quality, increasing your Commander rank, and attempting to survive until the Armistice and the end of the war. Raiders of the Deep is based on the popular Hunters game system by Gregory M. Smith and marks the first dedicated boardgame treatment covering WWI U-Boat warfare.",
+        "description_preview": "Raiders of the Deep: U-boats of the Great War, 1914-18 is a solitaire, tactical level game placing you in command of a German U-boat during WWI (known at the time as The Great War). Your mission is to destroy as much Allied shipping as possible, while advancing your crew quality, increasing your Commander rank, and attempting to survive until the Armistice and the end of the war. Raiders of the Deep is based on the popular Hunters game system by Gregory M. Smith and marks the first dedicated boardgame treatment covering WWI U-Boat warfare.",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550677791051",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1550677791051",
+        "url": "https://www.boardgameatlas.com/search/game/BQ6iZpVFNB",
+        "price": "76.99",
+        "msrp": "76.99",
+        "discount": "0.00",
+        "primary_publisher": "Compass Games",
+        "publishers": [],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "IoqlcPnxQG",
+        "name": "B.U.D. the game",
+        "year_published": null,
+        "min_players": null,
+        "max_players": null,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "Deckbuilding card game from 2 to 6 players",
+        "description_preview": "Deckbuilding card game from 2 to 6 players",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1551365437295",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1551365437295",
+        "url": "https://www.boardgameatlas.com/search/game/IoqlcPnxQG",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "Associazione Culturale Sepia Ludem",
+        "publishers": [],
+        "mechanics": [],
+        "categories": [
+            {
+                "id": "rrvd68LjOR"
+            }
+        ],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": "https://www.kickstarter.com/projects/578629496/bud-the-game?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=5cc_ads",
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "03UONk5Dz4",
+        "name": "U-BOOT: Eco-leather Giant Play Mat",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 4,
+        "min_playtime": 30,
+        "max_playtime": 120,
+        "min_age": 12,
+        "description": "Each pack includes an eco-leather mat with foam bottom, waterproof and scratch resistant, 2 mm thick, rollable, foldable, and anti-allergic.",
+        "description_preview": "Each pack includes an eco-leather mat with foam bottom, waterproof and scratch resistant, 2 mm thick, rollable, foldable, and anti-allergic.",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1551399114217",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1551399114217",
+        "url": "https://www.boardgameatlas.com/search/game/03UONk5Dz4",
+        "price": "59.95",
+        "msrp": "59.95",
+        "discount": "0.00",
+        "primary_publisher": "Ares Games",
+        "publishers": [],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "INmOkzK2on",
+        "name": "U-BOOT: Latex Giant Play Mat",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 4,
+        "min_playtime": 30,
+        "max_playtime": 120,
+        "min_age": 12,
+        "description": "Each pack includes a smooth texture latex mat, waterproof and scratch resistant, 0.7 mm thick, UV proof, and rollable.",
+        "description_preview": "Each pack includes a smooth texture latex mat, waterproof and scratch resistant, 0.7 mm thick, UV proof, and rollable.",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1551399114252",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1551399114252",
+        "url": "https://www.boardgameatlas.com/search/game/INmOkzK2on",
+        "price": "34.95",
+        "msrp": "34.95",
+        "discount": "0.00",
+        "primary_publisher": "Ares Games",
+        "publishers": [],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "2whHg3S4BI",
+        "name": "U-BOOT: All Resin Pack",
+        "year_published": null,
+        "min_players": 1,
+        "max_players": 4,
+        "min_playtime": 30,
+        "max_playtime": 120,
+        "min_age": 12,
+        "description": "Each pack includes 28 resin game pieces.",
+        "description_preview": "Each pack includes 28 resin game pieces.",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1551399114271",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1551399114271",
+        "url": "https://www.boardgameatlas.com/search/game/2whHg3S4BI",
+        "price": "80.00",
+        "msrp": "80.00",
+        "discount": "0.00",
+        "primary_publisher": "Ares Games",
+        "publishers": [],
+        "mechanics": [],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "tRi3HcLUjd",
+        "name": "M.U.L.E. The Board Game",
+        "year_published": null,
+        "min_players": null,
+        "max_players": null,
+        "min_playtime": null,
+        "max_playtime": null,
+        "min_age": null,
+        "description": "<p><em>*The Default edition may be any edition of this game. Designers, publishers and game box may vary.</em></p><table><tbody>\r\n<tr>\r\n<td>Designer(s)</td>\r\n<td>Heikki Harju</td>\r\n</tr>\r\n<tr>\r\n<td>Publisher(s)</td>\r\n<td>Lautapelit.fi</td>\r\n</tr>\r\n<tr>\r\n<td>Players</td>\r\n<td>3-4, <a href=\"https://boardgameco.myshopify.com/collections/best-with-4\" target=\"_self\">Best With 4</a>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Play Time</td>\r\n<td><a href=\"https://boardgameco.myshopify.com/collections/medium-1-2-hours\" target=\"_self\">Medium - 1-2 Hours</a></td>\r\n</tr>\r\n<tr>\r\n<td>Suggested Age</td>\r\n<td><a href=\"https://boardgameco.myshopify.com/collections/recommended-age-14\" target=\"_self\">14+</a></td>\r\n</tr>\r\n</tbody></table>Experience the groundbreaking M.U.L.E. and join your fellow alien pioneers on an exciting expedition to planet Irata. On the planet, claim plots of land, fit M.U.L.E.s (Multiple Use Labor Elements) for harvesting food, energy, smith ore, as well as the exclusive and elusive crystite. The most cunning settler and trader will receive fame, fortune, and the honorary title of first colonist.",
+        "description_preview": "  *The Default edition may be any edition of this game. Designers, publishers and game box may vary.    \r\n \r\n Designer(s) \r\n Heikki Harju \r\n \r\n \r\n Publisher(s) \r\n Lautapelit.fi \r\n \r\n \r\n Players \r\n 3-4,  Best With 4 \r\n \r\n \r\n \r\n Play Time \r\n  Medium - 1-2 Hours  \r\n \r\n \r\n Suggested Age \r\n  14+  \r\n \r\n  Experience the groundbreaking M.U.L.E. and join your fellow alien pioneers on an exciting expedition to planet Irata. On the planet, claim plots of land, fit M.U.L.E.s (Multiple Use Labor Elements) for harvesting food, energy, smith ore, as well as the exclusive and elusive crystite. The most cunning settler and trader will receive fame, fortune, and the honorary title of first colonist.",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1543422560010",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1543422560010",
+        "url": "https://www.boardgameatlas.com/search/game/tRi3HcLUjd",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": null,
+        "publishers": [],
+        "mechanics": [
+            {
+                "id": "oeg6wN9Eoc"
+            },
+            {
+                "id": "AZxlPpi5oq"
+            },
+            {
+                "id": "AVY6EvSQTP"
+            },
+            {
+                "id": "XM2FYZmBHH"
+            },
+            {
+                "id": "fBOTEBUAmV"
+            }
+        ],
+        "categories": [],
+        "designers": [],
+        "developers": [],
+        "artists": [],
+        "names": [
+            "M.U.L.E. The Board Game",
+            "M.U.L.E. The Board Game",
+            "M.U.L.E. The Board Game",
+            "M.U.L.E. The Board Game"
+        ],
+        "num_user_ratings": 1,
+        "average_user_rating": 2,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    },
+    {
+        "id": "zLnCeHQtb3",
+        "name": "King of New York: U.N. Head Quarters",
+        "year_published": 2015,
+        "min_players": 2,
+        "max_players": 6,
+        "min_playtime": 40,
+        "max_playtime": 40,
+        "min_age": null,
+        "description": "<p>Buy this card for 1 (energy) less if you are in MANHATTAN.</p>\r\n\r\n<p>+ 5 (stars) if you are the Monster with the single fewest (stars).</p>",
+        "description_preview": " Buy this card for 1 (energy) less if you are in MANHATTAN. \r\n\r\n + 5 (stars) if you are the Monster with the single fewest (stars). ",
+        "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547617406357",
+        "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1547617406357",
+        "url": "https://www.boardgameatlas.com/search/game/zLnCeHQtb3",
+        "price": "0.00",
+        "msrp": "0.00",
+        "discount": "0.00",
+        "primary_publisher": "IELLO",
+        "publishers": [
+            "IELLO",
+            "Heidelberger Spieleverlag",
+            "Reflexshop"
+        ],
+        "mechanics": [
+            {
+                "id": "iWODHwRGuU"
+            },
+            {
+                "id": "R0bGq4cAl4"
+            },
+            {
+                "id": "BGrhzIN69D"
+            }
+        ],
+        "categories": [],
+        "designers": [
+            "Richard Garfield"
+        ],
+        "developers": [],
+        "artists": [],
+        "names": [],
+        "num_user_ratings": 0,
+        "official_url": null,
+        "rules_url": null,
+        "matches_specs": null,
+        "spec": [],
+        "reddit_all_time_count": 0,
+        "reddit_week_count": 0,
+        "reddit_day_count": 0
+    }
+    
+]
