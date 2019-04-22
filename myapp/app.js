@@ -7,9 +7,10 @@ const cookieParser = require('cookie-parser');
 const logger       = require('morgan');
 const passport     = require('passport');
 
+require('./config/db.config')
 const session      = require('./config/session.config');
 require('./config/hbs.config')
-require('./config/db.config')
+
 require('./config/passport.config')
 
 
