@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
     type: { type: String },
     coordinates: [Number]
   },
-  avatar: String,
+  avatarURL: String,
   games: [{
     game_id: String,
     owned: Boolean,
