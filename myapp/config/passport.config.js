@@ -17,7 +17,7 @@ passport.use("local-auth", new LocalStrategy({
   usernameField: 'username',
   passwordField: 'password'
 }, (username, password, next) => {
-  User.findOne({username: username})
+  User.findOne({ username: username })
     .then(user => {
       if(!user){
         next(null, null, {password: 'Invalid username or password'})

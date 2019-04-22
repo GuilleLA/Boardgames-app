@@ -11,11 +11,11 @@ module.exports.index = ((req, res, next) => {
     .catch(next)
 });
 
-module.exports.register = (req, res, next) => {
+module.exports.register = ((req, res, next) => {
   res.render('auth/register', { title: 'Register'})
-};
+});
 
-module.exports.doRegister = (req, res, next) => {
+module.exports.doRegister = ((req, res, next) => {
   
   function renderWithErrors(errors) {
     res.render('auth/register', { 
@@ -41,14 +41,14 @@ module.exports.doRegister = (req, res, next) => {
       }
       else { next(error); }
     } )
-};
+});
 
 
-module.exports.login = (req, res, next) => {
+module.exports.login = ((req, res, next) => {
   res.render('auth/login', { title: 'Login'})
-};
+});
 
-module.exports.doLogin = (req, res, next) => {
+module.exports.doLogin = ((req, res, next) => {
   passport.authenticate('local-auth', (error, user, validation) => {
     if(error){
       next(error)
@@ -70,10 +70,10 @@ module.exports.doLogin = (req, res, next) => {
       })
     }
   })(req, res, next);
-};
+});
 
 
-module.exports.logout = (req, res, next) => {
+module.exports.logout = ((req, res, next) => {
   req.logout();
   res.redirect('/login');
-}
+})

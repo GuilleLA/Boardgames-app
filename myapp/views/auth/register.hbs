@@ -7,7 +7,7 @@
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-user"></i></div>
             </div>
-            <input type="text" name="username" class="form-control {{#if errors.username}} is-invalid {{/if}}" placeholder="Username" value="{{ user.username }}"/>
+            <input type="text" name="username" class="form-control {{#if errors}} is-invalid {{/if}}" placeholder="Username" value="{{ user.username }}"/>
             <div class="invalid-feedback">
               {{ errors.username }}
             </div>
@@ -16,7 +16,7 @@
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-envelope"></i></div>
             </div>
-            <input type="text" name="email" class="form-control {{#if errors.email}} is-invalid {{/if}}" placeholder="Email" value="{{ user.email }}"/>
+            <input type="text" name="email" class="form-control {{#if errors}} is-invalid {{/if}}" placeholder="Email" value="{{ user.email }}"/>
             <div class="invalid-feedback">
               {{ errors.email }}
             </div>
@@ -25,7 +25,7 @@
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-lock"></i></div>
             </div>
-            <input type="password" name="password" class="form-control {{#if errors.password}} is-invalid {{/if}}" placeholder="Password" />
+            <input type="password" name="password" class="form-control {{#if errors}} is-invalid {{/if}}" placeholder="Password" />
             <div class="invalid-feedback">
               {{ errors.password }}
             </div>
