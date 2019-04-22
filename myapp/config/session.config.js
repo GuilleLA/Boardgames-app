@@ -10,7 +10,7 @@ module.exports = session({
   cookie: {
     secure: process.env.SESSION_SECURE,
     httpOnly: true,
-    maxAge: SESSION_MAX_AGE
+    maxAge: SESSION_MAX_AGE * 1000
   },
   store: new MongoStore({
     mongooseConnection: mongoose.connection,

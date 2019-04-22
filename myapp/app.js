@@ -10,6 +10,7 @@ const passport     = require('passport');
 const session      = require('./config/session.config');
 require('./config/hbs.config')
 require('./config/db.config')
+require('./config/passport.config')
 
 
 const authRouter  = require('./routes/auth.routes');

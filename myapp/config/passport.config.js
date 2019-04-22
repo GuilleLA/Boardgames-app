@@ -22,7 +22,7 @@ passport.use("local-auth", new LocalStrategy({
       if(!user){
         next(null, null, {password: 'Invalid username or password'})
       } else {
-        return user.checkpassword(password)
+        return user.checkPassword(password)
           .then(match => {
             if(!match){
               next(null, null, {password: 'Invalid username or password'})
