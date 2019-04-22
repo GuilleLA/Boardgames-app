@@ -6,6 +6,6 @@ module.exports.details = (req, res, next) => {
   console.log(id, id)
   
   Game.findById(id)
-    .then( data => res.render('game/details', { title: 'Games', data } ) )
+    .then( data => res.render('game/details', { title: data.name, data } ) )
     .catch( next )
 };

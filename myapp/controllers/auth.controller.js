@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 const Game = require('../models/game.model')
 const User = require('../models/user.model')
+const passport = require('passport')
 
 module.exports.index = ((req, res, next) => {
-  Game.find().limit(12)
+  Game.find().limit(30)
     .then(games =>  {
       res.render('index', { title: 'BoardGamia games', games })
     })
@@ -25,8 +26,7 @@ module.exports.doRegister = (req, res, next) => {
 
   User.findOne( { email: req.body.mail } ) // AND con el username
     .then( user => {
-      if (user) { 
-        console.log('ERROR_1');
+      if (user) {
         renderWithErrors( { email: 'Email already registered' } );
       }
       else { 
@@ -37,7 +37,6 @@ module.exports.doRegister = (req, res, next) => {
     })
     .catch( error => {
       if (error instanceof mongoose.Error.ValidationError) { 
-        console.log('ERROR_2');
         renderWithErrors(error.errors)
       }
       else { next(error); }
@@ -50,5 +49,5 @@ module.exports.login = ((req, res, next) => {
 });
 
 module.exports.doLogin = ((req, res, next) => {
-  res.render('auth/register', { title: 'Login'})
+  res.render('auth/login', { title: 'Login'})
 });

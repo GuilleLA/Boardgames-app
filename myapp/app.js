@@ -5,9 +5,12 @@ const express      = require('express');
 const path         = require('path');
 const cookieParser = require('cookie-parser');
 const logger       = require('morgan');
+const passport     = require('passport');
 
+const session      = require('./config/session.config');
 require('./config/hbs.config')
 require('./config/db.config')
+
 
 const authRouter  = require('./routes/auth.routes');
 const usersRouter = require('./routes/users');
@@ -25,6 +28,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session)
+app.use(passport.initialize())
+app.use(passport.session())
+
+app.use((req, res, next) => {
+  res.locals.path = req.path;
+  res.locals.session = req.user;
+  next()
+})
 
 app.use('/', authRouter);
 app.use('/users', usersRouter);
