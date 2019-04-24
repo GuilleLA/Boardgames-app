@@ -29,14 +29,21 @@ const userSchema = new mongoose.Schema({
   },
   avatarURL: String,
   games: [{
-    game_id: String,
+    game: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Game'
+    },
     owned: Boolean,
     wished: Boolean,
-    toChange: Boolean
+    toChange: Boolean,
+    rated: Boolean,
   }],
   chatRoom: String,
   network:[{
-    user_id: String,
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User'
+    },
     follow: Boolean,
     Blocked: Boolean
   }]

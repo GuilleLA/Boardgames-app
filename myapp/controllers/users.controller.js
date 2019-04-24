@@ -6,3 +6,5 @@ module.exports.list =((req, res, next) => {
     .then(users => res.render('users/list', {title: 'Users', users}))
     .catch(next)
 })
+
+module.exports.profile = ((req, res, next) => {})
