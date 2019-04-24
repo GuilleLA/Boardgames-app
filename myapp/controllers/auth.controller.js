@@ -4,7 +4,9 @@ const User = require('../models/user.model')
 const passport = require('passport')
 
 module.exports.index = ((req, res, next) => {
-  Game.find().limit(30)
+  Game.find()
+    //.skip(50)
+    .limit(30)
     .then(games =>  {
       res.render('index', { title: 'BoardGamia games', games })
     })

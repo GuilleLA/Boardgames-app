@@ -15,7 +15,7 @@ require('./config/passport.config')
 
 
 const authRouter  = require('./routes/auth.routes');
-const usersRouter = require('./routes/users');
+const usersRouter = require('./routes/users.routes');
 const gamesRouter = require('./routes/game.routes');
 
 
