@@ -26,10 +26,15 @@ module.exports.doRegister = ((req, res, next) => {
       title: 'Register'})
   }
 
-  User.findOne( { email: req.body.mail } ) // AND con el username
+  User.findOne( { $or: [ { username: req.body.username }, {email: req.body.mail} ] } ) // AND con el username
     .then( user => {
       if (user) {
-        renderWithErrors( { email: 'Email already registered' } );
+        if(user.username === req.body.username && user.email === req.body.email){
+          renderWithErrors( { username: 'Username already registered', email: 'Email already registered' })
+        }
+        else {
+          renderWithErrors( { username: 'Username already registered' } );
+        }
       }
       else { 
         user = new User(req.body);
@@ -40,6 +45,9 @@ module.exports.doRegister = ((req, res, next) => {
     .catch( error => {
       if (error instanceof mongoose.Error.ValidationError) { 
         renderWithErrors(error.errors)
+      }
+      else if (error.name === 'MongoError'){
+        renderWithErrors( { email: 'Email already registered'} )
       }
       else { next(error); }
     } )
