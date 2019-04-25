@@ -22,7 +22,10 @@ const userSchema = new mongoose.Schema({
     required: true,
     minlength: 8
   },
-  age: Number,
+  age: {
+    type: Number,
+    min: 1,
+  },
   location: {
     type: { type: String },
     coordinates: [Number]
@@ -37,7 +40,12 @@ const userSchema = new mongoose.Schema({
     wished: Boolean,
     toChange: Boolean,
     rated: Boolean,
+    created: Boolean,
   }],
+  city: {
+    type: String,
+    lowercase: true,
+  },
   chatRoom: String,
   network:[{
     user: {
