@@ -2,13 +2,13 @@
 <div class="container mt-5">
   <div class="row justify-content-md-center">
     <div class="col-xs-12 col-sm-12 col-md-4">
-      <form action="/register" method="POST">
+      <form action="/users/{{ user.id }}/settings" method="POST">
         <div class="form-group">
           <div class="input-group mb-2">
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-user"></i></div>
             </div>
-            <input type="text" name="username" class="form-control {{#if errors.username}} is-invalid {{/if}}" placeholder="Username"/>
+            <input type="text" name="username" class="form-control {{#if errors.username}} is-invalid {{/if}}" value="{{user.username}}"/>
             <div class="invalid-feedback">
               {{ errors.username }}
             </div>
@@ -17,34 +17,34 @@
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-envelope"></i></div>
             </div>
-            <input type="text" name="email" class="form-control {{#if errors.email}} is-invalid {{/if}}" placeholder="Email"/>
+            <input type="text" name="email" class="form-control {{#if errors.email}} is-invalid {{/if}}" value="{{user.email}}"/>
             <div class="invalid-feedback">
               {{ errors.email }}
             </div>
           </div>
           <div class="input-group mb-2">
             <div class="input-group-prepend">
-              <div class="input-group-text"><i class="fas fa-lock"></i></div>
-            </div>
-            <input type="password" name="password" class="form-control {{#if errors.password}} is-invalid {{/if}}" placeholder="Password" />
-            <div class="invalid-feedback">
-              {{ errors.password }}
-            </div>
-          </div>
-          <div class="input-group mb-2">
-            <div class="input-group-prepend">
               <div class="input-group-text"><i class="fas fa-universal-access"></i></div>
             </div>
-            <input type="number" name="age" class="form-control {{#if errors.age}} is-invalid {{/if}}" placeholder="Age"/>
+            <input type="number" name="age" class="form-control {{#if errors.age}} is-invalid {{/if}}" placeholder="Enter your age"/>
             <div class="invalid-feedback">
               {{ errors.age }}
             </div>
           </div>
           <div class="input-group mb-2">
             <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-video"></i></div>
+            </div>
+            <input type="text" name="chatRoom" class="form-control {{#if errors.chatRoom}} is-invalid {{/if}}" placeholder="Enter your chatroom url"/>
+            <div class="invalid-feedback">
+              {{ errors.chatRoom }}
+            </div>
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
               <div class="input-group-text"><i class="fa fa-map-marker"></i></div>
             </div>
-            <input type="text" name="city" class="form-control {{#if errors.city}} is-invalid {{/if}}" placeholder="City"/>
+            <input type="text" name="city" class="form-control {{#if errors.city}} is-invalid {{/if}}" placeholder="Enter your city"/>
             <div class="invalid-feedback">
               {{ errors.city }}
             </div>
@@ -63,16 +63,16 @@
               {{errors.longitude}}
             </div>
           </div>
-        </div>
         <div class="form-actions">
-          <button type="submit" class="btn btn-primary btn-block">Register</button>
+          <a href="https://appear.in/" class="btn btn-primary btn-block" target="_blank">Create a video room to play with other users</a>
         </div>
         <div class="form-actions mt-2">
           <a href="https://www.latlong.net/" class="btn btn-info btn-block" target="_blank">Find your coordinates</a>
         </div>
+        <div class="form-actions mt-2">
+          <button type="submit" class="btn btn-success btn-block">Update</button>
+        </div>
       </form>
-      <hr>
-      <p class="text-center">Already registered? <a href="/login">Do login</a></p>
     </div>
   </div>
 </div>

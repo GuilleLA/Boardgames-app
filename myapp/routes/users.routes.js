@@ -10,5 +10,6 @@ router.get('/', secure.isAuthenticated, usersController.list);
 router.get('/:id', secure.isAuthenticated, usersController.profile)
 
 router.get('/:id/settings', secure.isUser, usersController.settings)
-//router.post('/:id/settings', usersController.doSettings)
+router.post('/:id/settings', usersController.doSettings)
+
 module.exports = router;

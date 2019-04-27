@@ -3,7 +3,7 @@
     <span style="font-size: 22px; color: ivory;">
       <i class="fas fa-dice d-inline-block align-top"></i>
     </span>
-    <strong>BoardGamia</strong>
+    <strong style="letter-spacing: 1px">BoardGamia</strong>
   </a>
   <a href="/users">
     <span style="font-size: 22px; color: ivory;">
@@ -13,7 +13,7 @@
   <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search game..." aria-label="Search" style="background-color: ivory">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-        <span style="font-size: 16px; color: saddlebrown;">
+        <span>
           <i class="fas fa-search d-inline-block align-center"></i>
         </span>
       </button>
@@ -26,13 +26,13 @@
   <ul class="navbar-nav">
     <li class="nav-item">
       {{#if session.email }}
-      <a class="nav-link" href="/logout">Logout</a>
+      <a class="nav-link" style="font-size: 20px; color: ivory; letter-spacing: 1px" href="/logout">Logout</a>
       {{else}}
-      <a class="nav-link" href="/login">Login</a>
+      <a class="nav-link" style="font-size: 20px; color: ivory; letter-spacing: 1px" href="/login">Login</a>
       {{/if}}
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/register">Register</a>
+      <a class="nav-link" style="font-size: 20px; color: ivory; letter-spacing: 1px" href="/register">Register</a>
     </li>
   </ul>
 </nav>

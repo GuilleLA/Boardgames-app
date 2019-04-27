@@ -16,8 +16,10 @@ nav {
 }
 
 a {
+  font-size: 22px;
   color: saddlebrown;
 }
+
 
 .user-wrapper {
   width: 400px;
