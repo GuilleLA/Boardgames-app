@@ -30,7 +30,10 @@ const userSchema = new mongoose.Schema({
     type: { type: String },
     coordinates: [Number]
   },
-  avatarURL: String,
+  avatarURL: {
+    type: String,
+    default: `https://gravatar.com/avatar/${Math.floor(Math.random()*90000)}?s=400&d=robohash&r=x`
+  },
   games: [{
     game: {
       type: mongoose.Schema.Types.ObjectId,

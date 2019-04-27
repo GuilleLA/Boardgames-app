@@ -1,1 +1,17 @@
-Hello
+<div href="" class="d-flex flex-row flex-wrap justify-content-around pt-5 pl-5 pr-5" style="width: 100vw">
+{{#each users as |user|}}
+  <a style="text-decoration:none" href="/users/{{ user.id }}" class="user-wrapper">
+    <div class="user-name">
+      {{ user.username }}
+    </div>
+    <div class="user-body">
+      <div class="user-info">
+        <p>{{ user.age }}</p>
+        <p>{{ user.city }}</p>
+        <p>Exchange {{#exchangeNumber user.games }}{{/exchangeNumber}} games</p>
+      </div>
+      <div class="user-avatar"><img src="{{ user.avatarURL }}" alt="user avatar"></div>
+    </div>
+  </a>
+{{/each}}
+</div>

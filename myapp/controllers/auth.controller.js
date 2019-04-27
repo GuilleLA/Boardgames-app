@@ -38,6 +38,7 @@ module.exports.doRegister = ((req, res, next) => {
       }
       else { 
         user = new User(req.body);
+        user.avatarURL = `https://gravatar.com/avatar/${Math.floor(Math.random()*90000)}?s=400&d=robohash&r=x`
         return user.save()
           .then( user => res.redirect('/login') )
       }
