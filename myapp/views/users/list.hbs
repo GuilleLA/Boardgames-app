@@ -8,7 +8,7 @@
       <div class="user-info">
         <p>{{ user.age }}</p>
         <p>{{ user.city }}</p>
-        <p>Exchange {{ user.games.length }} games</p>
+        <p>Exchange {{#exchangeNumber user.games }}{{/exchangeNumber}} games</p>
       </div>
       <div class="user-avatar"><img src="{{ user.avatarURL }}" alt="user avatar"></div>
     </div>
