@@ -9,3 +9,11 @@ module.exports.isAuthenticated = (req, res, next) => {
   }
 }
 
+module.exports.isUser = (req, res, next) => {
+    if (req.user.id === req.params.id) {
+      next()
+    }
+    else {
+      next(createError(403, 'Not your profile'))}
+}
+
