@@ -1,13 +1,7 @@
 const hbs = require('hbs');
 
-hbs.registerHelper('exchangeNumber', function (arr) {
-  let num = 0
-    arr.forEach(element => {
-      if(element.games.toChange === true){
-        num++
-      }      
-    });
-  return num;
+hbs.registerHelper('exchangeNumber', function (games) {
+  return games.reduce((num, game) => game.toChange ? ++num : num, 0);
 })
 
 hbs.registerHelper('ownerNumber', function (arr) {

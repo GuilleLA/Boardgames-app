@@ -11,13 +11,13 @@
 </div>
 <div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
   <h2>{{user.username}} owned games</h2>
-  {{#each games as |game|}}
-    <a href="/games/{{game.id}}" class="card-link m-2">
+  {{#each ownGames as |ownGame|}}
+    <a href="/games/{{ownGame.id}}" class="card-link m-2">
       <div>
         <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
-          <img src="{{game.imageURL}}" class="card-img-top" alt="{{game.name}}" height="300">
+          <img src="{{ownGame.imageURL}}" class="card-img-top" alt="{{ownGame.name}}" height="300">
           <div class="card-body">
-            <h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.name}}</strong></h5>
+            <h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{ownGame.name}}</strong></h5>
           </div>
         </div>
       </div>

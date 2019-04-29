@@ -1,12 +1,11 @@
 <div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
   {{#each games as |game|}}
-    <a href="/games/{{game.id}}" class="card-link m-2">
       <div>
         <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
           <img src="{{game.imageURL}}" class="card-img-top" alt="{{game.name}}" height="300">
           <div class="card-body">
             <h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.name}}</strong></h5>
-            <form action="/" method="POST"></form>
+            <form action="/games/{{game.id}}/add" method="POST">
               <button class="btn btn-success mr-3" type="submit">Add it!</button>
             </form>
             <form action="/" method="POST">
@@ -15,6 +14,5 @@
           </div>
         </div>
       </div>
-    </a>
   {{/each}}
 </div>
