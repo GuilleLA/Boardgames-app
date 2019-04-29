@@ -33,7 +33,7 @@ hbs.registerHelper('wishNumber', function (arr) {
 hbs.registerHelper('followNumber', function (arr) {
   let num = 0
     arr.forEach(element => {
-      if(element.games.wished === true){
+      if(element.network.follow === true){
         num++
       }      
     });
