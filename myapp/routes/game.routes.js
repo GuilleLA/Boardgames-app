@@ -7,4 +7,8 @@ const secure = require('../middlewares/secure.mid')
 
 router.get('/:id', secure.isAuthenticated, gameController.details);
 
+router.post('/:id', gameController.add)
+
+router.post('/:id', gameController.wish)
+
 module.exports = router;
