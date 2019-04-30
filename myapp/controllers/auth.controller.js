@@ -4,11 +4,23 @@ const User = require('../models/user.model')
 const passport = require('passport')
 
 module.exports.index = ((req, res, next) => {
-  Game.find()
+  
+  /*const criteria = {};
+  if (req.query.search) {
+    console.log(req.query.search);
+    const exp =  new RegExp(req.query.search, 'i');
+    // Usando $in se puede hacer búsquedas por más de 2 campos!!! (SERÍA LA MEJORA FINAL)
+    criteria.$or = [ { name: exp } ]
+  }*/
+
+  Game.find( /*criteria*/ )
     //.skip(50)
-    .limit(30)
+    .limit(10)
     .then(games =>  {
-      res.render('index', { title: 'BoardGamia games', games })
+      res.render('index', { 
+        title: 'BoardGamia games', 
+        games/*, 
+      search: req.query.search*/ })
     })
     .catch(next)
 });

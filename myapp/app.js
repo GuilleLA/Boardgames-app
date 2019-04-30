@@ -14,9 +14,10 @@ require('./config/hbs.config')
 require('./config/passport.config')
 
 
-const authRouter  = require('./routes/auth.routes');
-const usersRouter = require('./routes/users.routes');
-const gamesRouter = require('./routes/game.routes');
+const authRouter   = require('./routes/auth.routes');
+const searchRouter = require('./routes/search.routes');
+const usersRouter  = require('./routes/users.routes');
+const gamesRouter  = require('./routes/game.routes');
 
 
 const app = express();
@@ -41,8 +42,28 @@ app.use((req, res, next) => {
 })
 
 app.use('/', authRouter);
+
+app.get('/search', function (req, res, next) {
+  const Game = require('./models/game.model')
+  const criteria = {};
+  if (req.query.search) {
+    const exp =  new RegExp(req.query.search, 'i');
+    criteria.$or = [ { name: exp } ]
+  }
+  Game.find( criteria ).limit(8)
+    .then(games =>  {
+      res.render('search', { 
+        title: 'BoardGamia games', 
+        games, 
+        search: req.query.search })
+    })
+    .catch(next)
+});
+//app.use('/search', searchRouter);
+
 app.use('/users', usersRouter);
 app.use('/games', gamesRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

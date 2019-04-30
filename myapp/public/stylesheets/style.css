@@ -16,7 +16,7 @@ nav {
 }
 
 a {
-  font-size: 22px;
+  font-size: 18px;
   color: saddlebrown;
 }
 
@@ -67,4 +67,10 @@ a {
 .user-avatar img{
   width: 100%;
   height: 100%;
+}
+
+.card-style {
+  width: 12rem; height: 375px;
+  background-color: rgb(205,133,63,0.30);
+  border-color: saddlebrown;
 }

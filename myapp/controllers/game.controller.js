@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 const Game     = require('../models/game.model')
 
 module.exports.details = (req, res, next) => {
