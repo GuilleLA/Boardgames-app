@@ -11,6 +11,7 @@ module.exports.list =((req, res, next) => {
 
 module.exports.profile = ((req, res, next) => {
   const id = req.params.id;
+  console.log(req.user)
 
   User.findById(id)
     .populate('games.game')
