@@ -37,7 +37,8 @@ const userSchema = new mongoose.Schema({
   games: [{
     game: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Game'
+      ref: 'Game',
+      unique: true
     },
     owned: {
       type: Boolean,

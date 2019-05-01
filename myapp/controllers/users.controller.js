@@ -15,7 +15,6 @@ module.exports.profile = ((req, res, next) => {
   User.findById(id)
     .populate('games.game')
     .then(user => {
-      console.log(user);
       res.render('users/profile', { title: `${user.username} profile`, user })
     })
     .catch(next)
