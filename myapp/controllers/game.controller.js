@@ -13,20 +13,17 @@ module.exports.details = (req, res, next) => {
 module.exports.add = (req, res, next) => {
   const user = req.user;
   if(req.user.games.filter(item => item.game == req.params.id).length > 0){
-    console.log('en el if')
     user.games = user.games.map( item => {
       if (item.game == req.params.id){
         item.owned = true;
         return item
       }
       else {
-        console.log('en el else')
         return item
       }
     })
   }
   else {
-    console.log('en el else')
     user.games.push({ game: req.params.id, owned: true});
   }
   user.save()
@@ -37,7 +34,6 @@ module.exports.add = (req, res, next) => {
 module.exports.wish = (req, res, next) => {
   const user = req.user; 
   if(req.user.games.filter(item => item.game == req.params.id).length > 0){
-    console.log('en el if')
     user.games = user.games.map( item => {
       if (item.game == req.params.id){
         item.wished = true;
@@ -49,12 +45,36 @@ module.exports.wish = (req, res, next) => {
     })
   }
   else {
-    console.log('en el else')
     user.games.push({ game: req.params.id, wished: true});
   }
   user.save()
     .then(user => res.redirect('/'))
     .catch(next)
 };
+
+module.exports.change = (req, res, next) => {
+  const user = req.user; 
+  if(req.user.games.filter(item => item.game == req.params.id).length > 0){
+    user.games = user.games.map( item => {
+      if (item.game == req.params.id){
+        item.toChange = true;
+        return item
+      }
+      else {
+        return item
+      }
+    })
+  }
+  else {
+    user.games.push({ game: req.params.id, toChange: true});
+  }
+  user.save()
+    .then(user => res.redirect(`/users/${user.id}`))
+    .catch(next)
+};
+
+module.exports.removeOwned = (req, res, next) => {}
+module.exports.removeWish = (req, res, next) => {}
+module.exports.removeChange = (req, res, next) => {}
 
 

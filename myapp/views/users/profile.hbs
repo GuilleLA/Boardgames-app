@@ -13,16 +13,22 @@
   <h2>{{user.username}} owned games</h2>
   {{#each user.games as |game|}}
     {{#if_eq game.owned true}}
-      <a href="/games/{{game.game.id}}" class="card-link m-2">
-        <div>
-          <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
-            <img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300">
-            <div class="card-body">
-              <h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5>
+      <div>
+        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+          <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
+          <div class="card-body">
+            <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+            <div class="d-flex d-wrap justify-content-center">
+              <form action="/games/{{game.id}}/add" method="POST">
+                <button class="btn btn-danger mr-3" type="submit">Remove</button>
+              </form>
+              <form action="/games/{{game.id}}/change" method="POST">
+                <button class="btn btn-primary ml-3" style="color: white" type="submit">Exchange</button>
+              </form>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     {{/if_eq}}
   {{/each}}
 </div>
@@ -30,16 +36,22 @@
   <h2>{{user.username}} wished games</h2>
   {{#each user.games as |game|}}
     {{#if_eq game.wished true}}
-      <a href="/games/{{game.game.id}}" class="card-link m-2">
-        <div>
-          <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
-            <img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300">
-            <div class="card-body">
-              <h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5>
+      <div>
+        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+          <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
+          <div class="card-body">
+            <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+            <div class="d-flex d-wrap justify-content-center">
+              <form action="/games/{{game.id}}/removeWish" method="POST">
+                <button class="btn btn-danger mr-3" type="submit">Remove it!</button>
+              </form>
+              <form action="/games/{{game.id}}/add" method="POST">
+                <button class="btn btn-success mr-3" type="submit">Add it!</button>
+              </form>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     {{/if_eq}}
   {{/each}}
 </div>
@@ -47,16 +59,19 @@
   <h2>{{user.username}} exchangable games</h2>
   {{#each user.games as |game|}}
     {{#if_eq game.tochange true}}
-      <a href="/games/{{game.game.id}}" class="card-link m-2">
-        <div>
-          <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
-            <img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300">
-            <div class="card-body">
-              <h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5>
+      <div>
+        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+          <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
+          <div class="card-body">
+            <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+            <div class="d-flex d-wrap justify-content-center">
+              <form action="/games/{{game.id}}/add" method="POST">
+                <button class="btn btn-danger mr-3" type="submit">Remove it!</button>
+              </form>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     {{/if_eq}}
   {{/each}}
 </div>
