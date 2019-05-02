@@ -18,11 +18,18 @@
         </span>
       </button>
   </form>
-  <a {{#if session.email }} href="/users/{{session.id}}/settings" {{else}} href="/login"{{/if}}>
-    <span style="font-size: 22px; color: ivory;">
-      <i class="fas fa-cog d-inline-block align-top"></i>
-    </span>
-  </a>
+  <div>
+    <a href="/users/{{ session.id }}" class="mr-2">
+        <span style="font-size: 22px; color: ivory;">
+          <i class="fas fa-user d-inline-block align-top"></i>
+        </span>
+      </a>
+    <a {{#if session.email }} href="/users/{{ session.id }}/settings" {{else}} href="/login"{{/if}}>
+      <span style="font-size: 22px; color: ivory;">
+        <i class="fas fa-cog d-inline-block align-top"></i>
+      </span>
+    </a>
+  </div>
   <ul class="navbar-nav">
     <li class="nav-item">
       {{#if session.email }}

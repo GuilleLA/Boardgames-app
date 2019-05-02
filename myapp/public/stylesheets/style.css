@@ -69,8 +69,23 @@ a {
   height: 100%;
 }
 
+.user-profile-img {
+  border: gold solid 8px;
+}
+
+.profile-section-title {
+  width: 100%;
+  text-align: center;
+}
 .card-style {
   width: 12rem; height: 375px;
   background-color: rgb(205,133,63,0.30);
   border-color: saddlebrown;
+}
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

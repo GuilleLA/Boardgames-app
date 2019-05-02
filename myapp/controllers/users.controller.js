@@ -1,5 +1,6 @@
 var mongoose        = require('mongoose')
 var User            = require('../models/user.model')
+var Game            = require('../models/game.model')
 
 
 module.exports.list =((req, res, next) => {
@@ -12,7 +13,10 @@ module.exports.profile = ((req, res, next) => {
   const id = req.params.id;
 
   User.findById(id)
-    .then( user => res.render('users/profile', { title: `${user.username} profile`, user } ) )
+    .populate('games.game')
+    .then(user => {
+      res.render('users/profile', { title: `${user.username} profile`, user })
+    })
     .catch(next)
 })
 

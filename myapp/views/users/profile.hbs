@@ -1,1 +1,77 @@
-Hello
+<div class="d-flex d-wrap justify-content pt-5 pl-5 pr-5" style="border: black solid 2px; height: 500px">
+  <div><img class="user-profile-img" src="{{ user.avatarURL }}" alt="user avatar"></div>
+  <div>
+    <p>Is the owner of {{#ownerNumber user.games }}{{/ownerNumber}} games</p>
+    <p>Wants {{#wishNumber user.games }}{{/wishNumber}} games</p>
+    <p>Exchange {{#exchangeNumber user.games }}{{/exchangeNumber}} games</p>
+    <p>Usually plays in {{ user.city }}</p>
+    <p>Age: {{user.age}}</p>
+    <p>Follows {{#followNumber user.network }}{{/followNumber}} users</p>
+  </div>
+</div>
+<div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
+  <h2 class="profile-section-title">{{user.username}} owned games</h2>
+  {{#each user.games as |game|}}
+    {{#if_eq game.owned true}}
+      <div class="mt-3 mb-2">
+        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+          <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
+          <div class="card-body">
+            <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+            <div class="d-flex d-wrap justify-content-center">
+              <form action="/games/{{game.game.id}}/removeOwned" method="POST">
+                <button class="btn btn-danger mr-3" type="submit">Remove</button>
+              </form>
+              <form action="/games/{{game.game.id}}/change" method="POST">
+                <button class="btn btn-primary ml-3" style="color: white" type="submit">Exchange</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/if_eq}}
+  {{/each}}
+</div>
+<div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
+  <h2 class="profile-section-title">{{user.username}} wished games</h2>
+  {{#each user.games as |game|}}
+    {{#if_eq game.wished true}}
+      <div class="mt-3 mb-2">
+        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+          <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
+          <div class="card-body">
+            <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+            <div class="d-flex d-wrap justify-content-center">
+              <form action="/games/{{game.game.id}}/removeWish" method="POST">
+                <button class="btn btn-danger mr-3" type="submit">Remove</button>
+              </form>
+              <form action="/games/{{game.game.id}}/add" method="POST">
+                <button class="btn btn-success mr-3" type="submit">Add</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/if_eq}}
+  {{/each}}
+</div>
+<div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
+  <h2 class="profile-section-title">{{user.username}} exchangable games</h2>
+  {{#each user.games as |game|}}
+    {{#if_eq game.toChange true}}
+      <div class="mt-3 mb-2">
+        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+          <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
+          <div class="card-body">
+            <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+            <div class="d-flex d-wrap justify-content-center">
+              <form action="/games/{{game.game.id}}/removeChange" method="POST">
+                <button class="btn btn-danger mr-3" type="submit">Remove</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/if_eq}}
+  {{/each}}
+</div>

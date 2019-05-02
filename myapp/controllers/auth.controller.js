@@ -15,7 +15,7 @@ module.exports.index = ((req, res, next) => {
 
   Game.find( /*criteria*/ )
     //.skip(50)
-    .limit(10)
+    .limit(30)
     .then(games =>  {
       res.render('index', { 
         title: 'BoardGamia games', 

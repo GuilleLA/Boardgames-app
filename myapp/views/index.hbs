@@ -1,64 +1,69 @@
 <div class="d-flex flex-wrap justify-content-center pt-5 pl-5 pr-5">
-  
-  <div>
-    <form>
-      <div class="form-row mb-2">
-        <div class="col-auto">
-          <label for="game-name">Game Name</label>
-          <input type="text" class="form-control" placeholder="Name..." name="name" value="">
+  <div class="search-wrapper">
+    <div>
+      <form>
+        <div class="form-row mb-2">
+          <div class="col-auto">
+            <label for="game-name">Game Name</label>
+            <input type="text" class="form-control" placeholder="Name..." name="name" value="">
+          </div>
+          <div class="col-auto">
+            <label for="year-published">Published Year</label>
+            <input type="number" class="form-control" placeholder="Published year..." name="yearPublished" value="">
+          </div>
+          <div class="col-auto">
+            <label for="min-player">Min Players</label>
+            <input type="number" class="form-control" placeholder="Min players..." name="minPlayers" value="">
+          </div>
+          <div class="col-auto">
+            <label for="max-player">Max Players</label>
+            <input type="number" class="form-control" placeholder="Max players..." name="maxPlayers" value="">
+          </div>
         </div>
-        <div class="col-auto">
-          <label for="year-published">Published Year</label>
-          <input type="number" class="form-control" placeholder="Published year..." name="yearPublished" value="">
+        <div class="form-row mb-2">
+          <div class="col-auto">
+            <label for="max-playtime">Max PlayTime</label>
+            <input type="number" class="form-control" placeholder="Max playtime..." name="maxPlaytime" value="">
+          </div>
+          <div class="col-auto">
+            <label for="rating">Rating</label>
+            <input type="number" class="form-control" placeholder="Rating..." name="averageUserRating" value="">
+          </div>
+          <div class="col-auto">
+            <label for="min-age">Min Age</label>
+            <input type="number" class="form-control" placeholder="Min age..." name="minAge" value="">
+          </div>
+          <div class="col-auto">
+            <label for="price">Price</label>
+            <input type="text" class="form-control" placeholder="Price..." name="price" value="">
+          </div>
         </div>
-        <div class="col-auto">
-          <label for="min-player">Min Players</label>
-          <input type="number" class="form-control" placeholder="Min players..." name="minPlayers" value="">
+        <div class="form-row mt-4 mb-2 justify-content-md-center">
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-block">Search Game</button>
+          </div>
         </div>
-        <div class="col-auto">
-          <label for="max-player">Max Players</label>
-          <input type="number" class="form-control" placeholder="Max players..." name="maxPlayers" value="">
-        </div>
-      </div>
-      <div class="form-row mb-2">
-        <div class="col-auto">
-          <label for="max-playtime">Max PlayTime</label>
-          <input type="number" class="form-control" placeholder="Max playtime..." name="maxPlaytime" value="">
-        </div>
-        <div class="col-auto">
-          <label for="rating">Rating</label>
-          <input type="number" class="form-control" placeholder="Rating..." name="averageUserRating" value="">
-        </div>
-        <div class="col-auto">
-          <label for="min-age">Min Age</label>
-          <input type="number" class="form-control" placeholder="Min age..." name="minAge" value="">
-        </div>
-        <div class="col-auto">
-          <label for="price">Price</label>
-          <input type="text" class="form-control" placeholder="Price..." name="price" value="">
-        </div>
-      </div>
-      <div class="form-row mt-4 mb-2 justify-content-md-center">
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary btn-block">Search Game</button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
-
-  <div class="d-flex flex-wrap justify-content-center pt-4 pl-4 pr-4">
-    {{#each games as |game|}}
-      <a href="/games/{{game.id}}" class="card-link m-2">
-        <div class="pb-4">
-          <div class="card text-center card-style">
-            <img src="{{game.imageURL}}" class="card-img-top" alt="{{game.name}}" height="250">
-            <div class="card-body">
-              <h6 class="card-title pt-3" style="text-transform: capitalize;"><strong>{{game.name}}</strong></h6>
+  
+  {{#each games as |game|}}
+      <div class="m-3">
+        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+          <a href="/games/{{game.id}}"><img src="{{game.imageURL}}" class="card-img-top" alt="{{game.name}}" height="300"></a>
+          <div class="card-body">
+            <a href="/games/{{game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.name}}</strong></h5></a>
+            <div class="d-flex d-wrap justify-content-center">
+              <form action="/games/{{game.id}}/add" method="POST">
+                <button class="btn btn-success mr-3" type="submit">Add it!</button>
+              </form>
+              <form action="/games/{{game.id}}/wish" method="POST">
+                <button class="btn btn-primary ml-3" style="color: white" type="submit">Wish it!</button>
+              </form>
             </div>
           </div>
         </div>
-      </a>
-    {{/each}}
-  </div>
-  
+      </div>
+  {{/each}}
+
 </div>

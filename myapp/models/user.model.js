@@ -37,13 +37,28 @@ const userSchema = new mongoose.Schema({
   games: [{
     game: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Game'
+      ref: 'Game',
     },
-    owned: Boolean,
-    wished: Boolean,
-    toChange: Boolean,
-    rated: Boolean,
-    created: Boolean,
+    owned: {
+      type: Boolean,
+      default: false,
+      },
+    wished: {
+      type: Boolean,
+      default: false,
+      },
+    toChange: {
+      type: Boolean,
+      default: false,
+      },
+    rated: {
+      type: Boolean,
+      default: false,
+      },
+    created: {
+      type: Boolean,
+      default: false,
+      }
   }],
   city: {
     type: String,
@@ -55,8 +70,14 @@ const userSchema = new mongoose.Schema({
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User'
     },
-    follow: Boolean,
-    Blocked: Boolean
+    follow: {
+      type: Boolean,
+      default: false,
+      },
+    Blocked: {
+      type: Boolean,
+      default: false,
+      }
   }]
 }, { timestamps:true });
 
