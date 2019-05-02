@@ -16,6 +16,7 @@ module.exports.add = (req, res, next) => {
     user.games = user.games.map( item => {
       if (item.game == req.params.id){
         item.owned = true;
+        item.wished = false;
         return item
       }
       else {
@@ -27,7 +28,7 @@ module.exports.add = (req, res, next) => {
     user.games.push({ game: req.params.id, owned: true});
   }
   user.save()
-    .then(user => res.redirect('/'))
+    .then(user => res.redirect(`/users/${user.id}`))
     .catch(next)
 };
 
@@ -37,6 +38,7 @@ module.exports.wish = (req, res, next) => {
     user.games = user.games.map( item => {
       if (item.game == req.params.id){
         item.wished = true;
+        item.owned = false;
         return item
       }
       else {
@@ -48,7 +50,7 @@ module.exports.wish = (req, res, next) => {
     user.games.push({ game: req.params.id, wished: true});
   }
   user.save()
-    .then(user => res.redirect('/'))
+    .then(user => res.redirect(`/users/${user.id}`))
     .catch(next)
 };
 
@@ -73,8 +75,71 @@ module.exports.change = (req, res, next) => {
     .catch(next)
 };
 
-module.exports.removeOwned = (req, res, next) => {}
-module.exports.removeWish = (req, res, next) => {}
-module.exports.removeChange = (req, res, next) => {}
+module.exports.removeOwned = (req, res, next) => {
+  const user = req.user;
+  const newUserGames = []
+  user.games.forEach( item => {
+    if (item.game == req.params.id){
+      item.owned = false;
+      if(item.owned === false && item.wished === false && item.toChange === false && item.rated === false && item.created === false){
+        
+      }
+      else {
+        newUserGames.push(item)
+      }
+    }
+    else {
+      newUserGames.push(item)
+    }
+  })
+  user.games = newUserGames
+  user.save()
+    .then(user => res.redirect(`/users/${user.id}`))
+    .catch(next)
+}
+module.exports.removeWish = (req, res, next) => {
+  const user = req.user;
+  const newUserGames = []
+  user.games.forEach( item => {
+    if (item.game == req.params.id){
+      item.wished = false;
+      if(item.owned === false && item.wished === false && item.toChange === false && item.rated === false && item.created === false){
+        
+      }
+      else {
+        newUserGames.push(item)
+      }
+    }
+    else {
+      newUserGames.push(item)
+    }
+  })
+  user.games = newUserGames
+  user.save()
+    .then(user => res.redirect(`/users/${user.id}`))
+    .catch(next)
+}
+module.exports.removeChange = (req, res, next) => {
+  const user = req.user;
+  const newUserGames = []
+  user.games.forEach( item => {
+    if (item.game == req.params.id){
+      item.toChange = false;
+      if(item.owned === false && item.wished === false && item.toChange === false && item.rated === false && item.created === false){
+        
+      }
+      else {
+        newUserGames.push(item)
+      }
+    }
+    else {
+      newUserGames.push(item)
+    }
+  })
+  user.games = newUserGames
+  user.save()
+    .then(user => res.redirect(`/users/${user.id}`))
+    .catch(next)
+}
 
 

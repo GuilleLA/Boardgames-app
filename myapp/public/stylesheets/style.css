@@ -72,3 +72,8 @@ a {
 .user-profile-img {
   border: gold solid 8px;
 }
+
+.profile-section-title {
+  width: 100%;
+  text-align: center;
+}
