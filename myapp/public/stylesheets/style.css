@@ -16,7 +16,7 @@ nav {
 }
 
 a {
-  font-size: 22px;
+  font-size: 18px;
   color: saddlebrown;
 }
 
@@ -76,4 +76,16 @@ a {
 .profile-section-title {
   width: 100%;
   text-align: center;
+}
+.card-style {
+  width: 12rem; height: 375px;
+  background-color: rgb(205,133,63,0.30);
+  border-color: saddlebrown;
+}
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
