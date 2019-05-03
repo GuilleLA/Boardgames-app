@@ -1,14 +1,20 @@
 <div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
   {{#each games as |game|}}
-    <a href="/games/{{game.id}}" class="card-link m-2">
-      <div class="pb-4">
-        <div class="card text-center" style="width: 16rem; height: 450px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
-          <img src="{{game.imageURL}}" class="card-img-top" alt="{{game.name}}" height="300">
+      <div class="m-3">
+        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+          <a href="/games/{{game.id}}"><img src="{{game.imageURL}}" class="card-img-top" alt="{{game.name}}" height="300"></a>
           <div class="card-body">
-            <h5 class="card-title pt-3" style="text-transform: capitalize;"><strong>{{game.name}}</strong></h5>
+            <a href="/games/{{game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.name}}</strong></h5></a>
+            <div class="d-flex d-wrap justify-content-center">
+              <form action="/games/{{game.id}}/add" method="POST">
+                <button class="btn btn-success mr-3" type="submit">Add it!</button>
+              </form>
+              <form action="/games/{{game.id}}/wish" method="POST">
+                <button class="btn btn-primary ml-3" style="color: white" type="submit">Wish it!</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </a>
   {{/each}}
 </div>

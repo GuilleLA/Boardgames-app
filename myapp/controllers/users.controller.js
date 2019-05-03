@@ -31,7 +31,6 @@ module.exports.settings = ((req, res, next) => {
 
 module.exports.doSettings = ((req, res, next) => {
   const id = req.params.id
-  console.log(id)
 
   function renderWithErrors(errors) {
     res.render('users/settings', { 

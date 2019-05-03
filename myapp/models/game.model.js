@@ -39,7 +39,7 @@ const gameSchema = new mongoose.Schema({
     type: String,
     required: true,
     //match: regex,
-    default: '0.00'
+    default: '0.00€'
   }
 }, { timestamps: true})
 

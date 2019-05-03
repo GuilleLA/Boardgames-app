@@ -42,27 +42,9 @@ app.use((req, res, next) => {
 })
 
 app.use('/', authRouter);
-
-app.get('/search', function (req, res, next) {
-  const Game = require('./models/game.model')
-  const criteria = {};
-  if (req.query.search) {
-    const exp =  new RegExp(req.query.search, 'i');
-    criteria.$or = [ { name: exp } ]
-  }
-  Game.find( criteria )
-    .then(games =>  {
-      res.render('search', { 
-        title: 'BoardGamia games', 
-        games, 
-        search: req.query.search })
-    })
-    .catch(next)
-});
-//app.use('/search', searchRouter);
-
 app.use('/users', usersRouter);
 app.use('/games', gamesRouter);
+app.use('/search', searchRouter)
 
 
 // catch 404 and forward to error handler
