@@ -1,14 +1,55 @@
 const mongoose = require('mongoose');
 const Game     = require('../models/game.model');
-const User     = require('../models/user.model')
+const User     = require('../models/user.model');
 
 module.exports.details = (req, res, next) => {
   const id = req.params.id;
   
   Game.findById(id)
-    .then( data => res.render('game/details', { title: data.name, data } ) )
+    .then( game => res.render('game/details', { title: game.name, game } ) )
     .catch( next )
 };
+
+module.exports.update = (req, res, next) => {
+  const id = req.params.id
+
+  Game.findById(id)
+    .then( game => res.render('game/form', { title: `${game.name} update`, game } ) )
+    .catch( next )
+}
+
+module.exports.doUpdate = (req, res, next) => {
+  const id = req.params.id
+  console.log(req.body)
+
+  function renderWithErrors(errors) {
+    res.render('game/form', { 
+      game: req.body,
+      errors: errors,
+      title: 'Update game'})
+  }
+
+  Game.findByIdAndUpdate(id, req.body, { new: true, runValidators: true })
+    .then(game => {
+      if (game) {
+        res.redirect(`/games/${game.id}`)
+      } else {
+        next(createError(404, 'user not found'))
+      } 
+    })
+    .catch((error) => {
+      if (error instanceof mongoose.Error.ValidationError) { 
+        renderWithErrors(error.errors)
+      }
+      else {
+        next(error);
+      }
+    })
+}
+
+module.exports.addGame = (req, res, next) => {
+  res.render('game/create')
+}
 
 module.exports.add = (req, res, next) => {
   const user = req.user;

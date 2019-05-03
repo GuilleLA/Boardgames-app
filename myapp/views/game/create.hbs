@@ -1,0 +1,67 @@
+<div class="d-flex bd-highlight">
+  <div class="p-4 d-flex-row">
+    <img src="#" width="300">
+  </div>
+  <div class="p-2 bd-highlight w-75">
+    <form action="/games/addGame" method="POST">
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="text" name="name" class="form-control {{#if errors.name}} is-invalid {{/if}}" placeholder="Enter game title"/>
+          <div class="invalid-feedback">
+            {{ errors.name }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="number" name="yearPublished" class="form-control {{#if errors.yearPublished}} is-invalid {{/if}}" placeholder="Enter Year of game creation"/>
+          <div class="invalid-feedback">
+            {{ errors.yearPublished }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="number" name="minPlayers" class="form-control {{#if errors.minPlayers}} is-invalid {{/if}}" placeholder="Enter min number of players"/>
+          <div class="invalid-feedback">
+            {{ errors.minPlayers }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="number" name="maxPlayers" class="form-control {{#if errors.maxPlayers}} is-invalid {{/if}}" placeholder="Enter max number of players"/>
+          <div class="invalid-feedback">
+            {{ errors.maxPlayers }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="number" name="maxPlaytime" class="form-control {{#if errors.maxPlaytime}} is-invalid {{/if}}" placeholder="Enter max playtime"/>
+          <div class="invalid-feedback">
+            {{ errors.maxPlaytime }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="text" name="description" class="form-control {{#if errors.description}} is-invalid {{/if}}" placeholder="Enter description, minimun 50 characters, dont be lazy!! ;)"/>
+          <div class="invalid-feedback">
+            {{ errors.description }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="url" name="rulesURL" class="form-control {{#if errors.rulesURL}} is-invalid {{/if}}" placeholder="Enter url to the rules"/>
+          <div class="invalid-feedback">
+            {{ errors.rulesURL }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="text" name="price" class="form-control {{#if errors.price}} is-invalid {{/if}}" placeholder="Enter price"/>
+          <div class="invalid-feedback">
+            {{ errors.price }}
+          </div>
+      </div>
+      <div class="form-actions" style="width: 30%; margin: auto">
+          <button type="submit" class="btn btn-primary btn-block">Update</button>
+      </div>
+  </form>
+</div>

@@ -1,18 +1,18 @@
 <div class="d-flex bd-highlight">
-  <div class="p-4">
-    <img src={{data.imageURL}} alt={{data.name}} width="300">
+  <div class="p-4 d-flex-row">
+    <div><img src={{game.imageURL}} alt={{game.name}} width="300"></div>
+    <div><a href="/games/{{game.id}}/update" class="btn btn-primary mt-2" style="width:100%"> Update</a></div>
   </div>
   <div class="p-2 bd-highlight w-75">
     <a href="/">Go Back</a>
-    <h2>{{data.name}}</h2>
-    <h3> Year Published: {{data.yearPublished}}</h3>
-    <h3> Min Players: {{data.minPlayers}}</h3>
-    <h3> Max Players: {{data.maxPlayers}}</h3>
-    <h3> Max PlayTime: {{data.maxPlaytime}}</h3>
-    <h3> RANK: {{data.averageUserRating}}</h3>
-    <h3> Description: {{data.description}}</h3>
-    <h3> Rules: {{data.rulesURL}}</h3>
-    <h3> Price: {{data.price}}</h3>
-    
+    <h2>{{game.name}}</h2>
+    <h3> Year Published: {{game.yearPublished}}</h3>
+    <h3> Min Players: {{game.minPlayers}}</h3>
+    <h3> Max Players: {{game.maxPlayers}}</h3>
+    <h3> Max PlayTime: {{game.maxPlaytime}}</h3>
+    <h3> RANK: {{game.averageUserRating}}</h3>
+    <h3> Description: {{game.description}}</h3>
+    <h3> Rules: {{game.rulesURL}}</h3>
+    <h3> Price: {{game.price}}</h3>
   </div>
 </div>
