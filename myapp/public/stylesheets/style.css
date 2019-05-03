@@ -108,3 +108,13 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.adding-game {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  text-align: center
+}
+
+.adding-game a {
+  border: black solid 2px;
+}

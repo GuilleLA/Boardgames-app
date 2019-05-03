@@ -5,6 +5,8 @@ const secure = require('../middlewares/secure.mid')
  
 /* GET home page. */
 
+router.get('/addGame', gameController.addGame)
+
 router.get('/:id', secure.isAuthenticated, gameController.details);
 
 router.get('/:id/update', gameController.update)

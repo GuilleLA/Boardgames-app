@@ -47,6 +47,10 @@ module.exports.doUpdate = (req, res, next) => {
     })
 }
 
+module.exports.addGame = (req, res, next) => {
+  res.render('game/create')
+}
+
 module.exports.add = (req, res, next) => {
   const user = req.user;
   if(req.user.games.filter(item => item.game == req.params.id).length > 0){
