@@ -50,7 +50,7 @@ app.get('/search', function (req, res, next) {
     const exp =  new RegExp(req.query.search, 'i');
     criteria.$or = [ { name: exp } ]
   }
-  Game.find( criteria ).limit(8)
+  Game.find( criteria )
     .then(games =>  {
       res.render('search', { 
         title: 'BoardGamia games', 

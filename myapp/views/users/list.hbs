@@ -1,6 +1,6 @@
 <div href="" class="d-flex flex-row flex-wrap justify-content-around pt-5 pl-5 pr-5" style="width: 100vw">
 {{#each users as |user|}}
-  <a style="text-decoration:none" href="/users/{{ user.id }}" class="user-wrapper">
+  <a style="text-decoration:none" href="/users/{{ user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.games}}user-profile-img-gold{{/if_gold}}">
     <div class="user-name">
       {{ user.username }}
     </div>

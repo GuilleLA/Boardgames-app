@@ -28,7 +28,6 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: gold solid 5px;
 }
 
 .user-name{
@@ -69,10 +68,21 @@ a {
   height: 100%;
 }
 
-.user-profile-img {
-  border: gold solid 8px;
+.profile-image {
   max-width: 400px;
   max-height: 400px;
+}
+
+.user-profile-img-bronze {
+  border: rgb(124, 62, 0) solid 8px;
+}
+
+.user-profile-img-silver {
+  border: silver solid 8px;
+}
+
+.user-profile-img-gold {
+  border: gold solid 8px;
 }
 
 .profile-section-title {

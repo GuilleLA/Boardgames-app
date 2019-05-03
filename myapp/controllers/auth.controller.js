@@ -4,7 +4,7 @@ const User = require('../models/user.model')
 const passport = require('passport')
 
 module.exports.index = ((req, res, next) => {
-  
+  const user = req.user
   /*const criteria = {};
   if (req.query.search) {
     console.log(req.query.search);
@@ -19,7 +19,8 @@ module.exports.index = ((req, res, next) => {
     .then(games =>  {
       res.render('index', { 
         title: 'BoardGamia games', 
-        games/*, 
+        games,
+        user/*, 
       search: req.query.search*/ })
     })
     .catch(next)
