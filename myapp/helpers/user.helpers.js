@@ -23,3 +23,4 @@ hbs.registerHelper('if_eq', function(a, b, opts) {
       return opts.inverse(this);
   }
 });
+

@@ -14,8 +14,8 @@ module.exports.profile = ((req, res, next) => {
 
   User.findById(id)
     .populate('games.game')
-    .then(user => {
-      res.render('users/profile', { title: `${user.username} profile`, user })
+    .then(user => {      
+      res.render('users/profile', { profileId: req.user.id, title: `${user.username} profile`, user })
     })
     .catch(next)
 })
