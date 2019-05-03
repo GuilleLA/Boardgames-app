@@ -14,6 +14,7 @@ module.exports.profile = ((req, res, next) => {
 
   User.findById(id)
     .populate('games.game')
+    .populate('network.user')
     .then(user => {      
       res.render('users/profile', { profileId: req.user.id, title: `${user.username} profile`, user })
     })
@@ -55,4 +56,50 @@ module.exports.doSettings = ((req, res, next) => {
         next(error);
       }
     })
+})
+
+module.exports.follow = ((req, res, next) => {
+  const user = req.user;
+  if(req.user.network.filter(item => item.user == req.params.id).length > 0){
+    user.network = user.network.map( item => {
+      if (item.user == req.params.id){
+        item.follow = true;
+        return item
+      }
+      else {
+        return item
+      }
+    })
+  }
+  else {
+    user.network.push({ user: req.params.id, follow: true});
+  }
+  user.save()
+    .then(user => res.redirect(`/users/${user.id}`))
+    .catch(next)
+})
+
+module.exports.block = ((req, res, next) => {})
+
+module.exports.remove = ((req, res, next) => {
+  const user = req.user;
+  const newUserNetwork = []
+  user.network.forEach( item => {
+    if (item.user == req.params.id){
+      item.follow = false;
+      if(item.follow === false && item.blocked === false){
+        
+      }
+      else {
+        newUserNetwork.push(item)
+      }
+    }
+    else {
+      newUserNetwork.push(item)
+    }
+  })
+  user.network = newUserNetwork
+  user.save()
+    .then(user => res.redirect(`/users/${user.id}`))
+    .catch(next)
 })

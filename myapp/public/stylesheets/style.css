@@ -31,6 +31,9 @@ a {
 }
 
 .user-name{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
   height: 30%;
   background-color: burlywood;
@@ -39,6 +42,10 @@ a {
   font-weight: 700;
   padding-top: 7%;
   padding-left: 2%; 
+}
+
+.user-name div {
+  width: 50%
 }
 
 .user-body{

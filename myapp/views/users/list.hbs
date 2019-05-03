@@ -2,7 +2,13 @@
 {{#each users as |user|}}
   <a style="text-decoration:none" href="/users/{{ user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.games}}user-profile-img-gold{{/if_gold}}">
     <div class="user-name">
-      {{ user.username }}
+      <div>{{ user.username }}</div>
+      <form action="/users/{{user.id}}/follow" method="POST">
+        <button class="btn btn-primary" type="submit">Follow</button>
+      </form>
+      <form action="/users/{{user.id}}/block" method="POST">
+        <button class="btn btn-danger ml-1 mr-1" style="color: white" type="submit">Block</button>
+      </form>
     </div>
     <div class="user-body">
       <div class="user-info">
