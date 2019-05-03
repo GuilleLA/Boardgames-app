@@ -137,8 +137,8 @@
         <a style="text-decoration:none" href="/users/{{ user.user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.user.games}}user-profile-img-gold{{/if_gold}}">
           <div class="user-name">
             <div>{{ user.user.username }}</div>
-            <form action="/users/{{user.user.id}}/remove" method="POST">
-              <button class="btn btn-danger" type="submit">Remove</button>
+            <form action="/users/{{user.user.id}}/unfollow" method="POST">
+              <button class="btn btn-danger" type="submit">Unfollow</button>
             </form>
           </div>
           <div class="user-body">

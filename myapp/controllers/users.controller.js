@@ -81,7 +81,7 @@ module.exports.follow = ((req, res, next) => {
 
 module.exports.block = ((req, res, next) => {})
 
-module.exports.remove = ((req, res, next) => {
+module.exports.unfollow = ((req, res, next) => {
   const user = req.user;
   const newUserNetwork = []
   user.network.forEach( item => {

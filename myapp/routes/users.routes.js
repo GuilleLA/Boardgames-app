@@ -14,7 +14,7 @@ router.post('/:id/settings', usersController.doSettings)
 
 router.post('/:id/follow', usersController.follow)
 router.post('/:id/block', usersController.block)
-router.post('/:id/remove', usersController.remove)
+router.post('/:id/unfollow', usersController.unfollow)
 
 
 module.exports = router;
