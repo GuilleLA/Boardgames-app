@@ -5,6 +5,8 @@ const CommentModel  = require('../models/comment.model')
 
 module.exports.details = (req, res, next) => {
   const id = req.params.id;
+  const flashComments = req.flash('comment');
+  const comment = (flashComments && flashComments[0]) ? JSON.parse(flashComments[0]): {}
 
   Game.findById(id)
     .then( game => 
@@ -12,7 +14,7 @@ module.exports.details = (req, res, next) => {
         .populate('game')
         .populate('user')
 
-        .then( data => res.render('game/details', { title: game.name, game, data } ) ))
+        .then( data => res.render('game/details', { title: game.name, game, data, comment } ) ))
         .catch(next)
     .catch( next )
 };
@@ -55,6 +57,26 @@ module.exports.doUpdate = (req, res, next) => {
 
 module.exports.addGame = (req, res, next) => {
   res.render('game/create')
+}
+
+module.exports.doAddGame = (req, res, next) => {
+  const game = new Game(req.body);
+
+  if (req.file) {
+    console.log(req.file)
+    game.imageURL = req.file.secure_url;
+  }
+
+  game.save()
+    .then( game => res.redirect('/') )
+    .catch(error => {
+      if (error instanceof mongoose.Error.ValidationError) { 
+        res.render(`game/create`, { 
+          user: req.body,
+          errors: error.errors
+        })}
+      else { next(error); }
+    })
 }
 
 module.exports.add = (req, res, next) => {
@@ -199,21 +221,17 @@ module.exports.addComment = (req, res, next) => {
     user: req.user.id
   })
 
-  function renderWithErrors(errors, id) {
-    Game.findById(id)
-      .then( game => res.render('game/details', { 
-        comment: comment,
-        errors: errors,
-        title: `${game.name} update`, 
-        game } ) )
-      .catch(next)
-  }
-
   comment.save()
     .then( comment => res.redirect(`/games/${req.params.id}`) )
     .catch((error) => {
-      if (error instanceof mongoose.Error.ValidationError) { 
-        renderWithErrors(error.errors, id)
+      if (error instanceof mongoose.Error.ValidationError) {
+        const errors = Object.keys(error.errors).reduce((acc, prop) => {
+          acc[prop] = error.errors[prop].message;
+          return acc;
+        }, {});
+        req.flash('errors', JSON.stringify(errors));
+        req.flash('comment', JSON.stringify(req.body));
+        res.redirect(`/games/${id}`)
       }
       else {
         next(error);
