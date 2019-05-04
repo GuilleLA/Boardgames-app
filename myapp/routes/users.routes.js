@@ -12,4 +12,9 @@ router.get('/:id', secure.isAuthenticated, usersController.profile)
 router.get('/:id/settings', secure.isUser, usersController.settings)
 router.post('/:id/settings', usersController.doSettings)
 
+router.post('/:id/follow', usersController.follow)
+router.post('/:id/block', usersController.block)
+router.post('/:id/unfollow', usersController.unfollow)
+
+
 module.exports = router;

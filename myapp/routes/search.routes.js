@@ -4,8 +4,6 @@ const searchController = require('../controllers/search.controller');
 const secure = require('../middlewares/secure.mid')
  
 /* GET home page. */
-router.get('/search', secure.isAuthenticated, searchController.search);
-
-console.log('RUTA: ', router.stack[0].route.path);
+router.get('/', secure.isAuthenticated, searchController.search);
 
 module.exports = router;
