@@ -15,7 +15,6 @@
 
 <div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
   <h2 class="profile-section-title">{{user.username}} owned games</h2>
-  {{#if_eq profileId user.id}}
     {{#each user.games as |game|}}
       {{#if_eq game.owned true}}
         <div class="mt-3 mb-2">
@@ -23,6 +22,7 @@
             <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
             <div class="card-body">
               <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+              {{#if_eq ../session.id ../user.id}}
               <div class="d-flex d-wrap justify-content-center">
                 <form action="/games/{{game.game.id}}/removeOwned" method="POST">
                   <button class="btn btn-danger mr-3" type="submit">Remove</button>
@@ -31,31 +31,17 @@
                   <button class="btn btn-primary ml-3" style="color: white" type="submit">Exchange</button>
                 </form>
               </div>
-            </div>
-          </div>
-        </div>
-      {{/if_eq}}
-    {{/each}}
-  {{else}}
-    {{#each user.games as |game|}}
-      {{#if_eq game.owned true}}
-        <div class="mt-3 mb-2">
-          <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
-            <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
-            <div class="card-body">
-              <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+              {{/if_eq}}
             </div>
           </div>
         </div>
         {{/if_eq}}
     {{/each}}
-  {{/if_eq}}
 </div>
 
 
 <div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
   <h2 class="profile-section-title">{{user.username}} wished games</h2>
-  {{#if_eq profileId user.id}}
     {{#each user.games as |game|}}
       {{#if_eq game.wished true}}
         <div class="mt-3 mb-2">
@@ -63,6 +49,7 @@
             <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
             <div class="card-body">
               <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+              {{#if_eq ../session.id ../user.id}}
               <div class="d-flex d-wrap justify-content-center">
                 <form action="/games/{{game.game.id}}/removeWish" method="POST">
                   <button class="btn btn-danger mr-3" type="submit">Remove</button>
@@ -71,31 +58,17 @@
                   <button class="btn btn-success mr-3" type="submit">Add</button>
                 </form>
               </div>
+              {{/if_eq}}
             </div>
           </div>
         </div>
       {{/if_eq}}
     {{/each}}
-  {{else}}
-    {{#each user.games as |game|}}
-      {{#if_eq game.wished true}}
-        <div class="mt-3 mb-2">
-          <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
-            <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
-            <div class="card-body">
-              <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
-            </div>
-          </div>
-        </div>
-      {{/if_eq}}
-    {{/each}}
-  {{/if_eq}}
 </div>
 
 
 <div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
   <h2 class="profile-section-title">{{user.username}} exchangable games</h2>
-  {{#if_eq profileId user.id}}
     {{#each user.games as |game|}}
       {{#if_eq game.toChange true}}
         <div class="mt-3 mb-2">
@@ -103,43 +76,32 @@
             <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
             <div class="card-body">
               <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
+              {{#if_eq ../session.id ../user.id}}
               <div class="d-flex d-wrap justify-content-center">
                 <form action="/games/{{game.game.id}}/removeChange" method="POST">
                   <button class="btn btn-danger mr-3" type="submit">Remove</button>
                 </form>
               </div>
+              {{/if_eq}}
             </div>
           </div>
         </div>
       {{/if_eq}}
     {{/each}}
-  {{else}}
-    {{#each user.games as |game|}}
-      {{#if_eq game.toChange true}}
-        <div class="mt-3 mb-2">
-          <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
-            <a href="/games/{{game.game.id}}"><img src="{{game.game.imageURL}}" class="card-img-top" alt="{{game.game.name}}" height="300"></a>
-            <div class="card-body">
-              <a href="/games/{{game.game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.game.name}}</strong></h5></a>
-            </div>
-          </div>
-        </div>
-      {{/if_eq}}
-    {{/each}}
-  {{/if_eq}}
 </div>
 
 <div class="d-flex flex-wrap justify-content-around pt-5 pl-5 pr-5">
   <h2 class="profile-section-title">{{user.username}} network</h2>
-  {{#if_eq profileId user.id}}
     {{#each user.network as |user|}}
       {{#if_eq user.follow true}}
         <a style="text-decoration:none" href="/users/{{ user.user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.user.games}}user-profile-img-gold{{/if_gold}}">
           <div class="user-name">
             <div>{{ user.user.username }}</div>
+            {{#if_eq ../session.id ../user.id}}
             <form action="/users/{{user.user.id}}/unfollow" method="POST">
               <button class="btn btn-danger" type="submit">Unfollow</button>
             </form>
+            {{/if_eq}}
           </div>
           <div class="user-body">
             <div class="user-info">
@@ -152,23 +114,4 @@
         </a>
       {{/if_eq}}
     {{/each}}
-  {{else}}
-    {{#each user.network as |user|}}
-      {{#if_eq user.follow true}}
-        <a style="text-decoration:none" href="/users/{{ user.user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.user.games}}user-profile-img-gold{{/if_gold}}">
-          <div class="user-name">
-            <div>{{ user.user.username }}</div>
-          </div>
-          <div class="user-body">
-            <div class="user-info">
-              <p>{{ user.user.age }}</p>
-              <p>{{ user.user.city }}</p>
-              <p>Exchange {{#exchangeNumber user.user.games }}{{/exchangeNumber}} games</p>
-            </div>
-            <div class="user-avatar"><img src="{{ user.user.avatarURL }}" alt="user avatar"></div>
-          </div>
-        </a>
-      {{/if_eq}}
-    {{/each}}
-  {{/if_eq}}
 </div>

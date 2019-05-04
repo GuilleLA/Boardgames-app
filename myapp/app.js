@@ -6,6 +6,7 @@ const path         = require('path');
 const cookieParser = require('cookie-parser');
 const logger       = require('morgan');
 const passport     = require('passport');
+const flash        = require('express-flash');
 
 require('./config/db.config')
 const session      = require('./config/session.config');
@@ -34,10 +35,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session)
 app.use(passport.initialize())
 app.use(passport.session())
+app.use(flash())
 
 app.use((req, res, next) => {
   res.locals.path = req.path;
   res.locals.session = req.user;
+  const errors = req.flash('errors');
+  if (errors && errors[0]) {
+    console.log(JSON.parse(errors[0]))
+    res.locals.errors = JSON.parse(errors[0])
+  }
   next()
 })
 

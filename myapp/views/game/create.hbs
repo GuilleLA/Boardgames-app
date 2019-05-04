@@ -1,9 +1,13 @@
+<h1 class="profile-section-title">Add a new game</h1>
 <div class="d-flex bd-highlight">
-  <div class="p-4 d-flex-row">
-    <img src="#" width="300">
-  </div>
-  <div class="p-2 bd-highlight w-75">
-    <form action="/games/addGame" method="POST">
+  <div class="p-2 bd-highlight w-75" style="margin: auto">
+    <form action="/games/doAddGame" method="POST" enctype='multipart/form-data'>
+      <div class="form-group">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" name="image">
+          <label class="custom-file-label" for="image">Upload game .jpg or .png</label>
+        </div>
+      </div>
       <div class="form-group">
         <div class="input-group mb-2">
           <input type="text" name="name" class="form-control {{#if errors.name}} is-invalid {{/if}}" placeholder="Enter game title"/>
@@ -63,5 +67,6 @@
       <div class="form-actions" style="width: 30%; margin: auto">
           <button type="submit" class="btn btn-primary btn-block">Update</button>
       </div>
-  </form>
+    </form>
+  </div>
 </div>

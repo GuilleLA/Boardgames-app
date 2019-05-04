@@ -1,12 +1,21 @@
 const mongoose = require('mongoose');
 const Game     = require('../models/game.model');
 const User     = require('../models/user.model');
+const CommentModel  = require('../models/comment.model')
 
 module.exports.details = (req, res, next) => {
   const id = req.params.id;
-  
+  const flashComments = req.flash('comment');
+  const comment = (flashComments && flashComments[0]) ? JSON.parse(flashComments[0]): {}
+
   Game.findById(id)
-    .then( game => res.render('game/details', { title: game.name, game } ) )
+    .then( game => 
+      CommentModel.find({game: id})
+        .populate('game')
+        .populate('user')
+
+        .then( data => res.render('game/details', { title: game.name, game, data, comment } ) ))
+        .catch(next)
     .catch( next )
 };
 
@@ -20,7 +29,6 @@ module.exports.update = (req, res, next) => {
 
 module.exports.doUpdate = (req, res, next) => {
   const id = req.params.id
-  console.log(req.body)
 
   function renderWithErrors(errors) {
     res.render('game/form', { 
@@ -49,6 +57,26 @@ module.exports.doUpdate = (req, res, next) => {
 
 module.exports.addGame = (req, res, next) => {
   res.render('game/create')
+}
+
+module.exports.doAddGame = (req, res, next) => {
+  const game = new Game(req.body);
+
+  if (req.file) {
+    console.log(req.file)
+    game.imageURL = req.file.secure_url;
+  }
+
+  game.save()
+    .then( game => res.redirect('/') )
+    .catch(error => {
+      if (error instanceof mongoose.Error.ValidationError) { 
+        res.render(`game/create`, { 
+          user: req.body,
+          errors: error.errors
+        })}
+      else { next(error); }
+    })
 }
 
 module.exports.add = (req, res, next) => {
@@ -183,4 +211,31 @@ module.exports.removeChange = (req, res, next) => {
     .catch(next)
 }
 
+module.exports.addComment = (req, res, next) => {
+  const id = req.params.id
+
+  const comment = new CommentModel ({
+    comment: req.body.comment, 
+    rate: req.body.rate,
+    game: req.params.id,
+    user: req.user.id
+  })
+
+  comment.save()
+    .then( comment => res.redirect(`/games/${req.params.id}`) )
+    .catch((error) => {
+      if (error instanceof mongoose.Error.ValidationError) {
+        const errors = Object.keys(error.errors).reduce((acc, prop) => {
+          acc[prop] = error.errors[prop].message;
+          return acc;
+        }, {});
+        req.flash('errors', JSON.stringify(errors));
+        req.flash('comment', JSON.stringify(req.body));
+        res.redirect(`/games/${id}`)
+      }
+      else {
+        next(error);
+      }
+    })
+}
 
