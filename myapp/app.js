@@ -61,6 +61,25 @@ app.get('/search', function (req, res, next) {
 });
 //app.use('/search', searchRouter);
 
+app.get('/search-filters', function (req, res, next) {
+  const Game = require('./models/game.model')
+  const criteria = {};
+  console.log('QUERY: ', req.query)
+  if (req.query.search) {
+    const exp  =  new RegExp(req.query.search, 'i');
+    const exp2 =  new RegExp(req.query.minPlayers, 'i');
+    criteria.$or = [ { name: exp }, { minPlayers: exp2 } ]
+  }
+  Game.find( criteria ).limit(5)
+    .then(games =>  {
+      res.render('search', { 
+        title: 'BoardGamia games', 
+        games, 
+        search: req.query })
+    })
+    .catch(next)
+});
+
 app.use('/users', usersRouter);
 app.use('/games', gamesRouter);
 
