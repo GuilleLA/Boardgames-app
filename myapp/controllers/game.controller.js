@@ -1,12 +1,19 @@
 const mongoose = require('mongoose');
 const Game     = require('../models/game.model');
 const User     = require('../models/user.model');
+const CommentModel  = require('../models/comment.model')
 
 module.exports.details = (req, res, next) => {
   const id = req.params.id;
-  
+
   Game.findById(id)
-    .then( game => res.render('game/details', { title: game.name, game } ) )
+    .then( game => 
+      CommentModel.find({game: id})
+        .populate('game')
+        .populate('user')
+
+        .then( data => res.render('game/details', { title: game.name, game, data } ) ))
+        .catch(next)
     .catch( next )
 };
 
@@ -20,7 +27,6 @@ module.exports.update = (req, res, next) => {
 
 module.exports.doUpdate = (req, res, next) => {
   const id = req.params.id
-  console.log(req.body)
 
   function renderWithErrors(errors) {
     res.render('game/form', { 
@@ -183,4 +189,35 @@ module.exports.removeChange = (req, res, next) => {
     .catch(next)
 }
 
+module.exports.addComment = (req, res, next) => {
+  const id = req.params.id
+
+  const comment = new CommentModel ({
+    comment: req.body.comment, 
+    rate: req.body.rate,
+    game: req.params.id,
+    user: req.user.id
+  })
+
+  function renderWithErrors(errors, id) {
+    Game.findById(id)
+      .then( game => res.render('game/details', { 
+        comment: comment,
+        errors: errors,
+        title: `${game.name} update`, 
+        game } ) )
+      .catch(next)
+  }
+
+  comment.save()
+    .then( comment => res.redirect(`/games/${req.params.id}`) )
+    .catch((error) => {
+      if (error instanceof mongoose.Error.ValidationError) { 
+        renderWithErrors(error.errors, id)
+      }
+      else {
+        next(error);
+      }
+    })
+}
 

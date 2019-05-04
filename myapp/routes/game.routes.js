@@ -1,7 +1,8 @@
-const express = require('express');
-const router = express.Router();
+const express        = require('express');
+const router         = express.Router();
 const gameController = require('../controllers/game.controller');
-const secure = require('../middlewares/secure.mid')
+const secure         = require('../middlewares/secure.mid')
+const storage        = require('../config/storage.config');
  
 /* GET home page. */
 
@@ -18,5 +19,6 @@ router.post('/:id/change', gameController.change)
 router.post('/:id/removeOwned', gameController.removeOwned)
 router.post('/:id/removeWish', gameController.removeWish)
 router.post('/:id/removeChange', gameController.removeChange)
+router.post('/:id/addComment', gameController.addComment)
 
 module.exports = router;

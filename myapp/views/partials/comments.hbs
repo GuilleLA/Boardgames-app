@@ -1,0 +1,32 @@
+<form class="comment-form" action="/games/{{game.id}}/addComment" method="POST">
+  <div class="pic-comment-form"><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></div>
+  <div class="body-comment-form">
+    <p class="title-comment-form">Add your comment</p>
+    <div class="form-group">
+      <input class="rate-comment-form {{#if errors.rate}} is-invalid {{/if}}" type="number" name="rate" placeholder="Enter rate 0-5">
+      <div class="invalid-feedback">
+        {{ errors.rate }}
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea class="text-comment-form {{#if errors.comment}} is-invalid {{/if}}" name="comment" placeholder="Enter your comment"></textarea>
+      <div class="invalid-feedback">
+        {{ errors.comment }}
+      </div>
+    </div>
+    <div class="form-actions button-comment-form"><button type="submit" class="btn btn-primary btn-block">Submit</button></div>
+  </div>
+</form>
+
+
+<div class="d-flex flex-wrap justify-content-center pt-5">
+  {{#each data as |data|}}
+  <div class="comment-wrapper">
+    <div class="comment-picture"><img src="{{data.user.avatarURL}}"></div>
+    <div class="comment-body mt-4">
+      <p class="comment-username">{{data.user.username}}</p> <span class="comment-rate">Rate: {{data.rate}}</span>
+      <p class="comment-description">{{data.comment}}</p>
+    </div>
+  </div>
+  {{/each}}
+</div>

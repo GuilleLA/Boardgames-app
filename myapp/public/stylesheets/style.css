@@ -81,15 +81,15 @@ a {
 }
 
 .user-profile-img-bronze {
-  border: rgb(124, 62, 0) solid 8px;
+  border: rgb(124, 62, 0) ridge 20px;
 }
 
 .user-profile-img-silver {
-  border: silver solid 8px;
+  border: silver ridge 20px;
 }
 
 .user-profile-img-gold {
-  border: gold solid 8px;
+  border: gold ridge 20px;
 }
 
 .profile-section-title {
@@ -118,3 +118,81 @@ a {
 .adding-game a {
   border: black solid 2px;
 }
+
+.comment-form {
+  margin: 20px 13%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  border: brown solid 2px;
+  border-radius: 1%;
+  background-color: rgba(255, 127, 80, 0.582);
+}
+
+.pic-comment-form {
+  margin: 10px 0;
+}
+
+.body-comment-form {
+  width: 60%
+}
+
+.title-comment-form {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.rate-comment-form {
+  width: 30%
+}
+
+.text-comment-form {
+  width: 100%
+}
+
+.button-comment-form {
+  width: 30%;
+  margin: auto;
+}
+
+.comment-wrapper {
+  margin: 20px 13%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  border: brown solid 2px;
+  border-radius: 1%;
+  background-color: rgba(255, 127, 80, 0.582);
+}
+
+.comment-picture img{
+  width: 192px;
+  height: 192px;
+}
+
+.comment-body {
+  width: 80%;
+}
+
+.comment-username {
+  font-size: 1.7rem;
+  display: inline
+}
+
+.comment-description {  
+  margin: 30px auto;
+  font-size: 1.4rem;
+  padding: 5px;
+}
+
+.comment-rate {
+  float: right;
+  margin-right: 30px;
+  font-size: 1.7rem;
+}
+
