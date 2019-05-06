@@ -19,7 +19,7 @@ const authRouter   = require('./routes/auth.routes');
 const searchRouter = require('./routes/search.routes');
 const usersRouter  = require('./routes/users.routes');
 const gamesRouter  = require('./routes/game.routes');
-
+const eventsRouter = require('./routes/event.routes');
 
 const app = express();
 
@@ -52,59 +52,7 @@ app.use('/', authRouter);
 app.use('/users', usersRouter);
 app.use('/games', gamesRouter);
 app.use('/search', searchRouter);
-//app.use('/search-game-filter', searchRouter);
-
-
-app.get('/search-game-filter', function (req, res, next) {
-  const Game = require('./models/game.model')
-  const criteria = {};
-  const criteriaGte = {}
-
-  console.log('QUERY: ', req.query);
-
-  if (req.query.name) {
-    criteria.name =  new RegExp(req.query.name, 'i');
-  }
-
-  if (req.query.yearPublished) {
-    criteria.yearPublished = parseInt(req.query.yearPublished, 10);
-  }
-
-  if (req.query.minPlayers) {
-    criteria.minPlayers = parseInt(req.query.minPlayers, 10);
-  }
-
-  if (req.query.maxPlayers) {
-    criteria.maxPlayers = parseInt(req.query.maxPlayers, 10);
-  }
-
-  if (req.query.maxPlaytime) {
-    criteria.maxPlaytime = parseInt(req.query.maxPlaytime, 10);
-  }
-
-  if (req.query.averageUserRating) {
-    criteriaGte.averageUserRating = parseFloat(req.query.averageUserRating);
-  }
-
-  if (req.query.minAge)  {
-    criteria.minAge = parseInt(req.query.minAge, 10);
-  }
-
-  if (req.query.price) {
-    criteria.price =  parseFloat(req.query.price);
-  }
-
-
-
-  Game.find( criteria, { averageUserRating : { $lte: criteriaGte.averageUserRating } }).limit(10)
-    .then(games =>  {
-      res.render('search', { 
-        title: 'BoardGamia games', 
-        games, 
-        search: req.query })
-    })
-    .catch(next)
-});
+app.use('/events', eventsRouter);
 
 
 // catch 404 and forward to error handler

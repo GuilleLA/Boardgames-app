@@ -1,0 +1,45 @@
+<h1 class="profile-section-title">Add a new event</h1>
+<div class="d-flex bd-highlight">
+  <div class="p-2 bd-highlight w-75" style="margin: auto">
+    <form action="/events/doCreate" method="POST" enctype='multipart/form-data'>
+      <div class="form-group">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" name="image">
+          <label class="custom-file-label" for="image">Upload event .jpg or .png</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="text" name="name" class="form-control {{#if errors.name}} is-invalid {{/if}}" placeholder="Enter event name"/>
+          <div class="invalid-feedback">
+            {{ errors.name }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="date" name="date" class="form-control {{#if errors.date}} is-invalid {{/if}}" placeholder="Enter Event's Date"/>
+          <div class="invalid-feedback">
+            {{ errors.date }}
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-2">
+          <input type="number" name="maxParticipants" class="form-control {{#if errors.maxParticipants}} is-invalid {{/if}}" placeholder="Enter number of participants"/>
+          <div class="invalid-feedback">
+            {{ errors.maxParticipants }}
+          </div>
+      </div>
+      <select class="form-group">
+        <div class="input-group mb-2">
+          <input type="number" name="maxPlayers" class="form-control {{#if errors.maxPlayers}} is-invalid {{/if}}" placeholder="Enter max number of players"/>
+          <div class="invalid-feedback">
+            {{ errors.maxPlayers }}
+          </div>
+      </select>
+      
+      <div class="form-actions" style="width: 30%; margin: auto">
+          <button type="submit" class="btn btn-primary btn-block">Update</button>
+      </div>
+    </form>
+  </div>
+</div>
