@@ -196,3 +196,12 @@ a {
   font-size: 1.7rem;
 }
 
+.profile-info-section {
+  height: 500px;
+}
+
+.profile-info-text {
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+
