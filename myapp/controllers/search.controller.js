@@ -21,8 +21,7 @@ module.exports.search = ((req, res, next) => {
     .catch(next)
 });
 
-/*
-module.exports.searchGameFilter = ((req, res, next) => {
+module.exports.searchModule = ((req, res, next) => {
   const criteria = {};
 
   console.log('QUERY: ', req.query);
@@ -32,7 +31,8 @@ module.exports.searchGameFilter = ((req, res, next) => {
   }
 
   if (req.query.yearPublished) {
-    criteria.yearPublished = parseInt(req.query.yearPublished, 10);
+    { yearPublished: 
+    criteria.yearPublished = { $gte: parseInt(req.query.yearPublished, 10) } } 
   }
 
   if (req.query.minPlayers) {
@@ -56,10 +56,20 @@ module.exports.searchGameFilter = ((req, res, next) => {
   }
 
   if (req.query.price) {
-    criteria.price =  new RegExp(req.query.price, 'i');
+    criteria.price =  parseFloat(req.query.price);
   }
 
-  Game.find( criteria ).limit(10)
+
+
+Game.find({ $and: [ { name: criteria.name }, 
+  { yearPublished: { $gte: criteria.yearPublished } },
+  { minPlayers : { $gte: criteria.minPlayers } },
+  { maxPlayers : { $lte: criteria.maxPlayers } },
+  { averageUserRating : { $gte: criteria.averageUserRating } },
+  { maxPlaytime : { $gte: criteria.maxPlaytime } },
+  { minAge: { $gte: criteria.minAge } },
+  { price: { $lte: criteria.price }}
+  ]})
     .then(games =>  {
       res.render('search', { 
         title: 'BoardGamia games', 
@@ -68,4 +78,3 @@ module.exports.searchGameFilter = ((req, res, next) => {
     })
     .catch(next)
 });
-*/

@@ -8,4 +8,6 @@ router.get('/', secure.isAuthenticated, searchController.search);
 
 //router.get('/search-game-filter', secure.isAuthenticated, searchController.searchGameFilter);
 
+router.get('/game-filter', secure.isAuthenticated, searchController.searchModule) 
+
 module.exports = router;
