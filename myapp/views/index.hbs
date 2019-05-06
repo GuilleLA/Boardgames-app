@@ -1,7 +1,7 @@
 <div class="d-flex flex-wrap justify-content-center pt-5 pl-5 pr-5">
   <div class="search-wrapper">
     <div>
-      <form>
+      <form action = "/search-game-filter" method = "GET">
         <div class="form-row mb-2">
           <div class="col-auto">
             <label for="game-name">Game Name</label>
@@ -9,15 +9,15 @@
           </div>
           <div class="col-auto">
             <label for="year-published">Published Year</label>
-            <input type="number" class="form-control" placeholder="Published year..." name="yearPublished" value="">
+            <input type="number" min="1900" class="form-control" placeholder="Published year..." name="yearPublished" value="">
           </div>
           <div class="col-auto">
             <label for="min-player">Min Players</label>
-            <input type="number" class="form-control" placeholder="Min players..." name="minPlayers" value="">
+            <input type="number" min="1" class="form-control" placeholder="Min players..." name="minPlayers" value="">
           </div>
           <div class="col-auto">
             <label for="max-player">Max Players</label>
-            <input type="number" class="form-control" placeholder="Max players..." name="maxPlayers" value="">
+            <input type="number" min="1" class="form-control" placeholder="Max players..." name="maxPlayers" value="">
           </div>
         </div>
         <div class="form-row mb-2">
@@ -27,7 +27,7 @@
           </div>
           <div class="col-auto">
             <label for="rating">Rating</label>
-            <input type="number" class="form-control" placeholder="Rating..." name="averageUserRating" value="">
+            <input type="number" step="0.01" class="form-control" placeholder="Rating..." name="averageUserRating" value="">
           </div>
           <div class="col-auto">
             <label for="min-age">Min Age</label>

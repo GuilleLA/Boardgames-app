@@ -6,4 +6,6 @@ const secure = require('../middlewares/secure.mid')
 /* GET home page. */
 router.get('/', secure.isAuthenticated, searchController.search);
 
+//router.get('/search-game-filter', secure.isAuthenticated, searchController.searchGameFilter);
+
 module.exports = router;
