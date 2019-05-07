@@ -62,10 +62,9 @@
                 </form>
               {{/if_loop}}
               {{#if_loopwish ../user.games game.id}}
-                  <form action="/games/{{game.id}}/wish" method="POST">
-                    <button class="btn btn-primary ml-3" style="color: white" type="submit">Wish it!</button>
-                  </form>
-                  {{else}}
+                <form action="/games/{{game.id}}/wish" method="POST">
+                  <button class="btn btn-primary ml-3" style="color: white" type="submit">Wish it!</button>
+                </form>
               {{/if_loopwish}}
             </div>
           </div>

@@ -6,12 +6,18 @@
           <div class="card-body">
             <a href="/games/{{game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.name}}</strong></h5></a>
             <div class="d-flex d-wrap justify-content-center">
-              <form action="/games/{{game.id}}/add" method="POST">
-                <button class="btn btn-success mr-3" type="submit">Add it!</button>
-              </form>
-              <form action="/games/{{game.id}}/wish" method="POST">
-                <button class="btn btn-primary ml-3" style="color: white" type="submit">Wish it!</button>
-              </form>
+              {{#if_loop ../user.games game.id}}
+                <div class="btn mr-3" type="submit" style="background-color: dimgray">Got it!</div>
+              {{else}}
+                <form action="/games/{{game.id}}/add" method="POST">
+                  <button class="btn btn-success mr-3" type="submit">Add it!</button>
+                </form>
+              {{/if_loop}}
+              {{#if_loopwish ../user.games game.id}}
+                  <form action="/games/{{game.id}}/wish" method="POST">
+                    <button class="btn btn-primary ml-3" style="color: white" type="submit">Wish it!</button>
+                  </form>
+              {{/if_loopwish}}
             </div>
           </div>
         </div>
