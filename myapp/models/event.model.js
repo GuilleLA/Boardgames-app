@@ -6,6 +6,10 @@ const eventSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
+  imageURL: {
+    type: String,
+    default: 'https://www.science-emergence.com/media/images/thumbnails_1000_1000/question-mark-img.JPEG'
+  },
   date: {
     type: Date,
     required: true

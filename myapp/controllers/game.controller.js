@@ -63,7 +63,6 @@ module.exports.doAddGame = (req, res, next) => {
   const game = new Game(req.body);
 
   if (req.file) {
-    console.log(req.file)
     game.imageURL = req.file.secure_url;
   }
 

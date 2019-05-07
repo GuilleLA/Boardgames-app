@@ -28,9 +28,37 @@ module.exports.detail = ((req, res, next) => {
 });
 
 module.exports.create = ((req, res, next) => {
-
+  const id = req.user.id;
+  User.findById(id)
+    .populate('games.game')
+    .populate('network.user')
+    .then(user => {      
+      res.render('events/form', {
+        title: 'Create Event',
+        user
+      })
+    })
+    .catch(next)
 });
 
 module.exports.doCreate = ((req, res, next) => {
-  
+  const event = new Event(req.body);
+
+  console.log(req);
+
+  if (req.file) {
+    console.log(req.file)
+    event.imageURL = req.file.secure_url;
+  }
+
+  event.save()
+    .then( event => res.redirect(`/events/${event.id}`) )
+    .catch(error => {
+      if (error instanceof mongoose.Error.ValidationError) { 
+        res.render(`events/create`, { 
+          event: req.body,
+          errors: error.errors
+        })}
+      else { next(error); }
+    })  
 });
