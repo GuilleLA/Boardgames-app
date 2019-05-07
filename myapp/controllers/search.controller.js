@@ -30,49 +30,38 @@ module.exports.searchModule = ((req, res, next) => {
   console.log('QUERY: ', req.query);
 
   if (req.query.name) {
-    criteria.name =  new RegExp(req.query.name, 'i');
+    { name: criteria.name = new RegExp(req.query.name, 'i') };
   }
 
-  if (req.query.yearPublished) {
-    { yearPublished: 
-    criteria.yearPublished = { $gte: parseInt(req.query.yearPublished, 10) } } 
+  if (req.query.yearPublished) { 
+    { yearPublished: criteria.yearPublished = { $gte: parseInt(req.query.yearPublished, 10) } }; 
   }
 
   if (req.query.minPlayers) {
-    criteria.minPlayers = parseInt(req.query.minPlayers, 10);
+    { minPlayers : criteria.minPlayers = { $gte: parseInt(req.query.minPlayers, 10) } };
   }
 
   if (req.query.maxPlayers) {
-    criteria.maxPlayers = parseInt(req.query.maxPlayers, 10);
+    { maxPlayers : criteria.maxPlayers = { $lte: parseInt(req.query.maxPlayers, 10) } };
   }
 
   if (req.query.maxPlaytime) {
-    criteria.maxPlaytime = parseInt(req.query.maxPlaytime, 10);
+    { maxPlaytime : criteria.maxPlaytime = { $gte: parseInt(req.query.maxPlaytime, 10) } };
   }
 
   if (req.query.averageUserRating) {
-    criteria.averageUserRating = parseFloat(req.query.averageUserRating);
+    { averageUserRating : criteria.averageUserRating = { $gte: parseFloat(req.query.averageUserRating) } };
   }
 
   if (req.query.minAge)  {
-    criteria.minAge = parseInt(req.query.minAge, 10);
+    { minAge: criteria.minAge = { $gte: parseInt(req.query.minAge, 10) } };
   }
 
   if (req.query.price) {
-    criteria.price =  parseFloat(req.query.price);
+    { price: criteria.price = { $lte: parseFloat(req.query.price) }};
   }
 
-
-
-Game.find({ $and: [ { name: criteria.name }, 
-  { yearPublished: { $gte: criteria.yearPublished } },
-  { minPlayers : { $gte: criteria.minPlayers } },
-  { maxPlayers : { $lte: criteria.maxPlayers } },
-  { averageUserRating : { $gte: criteria.averageUserRating } },
-  { maxPlaytime : { $gte: criteria.maxPlaytime } },
-  { minAge: { $gte: criteria.minAge } },
-  { price: { $lte: criteria.price }}
-  ]})
+  Game.find( criteria )
     .then(games =>  {
       res.render('search', { 
         title: 'BoardGamia games', 
