@@ -49,3 +49,28 @@ hbs.registerHelper('if_bronze', function(a, opts) {
       return opts.inverse(this);
   }
 });
+
+hbs.registerHelper('if_loop', function(a, b, opts) {
+  let counter = "a"
+  for(i = 0; i<a.length; i++){
+    if (a[i].game == b && a[i].owned == true) {
+      counter = i
+      break
+    }
+  }
+  if (counter >= 0 && a[counter].game == b && a[counter].owned == true) {return opts.fn(this)}
+  else {return opts.inverse(this)}
+});
+
+hbs.registerHelper('if_loopwish', function(a, b, opts) {
+  let counter = "a"
+  for(i = 0; i<a.length; i++){
+    if (a[i].game == b) {
+      counter = i
+      break
+    }
+  }
+  if ((counter >= 0 && a[counter].game == b && a[counter].wished == true)|| ((counter >= 0 && a[counter].game == b && a[counter].owned == true))) {
+    return opts.inverse(this)}
+  else {return opts.fn(this)}
+});
