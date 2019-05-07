@@ -4,27 +4,27 @@
     <form action="/events/doCreate" method="POST" enctype='multipart/form-data'>
       <div class="form-group">
         <div class="custom-file">
-          <input type="file" class="custom-file-input" name="image">
+          <input type="file" class="custom-file-input" name="image" value="">
           <label class="custom-file-label" for="image">Upload event .jpg or .png</label>
         </div>
       </div>
       <div class="form-group">
         <div class="input-group mb-2">
-          <input type="text" name="name" class="form-control {{#if errors.name}} is-invalid {{/if}}" placeholder="Enter event name"/>
+          <input type="text" name="name" value="" class="form-control {{#if errors.name}} is-invalid {{/if}}" placeholder="Enter event name"/>
           <div class="invalid-feedback">
             {{ errors.name }}
           </div>
       </div>
       <div class="form-group">
         <div class="input-group mb-2">
-          <input type="date" name="date" class="form-control {{#if errors.date}} is-invalid {{/if}}" placeholder="Enter Event's Date"/>
+          <input type="date" name="date" value="" class="form-control {{#if errors.date}} is-invalid {{/if}}" placeholder="Enter Event's Date"/>
           <div class="invalid-feedback">
             {{ errors.date }}
           </div>
       </div>
       <div class="form-group">
         <div class="input-group mb-2">
-          <input type="number" name="maxParticipants" class="form-control {{#if errors.maxParticipants}} is-invalid {{/if}}" placeholder="Enter number of participants"/>
+          <input type="number" name="maxParticipants" value="" class="form-control {{#if errors.maxParticipants}} is-invalid {{/if}}" placeholder="Enter number of participants"/>
           <div class="invalid-feedback">
             {{ errors.maxParticipants }}
           </div>
@@ -33,7 +33,7 @@
         <div class="input-group mb-2">
           <select>
             {{#each user.games as |game|}}
-              <option value="{{game.game.name}}">
+              <option name="" value="{{game.game.name}}">
                 {{game.game.name}}
               </option>
             {{/each}}
@@ -41,7 +41,7 @@
       </div>
       
       <div class="form-actions" style="width: 30%; margin: auto">
-          <button type="submit" class="btn btn-primary btn-block">Update</button>
+          <button type="submit" class="btn btn-primary btn-block">Create Event</button>
       </div>
     </form>
   </div>

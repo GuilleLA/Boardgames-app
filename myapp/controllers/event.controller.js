@@ -41,18 +41,18 @@ module.exports.create = ((req, res, next) => {
     .catch(next)
 });
 
-module.exports.doCreate = ((req, res, next) => {
+module.exports.doCreate = (req, res, next) => {
   const event = new Event(req.body);
 
-  console.log(req);
+  console.log('EVENT: ', event);
 
   if (req.file) {
-    console.log(req.file)
     event.imageURL = req.file.secure_url;
   }
 
   event.save()
-    .then( event => res.redirect(`/events/${event.id}`) )
+    .then( event => res.redirect('/') )
+    //.then( event => res.redirect(`/events/${event.id}`) )
     .catch(error => {
       if (error instanceof mongoose.Error.ValidationError) { 
         res.render(`events/create`, { 
@@ -61,4 +61,4 @@ module.exports.doCreate = ((req, res, next) => {
         })}
       else { next(error); }
     })  
-});
+};
