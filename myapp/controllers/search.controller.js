@@ -3,6 +3,7 @@ const Game     = require('../models/game.model')
 const passport = require('passport')
 
 module.exports.search = ((req, res, next) => {
+  const user = req.user
   const criteria = {};
   if (req.query.search) {
     const exp =  new RegExp(req.query.search, 'i');
@@ -15,13 +16,15 @@ module.exports.search = ((req, res, next) => {
     .then(games =>  {
       res.render('search', { 
         title: 'BoardGamia games', 
-        games, 
+        games,
+        user, 
         search: req.query.search })
     })
     .catch(next)
 });
 
 module.exports.searchModule = ((req, res, next) => {
+  const user = req.user
   const criteria = {};
 
   console.log('QUERY: ', req.query);
@@ -73,7 +76,8 @@ Game.find({ $and: [ { name: criteria.name },
     .then(games =>  {
       res.render('search', { 
         title: 'BoardGamia games', 
-        games, 
+        games,
+        user, 
         search: req.query })
     })
     .catch(next)
