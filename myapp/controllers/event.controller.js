@@ -16,7 +16,7 @@ module.exports.list = ((req, res, next) => {
 });
 
 module.exports.detail = ((req, res, next) => {
-  const id = req.param.id;
+  const id = req.params.id;
   Event.findById( id )
     .then(event =>  {
       res.render('events/detail', { 
@@ -67,3 +67,11 @@ module.exports.doCreate = (req, res, next) => {
       else { next(error); }
     })  
 };
+
+module.exports.coordinates = ((req, res, next) => {
+  const id = req.params.id
+
+  Event.findById(id)
+    .then(event => res.json(event.location))
+    .catch(next)
+})
