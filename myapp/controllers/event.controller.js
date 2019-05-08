@@ -18,7 +18,11 @@ module.exports.list = ((req, res, next) => {
 module.exports.detail = ((req, res, next) => {
   const id = req.params.id;
   Event.findById( id )
+    .populate('participants')
+    .populate('game')
+    .populate('owner')
     .then(event =>  {
+      event.date = event.date.toDateString()
       res.render('events/detail', { 
         title: `BoardGamia ${event.name}`, 
         event

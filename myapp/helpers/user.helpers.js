@@ -16,6 +16,10 @@ hbs.registerHelper('followNumber', function (network) {
   return network.reduce((num, user) => user.follow ? ++num : num, 0);
 })
 
+hbs.registerHelper('formatDate', function (date) {
+  return date.toDateString()
+})
+
 hbs.registerHelper('if_eq', function(a, b, opts) {
   if (a == b) {
       return opts.fn(this);
@@ -23,6 +27,10 @@ hbs.registerHelper('if_eq', function(a, b, opts) {
       return opts.inverse(this);
   }
 });
+
+hbs.registerHelper('numberOfParticipants', function (participants) {
+  return participants.reduce((num, participant) => participant ? ++num : num, 0);
+})
 
 hbs.registerHelper('if_gold', function(a, opts) {
   let b = a.reduce((num, game) => game.owned ? ++num : num, 0)
