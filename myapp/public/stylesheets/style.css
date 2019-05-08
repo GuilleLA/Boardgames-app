@@ -20,6 +20,22 @@ a {
   color: saddlebrown;
 }
 
+.card-styles {
+  width: 16rem;
+  height: 470px;
+  background-color: rgb(205,133,63,0.30);
+  border-color: saddlebrown;
+}
+
+.card-styles a {
+  text-decoration: none;
+}
+
+.card-styles h5 {
+  text-transform: capitalize;
+  height: 80px
+}
+
 .profile-title {
   font-size: 45px;
   line-height: 40px;

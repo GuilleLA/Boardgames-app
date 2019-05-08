@@ -49,10 +49,10 @@
   
   {{#each games as |game|}}
       <div class="m-3">
-        <div class="card text-center" style="width: 16rem; height: 470px; background-color: rgb(205,133,63,0.30); border-color: saddlebrown;">
+        <div class="card text-center card-styles">
           <a href="/games/{{game.id}}"><img src="{{game.imageURL}}" class="card-img-top" alt="{{game.name}}" height="300"></a>
           <div class="card-body">
-            <a href="/games/{{game.id}}"><h5 class="card-title" style="text-transform: capitalize; height: 80px"><strong>{{game.name}}</strong></h5></a>
+            <a href="/games/{{game.id}}"><h5 class="card-title"><strong>{{game.name}}</strong></h5></a>
             <div class="d-flex d-wrap justify-content-center">
               {{#if_loop ../user.games game.id}}
                 <div class="btn mr-3" type="submit" style="background-color: dimgray">Got it!</div>
