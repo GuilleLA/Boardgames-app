@@ -31,15 +31,31 @@
       </div>
       <div class="form-group">
         <div class="input-group mb-2">
-          <select>
+          <select class="custom-select">
             {{#each user.games as |game|}}
-              <option name="" value="{{game.game.name}}">
+              <option name="game" value="{{game.game.id}}">
                 {{game.game.name}}
               </option>
             {{/each}}
           </select>
       </div>
-      
+      <div class="input-group mb-2">
+        <input type="text" class="form-control {{#if errors.latitude }}is-invalid{{/if}}" name="latitude" value="{{user.latitude}}"
+        placeholder="Enter user latitude" id="lat">
+         <div class="invalid-feedback">
+          {{errors.latitude}}
+         </div>
+      </div>
+      <div class="input-group mb-2">
+        <input type="text" class="form-control {{#if errors.longitude }}is-invalid{{/if}}" name="longitude"
+        value="{{user.longitude}}" placeholder="Enter user longitude" id="lng">
+        <div class="invalid-feedback">
+          {{errors.longitude}}
+        </div>
+      </div>
+      <div class="form-actions mt-2 mb-2" style="width: 30%; margin: auto">
+        <a href="https://www.latlong.net/" class="btn btn-info btn-block" target="_blank">Find your coordinates</a>
+      </div>
       <div class="form-actions" style="width: 30%; margin: auto">
           <button type="submit" class="btn btn-primary btn-block">Create Event</button>
       </div>
