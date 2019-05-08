@@ -96,7 +96,7 @@ module.exports.add = (req, res, next) => {
     user.games.push({ game: req.params.id, owned: true});
   }
   user.save()
-    .then(user => res.redirect(`/users/${user.id}`))
+    .then(user => res.redirect(`/`))
     .catch(next)
 };
 
@@ -118,7 +118,7 @@ module.exports.wish = (req, res, next) => {
     user.games.push({ game: req.params.id, wished: true});
   }
   user.save()
-    .then(user => res.redirect(`/users/${user.id}`))
+    .then(user => res.redirect(`/`))
     .catch(next)
 };
 
