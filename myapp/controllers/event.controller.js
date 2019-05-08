@@ -45,7 +45,7 @@ module.exports.doCreate = (req, res, next) => {
   const event = new Event(req.body);
 
   console.log('EVENT: ', event);
-
+  console.log('USER :', req.user)
   if (req.file) {
     event.imageURL = req.file.secure_url;
   }

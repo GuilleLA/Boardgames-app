@@ -74,7 +74,7 @@ module.exports.follow = ((req, res, next) => {
     user.network.push({ user: req.params.id, follow: true});
   }
   user.save()
-    .then(user => res.redirect(`/users/${user.id}`))
+    .then(user => res.redirect(`/users`))
     .catch(next)
 })
 

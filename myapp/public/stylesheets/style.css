@@ -20,6 +20,45 @@ a {
   color: saddlebrown;
 }
 
+.card-styles {
+  width: 16rem;
+  height: 470px;
+  background-color: rgb(205,133,63,0.30);
+  border-color: saddlebrown;
+}
+
+.card-styles a {
+  text-decoration: none;
+}
+
+.card-styles h5 {
+  text-transform: capitalize;
+  height: 80px
+}
+
+.profile-title {
+  font-size: 45px;
+  line-height: 40px;
+  margin-bottom: 20px;
+	font-weight: 700;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(248, 244, 4, 0.4);
+	position: relative;
+	color: rgb(9, 85, 15);
+}
+
+.profile-title2 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 20px;
+	font-weight: 700;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(248, 244, 4, 0.4);
+	position: relative;
+	color: rgb(9, 85, 15);
+}
 
 .user-wrapper {
   width: 400px;
@@ -76,8 +115,8 @@ a {
 }
 
 .profile-image {
-  max-width: 400px;
-  max-height: 400px;
+  width: 100%;
+  height: auto;
 }
 
 .user-profile-img-bronze {
@@ -198,10 +237,32 @@ a {
 
 .profile-info-section {
   height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .profile-info-text {
   padding-left: 10px;
   font-size: 1.3rem;
+}
+.profile-info-text p{
+  font-size: 1.8rem;
+}
+
+.sectionize {
+  border-top: black dotted 3px;
+  padding: 25px;
+}
+
+.first-column{
+  width: 20%
+}
+.second-column{
+  width: 50%;
+  text-align: center
+}
+.third-column{
+  width: 20%
 }
 

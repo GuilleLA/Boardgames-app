@@ -26,7 +26,7 @@ hbs.registerHelper('if_eq', function(a, b, opts) {
 
 hbs.registerHelper('if_gold', function(a, opts) {
   let b = a.reduce((num, game) => game.owned ? ++num : num, 0)
-  if (b >= 10 ) {
+  if (b >= 20 ) {
       return opts.fn(this);
   } else {
       return opts.inverse(this);
@@ -35,7 +35,7 @@ hbs.registerHelper('if_gold', function(a, opts) {
 
 hbs.registerHelper('if_silver', function(a, opts) {
   let b = a.reduce((num, game) => game.owned ? ++num : num, 0)
-  if (b >= 5) {
+  if (b >= 10) {
       return opts.fn(this);
   } else {
       return opts.inverse(this);
