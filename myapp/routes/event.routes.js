@@ -6,7 +6,10 @@ const storage        = require('../config/storage.config');
 
 router.get('/create', secure.isAuthenticated, eventController.create)
 router.post('/doCreate', secure.isAuthenticated, storage.single('image'), eventController.doCreate)
+
 router.get('/:id', secure.isAuthenticated, eventController.detail)
+router.get('/:id/coordinates', secure.isAuthenticated, eventController.coordinates)
+
 router.get('/', secure.isAuthenticated, eventController.list)
 
 module.exports = router;

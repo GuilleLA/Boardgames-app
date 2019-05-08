@@ -25,7 +25,7 @@ const eventSchema = new mongoose.Schema({
   },
   game: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Game',
+    ref: 'Game'
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,

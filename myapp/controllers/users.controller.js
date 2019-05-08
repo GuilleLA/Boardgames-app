@@ -39,7 +39,13 @@ module.exports.doSettings = ((req, res, next) => {
       title: 'settings'})
   }
 
-  User.findByIdAndUpdate(id, req.body, { new: true, runValidators: true })
+  const updateUser = req.body
+  updateUser.location = {
+    type: "Point",
+    coordinates: [req.body.longitude, req.body.latitude]
+  }
+
+  User.findByIdAndUpdate(id, updateUser, { new: true, runValidators: true })
     .then((user) => {
       if (user) {
         res.redirect(`/users/${user.id}`)

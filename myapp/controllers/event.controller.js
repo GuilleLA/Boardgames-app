@@ -16,7 +16,7 @@ module.exports.list = ((req, res, next) => {
 });
 
 module.exports.detail = ((req, res, next) => {
-  const id = req.param.id;
+  const id = req.params.id;
   Event.findById( id )
     .then(event =>  {
       res.render('events/detail', { 
@@ -42,10 +42,15 @@ module.exports.create = ((req, res, next) => {
 });
 
 module.exports.doCreate = (req, res, next) => {
-  const event = new Event(req.body);
+  const newEvent = req.body
+  newEvent.owner = req.user.id
+  newEvent.location = {
+    type: "Point",
+    coordinates: [req.body.longitude, req.body.latitude]
+  }
 
-  console.log('EVENT: ', event);
-  console.log('USER :', req.user)
+  const event = new Event(newEvent);
+
   if (req.file) {
     event.imageURL = req.file.secure_url;
   }
@@ -62,3 +67,11 @@ module.exports.doCreate = (req, res, next) => {
       else { next(error); }
     })  
 };
+
+module.exports.coordinates = ((req, res, next) => {
+  const id = req.params.id
+
+  Event.findById(id)
+    .then(event => res.json(event.location))
+    .catch(next)
+})
