@@ -33,9 +33,11 @@
         <div class="input-group mb-2">
           <select class="custom-select">
             {{#each user.games as |game|}}
-              <option name="game" value="{{game.game.id}}">
-                {{game.game.name}}
-              </option>
+              {{#if_eq game.owned true}}
+                <option name="game" value="{{game.game.id}}">
+                  {{game.game.name}}
+                </option>
+              {{/if_eq}}
             {{/each}}
           </select>
       </div>
