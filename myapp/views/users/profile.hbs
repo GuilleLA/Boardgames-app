@@ -3,13 +3,13 @@
     <img class="profile-image user-profile-img-bronze {{#if_silver user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.games}}user-profile-img-gold{{/if_gold}}" src="{{ user.avatarURL }}" alt="user avatar">
   </div>
   <div class="profile-info-text second-column">
-    <h1>{{user.username}}</h1>
-    <p>Is the owner of {{#ownerNumber user.games }}{{/ownerNumber}} games</p>
-    <p>Wants {{#wishNumber user.games }}{{/wishNumber}} games</p>
-    <p>Exchange {{#exchangeNumber user.games }}{{/exchangeNumber}} games</p>
-    <p>Usually plays in {{ user.city }}</p>
+    <h1 class="profile-title">{{user.username}}</h1>
     <p>Age: {{user.age}}</p>
-    <p>Follows {{#followNumber user.network }}{{/followNumber}} users</p>
+    <p>Owns: {{#ownerNumber user.games }}{{/ownerNumber}} games</p>
+    <p>Wants: {{#wishNumber user.games }}{{/wishNumber}} games</p>
+    <p>Exchanges: {{#exchangeNumber user.games }}{{/exchangeNumber}} games</p>
+    <p>Usually plays in: {{ user.city }}</p>
+    <p>Follows: {{#followNumber user.network }}{{/followNumber}} users</p>
   </div>
   <div class="p-4 d-flex-row third-column">
     <div><a href="#owned-games" class="btn btn-primary mt-2" style="width:100%">See games</a></div>
@@ -22,7 +22,7 @@
 
 
 <div class="d-flex flex-wrap justify-content-around sectionize">
-  <h2 id="owned-games" class="profile-section-title">Owned games</h2>
+  <h2 id="owned-games" class="profile-section-title profile-title2">Owned games</h2>
     {{#each user.games as |game|}}
       {{#if_eq game.owned true}}
         <div class="mt-3 mb-2">
@@ -49,7 +49,7 @@
 
 
 <div class="d-flex flex-wrap justify-content-around sectionize">
-  <h2 id="wishlist" class="profile-section-title">Wished games</h2>
+  <h2 id="wishlist" class="profile-section-title profile-title2">Wished games</h2>
     {{#each user.games as |game|}}
       {{#if_eq game.wished true}}
         <div class="mt-3 mb-2">
@@ -76,7 +76,7 @@
 
 
 <div class="d-flex flex-wrap justify-content-around sectionize">
-  <h2 id="exchangelist" class="profile-section-title">Exchangable games</h2>
+  <h2 id="exchangelist" class="profile-section-title profile-title2">Exchangable games</h2>
     {{#each user.games as |game|}}
       {{#if_eq game.toChange true}}
         <div class="mt-3 mb-2">
@@ -99,7 +99,7 @@
 </div>
 
 <div class="d-flex flex-wrap justify-content-around sectionize">
-  <h2 id="network" class="profile-section-title">Network</h2>
+  <h2 id="network" class="profile-section-title profile-title2">Network</h2>
     {{#each user.network as |user|}}
       {{#if_eq user.follow true}}
         <a style="text-decoration:none" href="/users/{{ user.user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.user.games}}user-profile-img-gold{{/if_gold}}">

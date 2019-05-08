@@ -20,6 +20,29 @@ a {
   color: saddlebrown;
 }
 
+.profile-title {
+  font-size: 45px;
+  line-height: 40px;
+  margin-bottom: 20px;
+	font-weight: 700;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(248, 244, 4, 0.4);
+	position: relative;
+	color: rgb(9, 85, 15);
+}
+
+.profile-title2 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 20px;
+	font-weight: 700;
+	color: white;
+	font-family: 'Hammersmith One', sans-serif;
+	text-shadow: 0 -1px 0 rgba(248, 244, 4, 0.4);
+	position: relative;
+	color: rgb(9, 85, 15);
+}
 
 .user-wrapper {
   width: 400px;
@@ -206,6 +229,9 @@ a {
 .profile-info-text {
   padding-left: 10px;
   font-size: 1.3rem;
+}
+.profile-info-text p{
+  font-size: 1.8rem;
 }
 
 .sectionize {
