@@ -22,7 +22,6 @@ module.exports.detail = ((req, res, next) => {
     .populate('game')
     .populate('owner')
     .then(event =>  {
-      event.date = event.date.toDateString()
       res.render('events/detail', { 
         title: `BoardGamia ${event.name}`, 
         event

@@ -69,6 +69,18 @@ a {
   flex-wrap: wrap;
 }
 
+.user-wrapper-event {
+  width: 400px;
+  height: 300px;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.user-wrapper-event .user-body p{
+  font-size: 1.1rem;
+}
+
 .user-name{
   display: flex;
   flex-wrap: wrap;
@@ -281,4 +293,36 @@ a {
 
 .event-body-card p{
   width: 100%;
+}
+
+.fluid-max-width {
+  max-width: 1500px;
+}
+
+.event-detail-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.event-detail-info-image {
+  width: 47%;
+}
+.event-detail-info-image img{
+  width: 100%;
+  height: auto;
+}
+
+.event-detail-info-text {
+  width: 47%;
+}
+
+.event-detail-info-text p {
+  font-size: 1.8rem;
+}
+
+.strong {
+  font-weight: 700;
 }

@@ -1,2 +1,36 @@
-<div id="map" class="map" data-id={{event.id}}></div>
+<div class="container-fluid fluid-max-width">
+  <div class="event-detail-info">
+    <div class="event-detail-info-image"><img src="{{event.imageURL}}" alt=""></img></div>
+    <div class="event-detail-info-text">
+      <h1 class="profile-title">{{event.name}}</h1>
+      <p class="strong">{{#formatDate event.date}}{{/formatDate}}</p>
+      <p>Spots left: {{#numberOfParticipants event.participants}}{{/numberOfParticipants}} / {{event.maxParticipants}}</p>
+      <p>Hosted by: {{event.owner.username}}</p>
+      <a style="text-decoration:none" href="/users/{{ event.owner.id }}" class="user-wrapper-event user-profile-img-bronze {{#if_silver event.owner.games}}user-profile-img-silver{{/if_silver}} {{#if_gold event.owner.games}}user-profile-img-gold{{/if_gold}}">
+        <div class="user-name">
+          <div>{{ event.owner.username }}</div>
+            <form action="/users/{{event.owner.id}}/follow" method="POST">
+              <button class="btn btn-primary" type="submit">Follow</button>
+            </form>
+            <form action="/users/{{event.owner.id}}/block" method="POST">
+              <button class="btn btn-danger ml-1 mr-1" style="color: white" type="submit">Block</button>
+            </form>
+        </div>
+        <div class="user-body">
+          <div class="user-info">
+            <p>Age: {{ event.owner.age }}</p>
+            <p>Plays in: {{ event.owner.city }}</p>
+            <p>Exchanges {{#exchangeNumber event.owner.games }}{{/exchangeNumber}} games</p>
+          </div>
+          <div class="user-avatar"><img src="{{ event.owner.avatarURL }}" alt="user avatar"></div>
+        </div>
+  </a>
+      <form action="/events/{{event.id}}/join" method="POST">
+        <button class="btn btn-success mr-3" type="submit">Join!</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="map" class="map" data-id={{event.id}}></div>
+</div>
 
