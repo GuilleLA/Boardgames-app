@@ -3,20 +3,38 @@
     <div><img src={{game.imageURL}} alt={{game.name}} width="300"></div>
     <div><a href="/games/{{game.id}}/update" class="btn btn-primary mt-2" style="width:100%">Update game</a></div>
     <div><a href="/events/create" class="btn btn-warning mt-2" style="width:100%">Create an event</a></div>
+    <div><a href="/" class="btn btn-success mt-2" style="width:100%">Go Main</a></div>
   </div>
-  <div class="p-2 bd-highlight w-75">
-    <a href="/">Go Back</a>
-    <h2>{{game.name}}</h2>
-    <h3> Year Published: {{game.yearPublished}}</h3>
-    <h3> Min Players: {{game.minPlayers}}</h3>
-    <h3> Max Players: {{game.maxPlayers}}</h3>
-    <h3> Max PlayTime: {{game.maxPlaytime}}</h3>
-    <h3> Min Age: {{game.minAge}}</h3>
-    <h3> RANK: {{game.averageUserRating}}</h3>
-    <h3> Description: {{game.description}}</h3>
-    <h3> Rules: {{game.rulesURL}}</h3>
-    <h3> Price: {{game.price}}</h3>
+  <div class="p-4 bd-highlight w-75">
+    <h4 class="text-uppercase"><strong>{{game.name}}</strong></h4>
+    <h5> <strong>Year Published: </strong>{{game.yearPublished}}</h5>
+    <h5> <strong>Min Players: </strong>{{game.minPlayers}}</h5>
+    <h5> <strong>Max Players: </strong>{{game.maxPlayers}}</h5>
+    <h5> <strong>Max PlayTime: </strong>{{game.maxPlaytime}}</h5>
+    <h5> <strong>Min Age: </strong>{{game.minAge}}</h5>
+    <h5> <strong>Rating: </strong>
+      <script>
+        document.write( {{game.averageUserRating}}.toFixed(2) );
+      </script>
+    </h5>
+    <h5> 
+      <strong>Description: </strong>
+      <p class="text-justify">{{game.description}}</p>
+    </h5>
+    <h5> 
+      <strong>Rules: </strong>
+      </br>
+      <a href="{{game.rulesURL}}">{{game.rulesURL}}</a>
+    </h5>
+    
+    <h5> <strong>Price: </strong>${{game.price}}</h5>
   </div>
 </div>
 
-{{>comments game=game errors=errors}}
+<div>
+  EVENTOS
+</div>
+
+<div>
+  {{>comments game=game errors=errors}}
+</div>
