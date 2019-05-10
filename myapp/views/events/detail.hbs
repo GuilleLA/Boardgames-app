@@ -27,7 +27,7 @@
       </a>
       <div>
         {{#if_eq event.owner.id user.id}}
-          <form action="/events/{{event.id}}/cancel" method="POST"></form>
+          <form action="/events/{{event.id}}/cancel" method="POST">
             <button class="btn btn-danger event-button" type="submit">Cancel</button>
           </form>
         {{else}}
@@ -45,7 +45,7 @@
 
   <div class="button-wrapper">
     {{#if_eq event.owner.id user.id}}
-      <form action="/events/{{event.id}}/cancel" method="POST"></form>
+      <form action="/events/{{event.id}}/cancel" method="POST">
         <button class="btn btn-danger event-button-2" type="submit">Cancel</button>
       </form>
     {{else}}

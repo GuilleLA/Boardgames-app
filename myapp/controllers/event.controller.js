@@ -99,3 +99,11 @@ module.exports.join = ((req, res, next) => {
     })
     .catch(next)  
 })
+
+module.exports.cancel = ((req, res, next) => {
+  const id = req.params.id
+
+  Event.findByIdAndRemove(id)
+    .then(event => res.redirect('/events'))
+    .catch(next)
+})
