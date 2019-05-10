@@ -5,11 +5,18 @@
     </span>
     <strong style="letter-spacing: 1px">BoardGamia</strong>
   </a>
-  <a href="/users">
-    <span style="font-size: 22px; color: ivory;">
-      <i class="fas fa-users d-inline-block align-top"></i>
-    </span>
-  </a>
+  <div>
+    <a href="/users" class="mr-4">
+      <span style="font-size: 22px; color: ivory;">
+        <i class="fas fa-users d-inline-block align-top"></i>
+      </span>
+    </a>
+    <a href="/events">
+      <span style="font-size: 22px; color: ivory;">
+        <i class="fas fa-calendar-alt d-inline-block align-top"></i>
+      </span>
+    </a>
+  </div>
   <form class="form-inline my-2 my-lg-0" action = "/search" method = "GET">
       <input class="form-control mr-sm-2" type="text" placeholder="Search game by name..." aria-label="Search" style="background-color: ivory" name="search" value = "">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
@@ -19,7 +26,7 @@
       </button>
   </form>
   <div>
-    <a href="/users/{{ session.id }}" class="mr-2">
+    <a href="/users/{{ session.id }}" class="mr-4">
         <span style="font-size: 22px; color: ivory;">
           <i class="fas fa-user d-inline-block align-top"></i>
         </span>
