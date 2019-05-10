@@ -40,6 +40,7 @@ app.use(flash())
 app.use((req, res, next) => {
   res.locals.path = req.path;
   res.locals.session = req.user;
+  res.locals.maps = process.env.GOOGLE_MAPS_API_KEY;
   const errors = req.flash('errors');
   if (errors && errors[0]) {
     console.log(JSON.parse(errors[0]))

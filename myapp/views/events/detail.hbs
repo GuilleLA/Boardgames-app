@@ -1,2 +1,108 @@
-<div id="map" class="map" data-id={{event.id}}></div>
+<div class="container-fluid fluid-max-width">
+  <div class="event-detail-info">
+    <div class="event-detail-info-image"><img src="{{event.imageURL}}" alt=""></img></div>
+    <div class="event-detail-info-text">
+      <h1 class="profile-title">{{event.name}}</h1>
+      <p class="strong">{{#formatDate event.date}}{{/formatDate}}</p>
+      <p>Spots left: {{#numberOfParticipants event.participants}}{{/numberOfParticipants}} / {{event.maxParticipants}}</p>
+      <p>Hosted by: {{event.owner.username}}</p>
+      <a style="text-decoration:none" href="/users/{{ event.owner.id }}" class="user-wrapper-event user-profile-img-bronze {{#if_silver event.owner.games}}user-profile-img-silver{{/if_silver}} {{#if_gold event.owner.games}}user-profile-img-gold{{/if_gold}}">
+        <div class="user-name">
+          <div>{{ event.owner.username }}</div>
+            <form action="/users/{{event.owner.id}}/follow" method="POST">
+              <button class="btn btn-primary" type="submit">Follow</button>
+            </form>
+            <form action="/users/{{event.owner.id}}/block" method="POST">
+              <button class="btn btn-danger ml-1 mr-1" style="color: white" type="submit">Block</button>
+            </form>
+        </div>
+        <div class="user-body">
+          <div class="user-info">
+            <p>Age: {{ event.owner.age }}</p>
+            <p>Plays in: {{ event.owner.city }}</p>
+            <p>Exchanges {{#exchangeNumber event.owner.games }}{{/exchangeNumber}} games</p>
+          </div>
+          <div class="user-avatar"><img src="{{ event.owner.avatarURL }}" alt="user avatar"></div>
+        </div>
+      </a>
+      <div>
+        {{#if_eq event.owner.id user.id}}
+          <form action="/events/{{event.id}}/cancel" method="POST">
+            <button class="btn btn-danger event-button" type="submit">Cancel</button>
+          </form>
+        {{else}}
+          {{#if_full event.participants event.maxParticipants}}
+              <a class="btn btn-secondary event-button full-button" style="color: white;">Full!</a>
+          {{else}}
+            {{#if_joined event.participants user.id}}
+              <a class="btn btn-secondary event-button full-button" style="color: white;">Joined</a>
+            {{else}}
+              <form action="/events/{{event.id}}/join" method="POST">
+                <button class="btn btn-success event-button" type="submit">Join!</button>
+              </form>
+            {{/if_joined}}
+          {{/if_full}}
+        {{/if_eq}}
+      </div>
+    </div>
+  </div>
+
+  <div class="button-wrapper">
+    {{#if_eq event.owner.id user.id}}
+      <form action="/events/{{event.id}}/cancel" method="POST">
+        <button class="btn btn-danger event-button-2" type="submit">Cancel</button>
+      </form>
+    {{else}}
+      {{#if_full event.participants event.maxParticipants}}
+        <a class="btn btn-secondary event-button2 full-button-2" style="color: white;">Full!</a>
+      {{else}}
+        {{#if_joined event.participants user.id}}
+          <a class="btn btn-secondary event-button full-button" style="color: white;">Joined</a>
+        {{else}}
+          <form action="/events/{{event.id}}/join" method="POST">
+            <button class="btn btn-success event-button" type="submit">Join!</button>
+          </form>
+        {{/if_joined}}
+      {{/if_full}}
+    {{/if_eq}}
+  </div>
+  
+  <div class="event-map-info-wrapper sectionize">
+    <div class="event-description-wrapper">
+      <h2 class="profile-title2">Game description</h2>
+      <p>{{event.game.description}}</p>
+      <a href="/games/{{event.game.id}}">Go to game info>>></a>
+    </div>
+    <div id="map" class="map" data-id={{event.id}}></div>
+  </div>
+  
+  <div class="sectionize">
+    <h2 class="event-participants-title profile-title2">Participants</h2>
+    <div class="d-flex flex-row flex-wrap pt-5 pl-5 pr-5" style="width: 100vw">
+      {{#each event.participants as |user|}}
+        <a style="text-decoration:none" href="/users/{{ user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.games}}user-profile-img-gold{{/if_gold}}">
+          <div class="user-name">
+            <div>{{ user.username }}</div>
+              <form action="/users/{{user.id}}/follow" method="POST">
+                <button class="btn btn-primary" type="submit">Follow</button>
+              </form>
+              {{#if_eq ../event.owner.id ../user.id}}
+                <form action="/events/{{../event.id}}/{{user.id}}/remove" method="POST">
+                  <button class="btn btn-danger ml-1 mr-1" style="color: white" type="submit">Remove</button>
+                </form>
+              {{/if_eq}}
+          </div>
+          <div class="user-body">
+            <div class="user-info">
+              <p>{{ user.age }}</p>
+              <p>{{ user.city }}</p>
+              <p>Exchange {{#exchangeNumber user.games }}{{/exchangeNumber}} games</p>
+            </div>
+            <div class="user-avatar"><img src="{{ user.avatarURL }}" alt="user avatar"></div>
+          </div>
+        </a>
+      {{/each}}
+    </div>
+  </div>
+</div>
 

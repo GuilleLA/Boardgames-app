@@ -3,8 +3,27 @@
   <div class="m-3">
         <div class="card text-center card-styles">
           <a href="/events/{{event.id}}"><img src="{{event.imageURL}}" class="card-img-top" alt="{{event.name}}" height="300"></a>
-          <div class="card-body">
-            <a href="/events/{{event.id}}"><h5 class="card-title"><strong>{{event.name}}</strong></h5></a>
+          <div class="event-body-card">
+            <a href="/events/{{event.id}}" class="mt-3"><strong>{{event.name}}</strong></a>
+            <p class="mt-3">{{#formatDate event.date}}{{/formatDate}}</p>
+            <p>Spots left: {{#numberOfParticipants event.participants}}{{/numberOfParticipants}} / {{event.maxParticipants}}</p>
+            {{#if_eq event.owner ../user.id}}
+              <form action="/events/{{event.id}}/cancel" method="POST">
+                <button class="btn btn-danger" type="submit">Cancel</button>
+              </>
+            {{else}}
+              {{#if_full event.participants event.maxParticipants}}
+                  <a class="btn btn-secondary" style="color:white" src="#">Full!</a>
+              {{else}}
+                {{#if_joined event.participants ../user.id}}
+                  <a class="btn btn-secondary" style="color: white;">Joined</a>
+                {{else}}
+                  <form action="/events/{{event.id}}/join" method="POST">
+                    <button class="btn btn-success" type="submit">Join!</button>
+                  </form>
+                {{/if_joined}}
+              {{/if_full}}
+            {{/if_eq}}
           </div>
         </div>
   </div>
