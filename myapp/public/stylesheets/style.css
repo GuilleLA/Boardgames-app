@@ -387,6 +387,11 @@ a {
   text-align: center;
 }
 
+.event-description-wrapper a {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
 @media only screen and (min-width: 1001px) and (max-width: 1310px) {
   .full-button {
     display: none;    
