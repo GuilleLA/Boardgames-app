@@ -24,13 +24,53 @@
           </div>
           <div class="user-avatar"><img src="{{ event.owner.avatarURL }}" alt="user avatar"></div>
         </div>
-  </a>
-      <form action="/events/{{event.id}}/join" method="POST">
-        <button class="btn btn-success mr-3" type="submit">Join!</button>
-      </form>
+      </a>
+      <div>
+        <form action="/events/{{event.id}}/join" method="POST">
+          <button class="btn btn-success event-button" type="submit">Join!</button>
+        </form>
+      </div>
     </div>
   </div>
 
-  <div id="map" class="map" data-id={{event.id}}></div>
+  <div class="button-wrapper">
+    <form action="/events/{{event.id}}/join" method="POST">
+      <button class="btn btn-success event-button-2" type="submit">Join!</button>
+    </form>
+  </div>
+  
+  <div class="event-map-info-wrapper sectionize">
+    <div class="event-description-wrapper">
+      <h2 class="profile-title2">Game description</h2>
+      <p>{{event.game.description}}</p>
+    </div>
+    <div id="map" class="map" data-id={{event.id}}></div>
+  </div>
+  
+  <div class="sectionize">
+    <h2 class="profile-title2">Participants</h2>
+
+    {{#each event.participants as |user|}}
+  <a style="text-decoration:none" href="/users/{{ user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.games}}user-profile-img-gold{{/if_gold}}">
+    <div class="user-name">
+      <div>{{ user.username }}</div>
+      <form action="/users/{{user.id}}/follow" method="POST">
+        <button class="btn btn-primary" type="submit">Follow</button>
+      </form>
+      <form action="/users/{{user.id}}/block" method="POST">
+        <button class="btn btn-danger ml-1 mr-1" style="color: white" type="submit">Block</button>
+      </form>
+    </div>
+    <div class="user-body">
+      <div class="user-info">
+        <p>{{ user.age }}</p>
+        <p>{{ user.city }}</p>
+        <p>Exchange {{#exchangeNumber user.games }}{{/exchangeNumber}} games</p>
+      </div>
+      <div class="user-avatar"><img src="{{ user.avatarURL }}" alt="user avatar"></div>
+    </div>
+  </a>
+{{/each}}
+  </div>
 </div>
 
