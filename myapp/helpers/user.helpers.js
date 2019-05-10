@@ -82,3 +82,10 @@ hbs.registerHelper('if_loopwish', function(a, b, opts) {
     return opts.inverse(this)}
   else {return opts.fn(this)}
 });
+
+hbs.registerHelper('if_full', function(participants, b, opts) {
+  const a = participants.reduce((num, participant) => participant ? ++num : num, 0);
+
+  if (a == b) {return opts.fn(this)}
+  else {return opts.inverse(this)}
+});

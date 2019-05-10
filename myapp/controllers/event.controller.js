@@ -9,13 +9,15 @@ module.exports.list = ((req, res, next) => {
     .then(events =>  {
       res.render('events/list', { 
         title: 'BoardGamia events', 
-        events 
+        events,
+        user 
       })
     })
     .catch(next)
 });
 
 module.exports.detail = ((req, res, next) => {
+  const user = req.user
   const id = req.params.id;
   Event.findById( id )
     .populate('participants')
@@ -24,7 +26,8 @@ module.exports.detail = ((req, res, next) => {
     .then(event =>  {
       res.render('events/detail', { 
         title: `BoardGamia ${event.name}`, 
-        event
+        event,
+        user
       })
     })
     .catch(next)
@@ -45,6 +48,7 @@ module.exports.create = ((req, res, next) => {
 });
 
 module.exports.doCreate = (req, res, next) => {
+  const user = req.user
   const newEvent = req.body
   newEvent.owner = req.user.id
   newEvent.location = {
@@ -53,7 +57,7 @@ module.exports.doCreate = (req, res, next) => {
   }
 
   const event = new Event(newEvent);
-
+    event.participants.push(user)
   if (req.file) {
     event.imageURL = req.file.secure_url;
   }
@@ -77,4 +81,21 @@ module.exports.coordinates = ((req, res, next) => {
   Event.findById(id)
     .then(event => res.json(event.location))
     .catch(next)
+})
+
+module.exports.join = ((req, res, next) => {
+  const user = req.user
+  const id = req.params.id
+
+  Event.findById(id)
+    .populate('participants')
+    .populate('game')
+    .populate('owner')
+    .then(event => {
+      event.participants.push(user)
+      event.save()
+        .then(event => res.redirect(`/events/${event.id}`, event))
+        .catch(next)   
+    })
+    .catch(next)  
 })
