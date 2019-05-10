@@ -6,7 +6,7 @@
     <div><a href="/" class="btn btn-success mt-2" style="width:100%">Go Main</a></div>
   </div>
   <div class="p-4 bd-highlight w-75">
-    <h4 class="text-uppercase"><strong>{{game.name}}</strong></h4>
+    <h4 class="text-uppercase text-center"><strong>{{game.name}}</strong></h4>
     <h5> <strong>Year Published: </strong>{{game.yearPublished}}</h5>
     <h5> <strong>Min Players: </strong>{{game.minPlayers}}</h5>
     <h5> <strong>Max Players: </strong>{{game.maxPlayers}}</h5>
@@ -32,8 +32,22 @@
 </div>
 
 <div>
-  EVENTOS
-</div>
+  <div>
+    <h4 class="text-uppercase text-center pt-3"><strong>EVENTS</strong></h4>
+  </div>
+  <div class="d-flex flex-row flex-wrap justify-content-around p-4" style="width: 100vw">
+    {{#each event as |e|}}
+      <div class="m-3">
+            <div class="card text-center card-styles">
+              <a href="/events/{{e.id}}"><img src="{{e.imageURL}}" class="card-img-top" alt="{{e.name}}" height="300"></a>
+              <div class="card-body">
+                <a href="/events/{{e.id}}"><h5 class="card-title"><strong>{{e.name}}</strong></h5></a>
+              </div>
+            </div>
+      </div>
+    {{/each}}
+  </div>
+</div>  
 
 <div>
   {{>comments game=game errors=errors}}

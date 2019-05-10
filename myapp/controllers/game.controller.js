@@ -2,19 +2,20 @@ const mongoose = require('mongoose');
 const Game     = require('../models/game.model');
 const User     = require('../models/user.model');
 const CommentModel  = require('../models/comment.model')
+const EventModel  = require('../models/event.model')
 
 module.exports.details = (req, res, next) => {
   const id = req.params.id;
   const flashComments = req.flash('comment');
   const comment = (flashComments && flashComments[0]) ? JSON.parse(flashComments[0]): {}
 
+  console.log('ID: ', id)
   Game.findById(id)
     .then( game => 
-      CommentModel.find({game: id})
-        .populate('game')
-        .populate('user')
-
-        .then( data => res.render('game/details', { title: game.name, game, data, comment } ) ))
+      EventModel.find({game: id}).populate('game').populate('owner') // find tb x el usuario logado???
+        .then( event => CommentModel.find({game: id}).populate('game').populate('user')
+          .then( data => res.render('game/details', { title: game.name, game, event, data, comment } ) )
+          .catch(next)) )
         .catch(next)
     .catch( next )
 };
