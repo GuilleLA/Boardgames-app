@@ -34,9 +34,13 @@
           {{#if_full event.participants event.maxParticipants}}
               <a class="btn btn-secondary event-button full-button" style="color: white;">Full!</a>
           {{else}}
-            <form action="/events/{{event.id}}/join" method="POST">
-              <button class="btn btn-success event-button" type="submit">Join!</button>
-            </form>
+            {{#if_joined event.participants user.id}}
+              <a class="btn btn-secondary event-button full-button" style="color: white;">Joined</a>
+            {{else}}
+              <form action="/events/{{event.id}}/join" method="POST">
+                <button class="btn btn-success event-button" type="submit">Join!</button>
+              </form>
+            {{/if_joined}}
           {{/if_full}}
         {{/if_eq}}
       </div>
@@ -52,9 +56,13 @@
       {{#if_full event.participants event.maxParticipants}}
         <a class="btn btn-secondary event-button2 full-button-2" style="color: white;">Full!</a>
       {{else}}
-        <form action="/events/{{event.id}}/join" method="POST">
-          <button class="btn btn-success event-button-2" type="submit">Join!</button>
-        </form>
+        {{#if_joined event.participants user.id}}
+          <a class="btn btn-secondary event-button full-button" style="color: white;">Joined</a>
+        {{else}}
+          <form action="/events/{{event.id}}/join" method="POST">
+            <button class="btn btn-success event-button" type="submit">Join!</button>
+          </form>
+        {{/if_joined}}
       {{/if_full}}
     {{/if_eq}}
   </div>
@@ -75,12 +83,14 @@
         <a style="text-decoration:none" href="/users/{{ user.id }}" class="user-wrapper user-profile-img-bronze {{#if_silver user.games}}user-profile-img-silver{{/if_silver}} {{#if_gold user.games}}user-profile-img-gold{{/if_gold}}">
           <div class="user-name">
             <div>{{ user.username }}</div>
-            <form action="/users/{{user.id}}/follow" method="POST">
-              <button class="btn btn-primary" type="submit">Follow</button>
-            </form>
-            <form action="/users/{{user.id}}/block" method="POST">
-              <button class="btn btn-danger ml-1 mr-1" style="color: white" type="submit">Block</button>
-            </form>
+              <form action="/users/{{user.id}}/follow" method="POST">
+                <button class="btn btn-primary" type="submit">Follow</button>
+              </form>
+              {{#if_eq ../event.owner.id ../user.id}}
+                <form action="/events/{{../event.id}}/{{user.id}}/remove" method="POST">
+                  <button class="btn btn-danger ml-1 mr-1" style="color: white" type="submit">Remove</button>
+                </form>
+              {{/if_eq}}
           </div>
           <div class="user-body">
             <div class="user-info">

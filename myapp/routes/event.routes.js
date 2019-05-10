@@ -12,6 +12,7 @@ router.get('/:id', secure.isAuthenticated, eventController.detail)
 router.get('/:id/coordinates', secure.isAuthenticated, eventController.coordinates)
 router.post('/:id/join', secure.isAuthenticated, eventController.join)
 router.post('/:id/cancel', secure.isAuthenticated, eventController.cancel)
+router.post('/:id/:uid/remove', secure.isAuthenticated, eventController.remove)
 
 router.get('/', secure.isAuthenticated, eventController.list)
 

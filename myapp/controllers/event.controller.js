@@ -107,3 +107,24 @@ module.exports.cancel = ((req, res, next) => {
     .then(event => res.redirect('/events'))
     .catch(next)
 })
+
+module.exports.remove = ((req, res, next) => {
+  const user = req.user
+  const eventId = req.params.id
+  const userId = req.params.uid
+
+  Event.findById(eventId)
+    .populate('participants')
+    .populate('game')
+    .populate('owner')
+    .then(event => {
+      const newEvent = event.participants.filter(item => {
+        if (item.id != userId){return item}
+      })
+      event.participants = newEvent.participants
+      event.save()
+        .then(event => res.redirect(`/events/${event.id}`, event))
+        .catch(next)   
+    })
+    .catch(next) 
+})

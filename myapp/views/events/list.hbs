@@ -15,9 +15,13 @@
               {{#if_full event.participants event.maxParticipants}}
                   <a class="btn btn-secondary" style="color:white" src="#">Full!</a>
               {{else}}
-                <form action="/events/{{event.id}}/join" method="POST">
-                  <button class="btn btn-success" type="submit">Join!</button>
-                </form>
+                {{#if_joined event.participants ../user.id}}
+                  <a class="btn btn-secondary" style="color: white;">Joined</a>
+                {{else}}
+                  <form action="/events/{{event.id}}/join" method="POST">
+                    <button class="btn btn-success" type="submit">Join!</button>
+                  </form>
+                {{/if_joined}}
               {{/if_full}}
             {{/if_eq}}
           </div>

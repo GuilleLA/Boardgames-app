@@ -89,3 +89,16 @@ hbs.registerHelper('if_full', function(participants, b, opts) {
   if (a == b) {return opts.fn(this)}
   else {return opts.inverse(this)}
 });
+
+hbs.registerHelper('if_joined', function(participants, b, opts) {
+  const a = participants.filter(participant => {
+    if (participant.id = b){
+      return participant
+    }
+  });
+  console.log(a)
+  console.log(b)
+
+  if (a.length > 0) {return opts.fn(this)}
+  else {return opts.inverse(this)}
+});
