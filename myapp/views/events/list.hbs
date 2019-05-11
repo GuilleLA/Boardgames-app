@@ -4,7 +4,7 @@
         <div class="card text-center card-styles">
           <a href="/events/{{event.id}}"><img src="{{event.imageURL}}" class="card-img-top" alt="{{event.name}}" height="300"></a>
           <div class="event-body-card">
-            <a href="/events/{{event.id}}" class="mt-3"><strong>{{event.name}}</strong></a>
+            <a href="/events/{{event.id}}"><strong>{{event.name}}</strong></a>
             <p class="mt-3">{{#formatDate event.date}}{{/formatDate}}</p>
             <p>Spots left: {{#numberOfParticipants event.participants}}{{/numberOfParticipants}} / {{event.maxParticipants}}</p>
             {{#if_eq event.owner ../user.id}}

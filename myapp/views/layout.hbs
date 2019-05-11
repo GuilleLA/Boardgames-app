@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <script src="/javascripts/my-map.js"></script>
     <script src="/javascripts/index.js"></script>
+    <script src="/javascripts/stats.js"></script>
   </head>
   <body>
     {{>nav}}
     {{{body}}}
     <script src="https://maps.googleapis.com/maps/api/js?key={{process.env.GOOGLE_MAPS_API_KEY}}&callback=initMap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   </body>
 </html>

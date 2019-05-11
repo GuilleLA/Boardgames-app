@@ -284,11 +284,6 @@ a {
   height: 400px;
 }
 
-<<<<<<< HEAD
-a {
-  font-size: 1.25rem;
-}
-=======
 .event-body-card {
   display: flex;
   flex-direction: row;
@@ -494,4 +489,3 @@ a {
     height: 500px;
   }
 }
->>>>>>> c47cc0663414570a2f43d9788af7dfa3753188a1

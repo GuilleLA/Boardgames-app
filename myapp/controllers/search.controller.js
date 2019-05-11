@@ -71,3 +71,52 @@ module.exports.searchModule = ((req, res, next) => {
     })
     .catch(next)
 });
+
+
+module.exports.sort = ((req, res, next) => {
+  const user = req.user
+
+  if (req.query.sortType === 'rank') {
+    Game.find().sort({averageUserRating: -1})
+      .then( games => res.render('search', { 
+        title: 'BoardGamia games', 
+        games,
+        user 
+      })
+    )
+      .catch(next)
+  }
+
+  if (req.query.sortType === 'age') {
+    Game.find().sort({minAge: 1})
+      .then( games => res.render('search', { 
+        title: 'BoardGamia games', 
+        games,
+        user 
+      })
+    )
+      .catch(next)
+  }
+
+  if (req.query.sortType === 'playtimelh') {
+    Game.find().sort({maxPlaytime: 1})
+      .then( games => res.render('search', { 
+        title: 'BoardGamia games', 
+        games,
+        user 
+      })
+    )
+      .catch(next)
+  }
+
+  if (req.query.sortType === 'playtimehl') {
+    Game.find().sort({maxPlaytime: -1})
+      .then( games => res.render('search', { 
+        title: 'BoardGamia games', 
+        games,
+        user 
+      })
+    )
+      .catch(next)
+  }
+})

@@ -26,9 +26,9 @@
       </button>
   </form>
   <div>
-    <a href="/users/{{ session.id }}" class="mr-4">
+    <a href="/stats" class="mr-4">
         <span style="font-size: 22px; color: ivory;">
-          <i class="fas fa-user d-inline-block align-top"></i>
+          <i class="fas fa-chart-area d-inline-block align-top"></i>
         </span>
       </a>
     <a {{#if session.email }} href="/users/{{ session.id }}/settings" {{else}} href="/login"{{/if}}>
