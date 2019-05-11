@@ -97,11 +97,6 @@ hbs.registerHelper('if_joined', function(participants, b, opts) {
     }
   });
 
-  
-  console.log("-------------------------------------------------------------------------------")
-  console.log(participants.map(x => x.id))
-  console.log(b)
-
   if (a.length > 0) {return opts.fn(this)}
   else {return opts.inverse(this)}
 });

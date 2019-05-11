@@ -5,6 +5,7 @@ const CommentModel  = require('../models/comment.model')
 const EventModel  = require('../models/event.model')
 
 module.exports.details = (req, res, next) => {
+  const user = req.user
   const id = req.params.id;
   const flashComments = req.flash('comment');
   const comment = (flashComments && flashComments[0]) ? JSON.parse(flashComments[0]): {}
@@ -12,9 +13,9 @@ module.exports.details = (req, res, next) => {
   console.log('ID: ', id)
   Game.findById(id)
     .then( game => 
-      EventModel.find({game: id}).populate('game').populate('owner') // find tb x el usuario logado???
+      EventModel.find({game: id}).populate('game').populate('owner').populate('participants')
         .then( event => CommentModel.find({game: id}).populate('game').populate('user')
-          .then( data => res.render('game/details', { title: game.name, game, event, data, comment } ) )
+          .then( data => res.render('game/details', { title: game.name, game, event, data, comment, user } ) )
           .catch(next)) )
         .catch(next)
     .catch( next )
