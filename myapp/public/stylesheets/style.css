@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
   background-image: url('https://image.freepik.com/foto-gratis/papel-papiro-marron_53876-14519.jpg');
   background-size: cover;
   /*background-blend-mode: screen;
@@ -283,6 +284,11 @@ a {
   height: 400px;
 }
 
+<<<<<<< HEAD
+a {
+  font-size: 1.25rem;
+}
+=======
 .event-body-card {
   display: flex;
   flex-direction: row;
@@ -488,3 +494,4 @@ a {
     height: 500px;
   }
 }
+>>>>>>> c47cc0663414570a2f43d9788af7dfa3753188a1
