@@ -54,13 +54,13 @@
       </form>
     {{else}}
       {{#if_full event.participants event.maxParticipants}}
-        <a class="btn btn-secondary event-button2 full-button-2" style="color: white;">Full!</a>
+        <a class="btn btn-secondary event-button-2 full-button" style="color: white;">Full!</a>
       {{else}}
         {{#if_joined event.participants user.id}}
-          <a class="btn btn-secondary event-button full-button" style="color: white;">Joined</a>
+          <a class="btn btn-secondary event-button-2 full-button-2" style="color: white;">Joined</a>
         {{else}}
           <form action="/events/{{event.id}}/join" method="POST">
-            <button class="btn btn-success event-button" type="submit">Join!</button>
+            <button class="btn btn-success event-button-2" type="submit">Join!</button>
           </form>
         {{/if_joined}}
       {{/if_full}}
