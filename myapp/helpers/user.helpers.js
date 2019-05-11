@@ -92,11 +92,14 @@ hbs.registerHelper('if_full', function(participants, b, opts) {
 
 hbs.registerHelper('if_joined', function(participants, b, opts) {
   const a = participants.filter(participant => {
-    if (participant.id = b){
+    if (participant.id.toString() === b.toString()){
       return participant
     }
   });
-  console.log(a)
+
+  
+  console.log("-------------------------------------------------------------------------------")
+  console.log(participants.map(x => x.id))
   console.log(b)
 
   if (a.length > 0) {return opts.fn(this)}

@@ -5,7 +5,8 @@ const Event    = require('../models/event.model');
 
 module.exports.list = ((req, res, next) => {
   const user = req.user
-  Event.find( ).limit(50)
+  Event.find().limit(50)
+    .populate('participants')
     .then(events =>  {
       res.render('events/list', { 
         title: 'BoardGamia events', 
@@ -94,7 +95,7 @@ module.exports.join = ((req, res, next) => {
     .then(event => {
       event.participants.push(user)
       event.save()
-        .then(event => res.redirect(`/events/${event.id}`, event))
+        .then(event => res.redirect(`/events/${event.id}`))
         .catch(next)   
     })
     .catch(next)  
@@ -114,16 +115,13 @@ module.exports.remove = ((req, res, next) => {
   const userId = req.params.uid
 
   Event.findById(eventId)
-    .populate('participants')
-    .populate('game')
-    .populate('owner')
     .then(event => {
-      const newEvent = event.participants.filter(item => {
-        if (item.id != userId){return item}
+      event.participants = event.participants.filter(item => {
+        return item.toString() !== userId
       })
-      event.participants = newEvent.participants
+
       event.save()
-        .then(event => res.redirect(`/events/${event.id}`, event))
+        .then(event => res.redirect(`/events/${event.id}`))
         .catch(next)   
     })
     .catch(next) 
