@@ -4,19 +4,21 @@ var Game            = require('../models/game.model')
 
 
 module.exports.list =((req, res, next) => {
+  const user = req.user
   User.find()
-    .then(users => res.render('users/list', {title: 'Users', users}))
+    .then(users => res.render('users/list', {title: 'Users', users, user}))
     .catch(next)
 })
 
 module.exports.profile = ((req, res, next) => {
+  const user = req.user
   const id = req.params.id;
 
   User.findById(id)
     .populate('games.game')
     .populate('network.user')
-    .then(user => {      
-      res.render('users/profile', { title: `${user.username} profile`, user })
+    .then(userdb => {      
+      res.render('users/profile', { title: `${user.username} profile`, userdb, user })
     })
     .catch(next)
 })
