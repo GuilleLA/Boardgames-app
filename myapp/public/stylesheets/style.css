@@ -489,3 +489,8 @@ a {
     height: 500px;
   }
 }
+
+.stats-map {
+  width: auto !important;
+  height: 100% !important;
+}
