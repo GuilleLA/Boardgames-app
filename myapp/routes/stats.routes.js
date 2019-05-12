@@ -8,6 +8,8 @@ const secure        = require('../middlewares/secure.mid');
 router.get('/', secure.isAuthenticated, statsController.stats);
 router.get('/coordinates', secure.isAuthenticated, statsController.coordinates);
 router.get('/ownedMost', secure.isAuthenticated, statsController.ownedMost);
+router.get('/wishedMost', secure.isAuthenticated, statsController.wishedMost);
+router.get('/exchangedMost', secure.isAuthenticated, statsController.exchangedMost);
 router.get('/ages', secure.isAuthenticated, statsController.ages);
 
 module.exports = router;

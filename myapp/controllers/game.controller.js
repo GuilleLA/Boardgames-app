@@ -15,9 +15,9 @@ module.exports.details = (req, res, next) => {
   CommentModel.find( {game: id}, {rate: 1, _id: 0} )
     .then( response => {
       const rates = response.map( obj => obj.rate );
-      userRate = (rates.reduce( (a, b) => { return a + b} ) / rates.length).toFixed(2)
-      console.log(rates);
-      console.log(userRate);
+      if (rates.length > 0){
+        userRate = (rates.reduce( (a, b) => { return a + b} ) / rates.length).toFixed(2)
+      }
     })
     .catch(next)
 
