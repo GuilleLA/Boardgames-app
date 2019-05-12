@@ -3,7 +3,7 @@
   <div class="body-comment-form">
     <p class="title-comment-form">Add your comment</p>
     <div class="form-group">
-      <input class="rate-comment-form form-control {{#if errors.rate}} is-invalid {{/if}}" type="number" name="rate" placeholder="Enter rate 0-5" value="{{ comment.rate }}">
+      <input class="rate-comment-form form-control {{#if errors.rate}} is-invalid {{/if}}" type="number" name="rate" placeholder="Enter rate 0-5" value="{{ comment.rate }}" min=0 max=5>
       <div class="invalid-feedback">
         {{ errors.rate }}
       </div>

@@ -9,13 +9,25 @@ module.exports.details = (req, res, next) => {
   const id = req.params.id;
   const flashComments = req.flash('comment');
   const comment = (flashComments && flashComments[0]) ? JSON.parse(flashComments[0]): {}
-
+  let userRate;
   console.log('ID: ', id)
+
+  CommentModel.find( {game: id}, {rate: 1, _id: 0} )
+    .then( response => {
+      const rates = response.map( obj => obj.rate );
+      userRate = (rates.reduce( (a, b) => { return a + b} ) / rates.length).toFixed(2)
+      console.log(rates);
+      console.log(userRate);
+    })
+    .catch(next)
+
+    console.log(userRate);
+
   Game.findById(id)
     .then( game => 
       EventModel.find({game: id}).populate('game').populate('owner').populate('participants')
         .then( event => CommentModel.find({game: id}).populate('game').populate('user')
-          .then( data => res.render('game/details', { title: game.name, game, event, data, comment, user } ) )
+          .then( data => res.render('game/details', { title: game.name, game, event, data, comment, user, userRate } ) )
           .catch(next)) )
         .catch(next)
     .catch( next )

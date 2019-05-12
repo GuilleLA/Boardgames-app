@@ -7,12 +7,17 @@
   </div>
   <div class="p-4 bd-highlight w-75">
     <h4 class="text-uppercase text-center profile-title"><strong>{{game.name}}</strong></h4>
-    <h5> <strong>Year Published: </strong>{{game.yearPublished}}</h5>
-    <h5> <strong>Min Players: </strong>{{game.minPlayers}}</h5>
-    <h5> <strong>Max Players: </strong>{{game.maxPlayers}}</h5>
+    <h5> <strong>Year Published: </strong>{{game.yearPublished}} </h5>
+    <h5> <strong>Min Players: </strong>{{game.minPlayers}} </h5>
+    <h5> 
+      <strong>Max Players: </strong>{{game.maxPlayers}}
+      <div style="float: right; padding-right: 50px; font-size: 1.5rem">
+        <strong>Users Rating: </strong>{{userRate}}
+      </div>
+    </h5>
     <h5> <strong>Max PlayTime: </strong>{{game.maxPlaytime}}</h5>
     <h5> <strong>Min Age: </strong>{{game.minAge}}</h5>
-    <h5> <strong>Rating: </strong>
+    <h5> <strong>Google Rating: </strong>
       <script>
         document.write( {{game.averageUserRating}}.toFixed(2) );
       </script>
@@ -69,5 +74,8 @@
 </div>  
 
 <div class="sectionize">
+  <div>
+    <h4 class="text-uppercase text-center pt-3 pb-2 profile-title2"><strong>COMMENTS</strong></h4>
+  </div>
   {{>comments game=game errors=errors}}
 </div>
