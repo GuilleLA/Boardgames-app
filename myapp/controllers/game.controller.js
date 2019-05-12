@@ -21,8 +21,6 @@ module.exports.details = (req, res, next) => {
     })
     .catch(next)
 
-    console.log(userRate);
-
   Game.findById(id)
     .then( game => 
       EventModel.find({game: id}).populate('game').populate('owner').populate('participants')

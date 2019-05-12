@@ -1,12 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
   font-family: 'Montserrat', sans-serif;
   background-image: url('https://image.freepik.com/foto-gratis/papel-papiro-marron_53876-14519.jpg');
   background-size: cover;
-  /*background-blend-mode: screen;
-  background-color: rgb(254, 254, 146);*/
   background-color: peru;
   background-position: 0px 0px;
   background-repeat: no-repeat;
@@ -16,9 +13,22 @@ nav {
   color: saddlebrown;
 }
 
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgb(97, 56, 14); 
+  z-index: 5;
+}
+
 a {
   font-size: 18px;
   color: saddlebrown;
+}
+
+.body-wrapper {
+  padding: 5rem 3rem 5rem 3rem;
 }
 
 .card-styles {
@@ -493,4 +503,21 @@ a {
 .stats-map {
   width: auto !important;
   height: 100% !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  background-color: rgb(97, 56, 14);
+  color: orange;
+  text-align: left;
+}
+
+.footer span {
+  vertical-align: -webkit-baseline-middle;
+  padding-top: 10px;
 }
