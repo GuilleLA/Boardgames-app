@@ -23,7 +23,7 @@ module.exports.details = (req, res, next) => {
 
   Game.findById(id)
     .then( game => 
-      EventModel.find({game: id}).populate('game').populate('owner').populate('participants')
+      EventModel.find({game: id}).sort( { "date": -1 } ).limit(5).populate('game').populate('owner').populate('participants')
         .then( event => CommentModel.find({game: id}).populate('game').populate('user')
           .then( data => res.render('game/details', { title: game.name, game, event, data, comment, user, userRate } ) )
           .catch(next)) )
