@@ -325,6 +325,7 @@ a {
 .event-detail-info-image img{
   width: 100%;
   height: auto;
+  max-height: 700px;
 }
 
 .event-detail-info-text {

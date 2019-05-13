@@ -25,6 +25,7 @@ function addEventToMap(myMap) {
         lng: response.data.coordinates[0]
       }
       myMap.addMarker(position.lat, position.lng)
+      myMap.googleMap.setCenter(position)
       // response.data.forEach(coordinate => {
       //   myMap.addMarker(
       //     coordinate.coordinates[1],
