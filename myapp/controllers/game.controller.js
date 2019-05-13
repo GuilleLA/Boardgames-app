@@ -9,7 +9,7 @@ module.exports.details = (req, res, next) => {
   const id = req.params.id;
   const flashComments = req.flash('comment');
   const comment = (flashComments && flashComments[0]) ? JSON.parse(flashComments[0]): {}
-  let userRate;
+  let userRate = 'none';
   console.log('ID: ', id)
 
   CommentModel.find( {game: id}, {rate: 1, _id: 0} )

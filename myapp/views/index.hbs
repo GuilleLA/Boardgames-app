@@ -45,23 +45,25 @@
         </div>
       </form>
     </div>
-
-    <form action="/search/game-sort" method="GET">
-      <div class="align-items-center">
-        <div>
-          <select class="custom-select" id="inlineFormCustomSelect" name="sortType">
-            <option selected>Sort by</option>
-            <option value="rank">Rank</option>
-            <option value="age">Age</option>
-            <option value="playtimelh">Playtime Low - High</option>
-            <option value="playtimehl">Playtime High - Low</option>
-          </select>
+    
+    <div class="sort-games">
+      <form action="/search/game-sort" method="GET">
+        <div class="align-items-center">
+          <div>
+            <select class="custom-select" id="inlineFormCustomSelect" name="sortType">
+              <option selected>Sort by</option>
+              <option value="rank">Rank</option>
+              <option value="age">Age</option>
+              <option value="playtimelh">Playtime Low - High</option>
+              <option value="playtimehl">Playtime High - Low</option>
+            </select>
+          </div>
+          <div class="pt-2">
+            <button type="submit" class="btn btn-primary">Sort</button>
+          </div>
         </div>
-        <div>
-          <button type="submit" class="btn btn-primary">Sort</button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>  
   </div>
 
   

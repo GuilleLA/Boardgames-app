@@ -1,4 +1,4 @@
-<div class="pt-5 pl-5 pr-5 profile-info-section">
+<div class="body-wrapper profile-info-section">
   <div class="first-column">
     <img class="profile-image user-profile-img-bronze {{#if_silver userdb.games}}user-profile-img-silver{{/if_silver}} {{#if_gold userdb.games}}user-profile-img-gold{{/if_gold}}" src="{{ userdb.avatarURL }}" alt="user avatar">
   </div>
@@ -98,7 +98,7 @@
     {{/each}}
 </div>
 
-<div class="d-flex flex-wrap justify-content-around sectionize">
+<div class="d-flex flex-wrap justify-content-around sectionize pb-5">
   <h2 id="network" class="profile-section-title profile-title2">Network</h2>
     {{#each userdb.network as |user|}}
       {{#if_eq user.follow true}}

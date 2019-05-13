@@ -9,6 +9,11 @@ body {
   background-repeat: no-repeat;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 nav {
   color: saddlebrown;
 }
@@ -122,9 +127,9 @@ a {
   width: 50%;
   height: 100%;
   color: orange;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  padding-top: 7%;
+  padding-top: 5%;
   padding-left: 2%;
 }
 
@@ -143,15 +148,15 @@ a {
 }
 
 .user-profile-img-bronze {
-  border: rgb(124, 62, 0) ridge 20px;
+  border: rgb(124, 62, 0) ridge 15px;
 }
 
 .user-profile-img-silver {
-  border: silver ridge 20px;
+  border: silver ridge 15px;
 }
 
 .user-profile-img-gold {
-  border: gold ridge 20px;
+  border: gold ridge 15px;
 }
 
 .profile-section-title {
@@ -289,9 +294,10 @@ a {
   width: 20%
 }
 
-.map {
+.users-map {
   width: 100%;
   height: 400px;
+  margin: auto;
 }
 
 .event-body-card {
@@ -299,7 +305,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .event-body-card p{
@@ -502,7 +508,9 @@ a {
 
 .stats-map {
   width: auto !important;
-  height: 100% !important;
+  height: 500px !important;
+  margin: auto;
+  padding: 20px;
 }
 
 .footer {
@@ -520,4 +528,14 @@ a {
 .footer span {
   vertical-align: -webkit-baseline-middle;
   padding-top: 10px;
+}
+
+.sort-games {
+  padding: 60px;
+}
+
+.user-rating-box {
+  border: 3px outset orange;
+  background-color: peru;
+  padding: 3px;
 }

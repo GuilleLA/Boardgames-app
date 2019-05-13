@@ -1,6 +1,6 @@
-<div class="d-flex bd-highlight">
+<div class="d-flex bd-highlight body-wrapper">
   <div class="p-4 d-flex-row">
-    <div><img src={{game.imageURL}} alt={{game.name}} width="300"></div>
+    <div><img src={{game.imageURL}} alt={{game.name}} width="350"></div>
     <div><a href="/games/{{game.id}}/update" class="btn btn-primary mt-2" style="width:100%">Update game</a></div>
     <div><a href="/events/create" class="btn btn-warning mt-2" style="width:100%">Create an event</a></div>
     <div><a href="/" class="btn btn-success mt-2" style="width:100%">Go Main</a></div>
@@ -12,7 +12,8 @@
     <h5> 
       <strong>Max Players: </strong>{{game.maxPlayers}}
       <div style="float: right; padding-right: 50px; font-size: 1.5rem">
-        <strong>Users Rating: </strong>{{userRate}}
+        <strong>Users Rating: </strong>
+        <span class="user-rating-box">{{userRate}}</span>
       </div>
     </h5>
     <h5> <strong>Max PlayTime: </strong>{{game.maxPlaytime}}</h5>
@@ -25,6 +26,20 @@
     <h5> 
       <strong>Description: </strong>
       <p class="text-justify">{{game.description}}</p>
+
+      {{!-- <details>
+        <summary>
+          <script>
+            //let str = {{game.description}};
+            //console.log(str);
+            //let str2 = str.replace(/(([^\s]+\s\s*){12})(.*)/,"$1…");
+            //document.write(str2);
+            document.write( {{game.description}} );
+          </script>
+        </summary>
+        <p class="text-justify">{{game.description}}</p>
+      </details> --}}
+
     </h5>
     <h5> 
       <strong>Rules: </strong>
@@ -77,5 +92,7 @@
   <div>
     <h4 class="text-uppercase text-center pt-3 pb-2 profile-title2"><strong>COMMENTS</strong></h4>
   </div>
-  {{>comments game=game errors=errors}}
+  <div class="pb-5">
+    {{>comments game=game errors=errors}}
+  </div>
 </div>
