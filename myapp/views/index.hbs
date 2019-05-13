@@ -1,6 +1,6 @@
 <div class="d-flex flex-wrap justify-content-center body-wrapper">
   <div class="search-wrapper">
-    <div>
+    <div class="search-module">
       <form action = "/search/game-filter" method = "GET">
         <div class="form-row mb-2">
           <div class="col-auto">
@@ -48,8 +48,8 @@
     
     <div class="sort-games">
       <form action="/search/game-sort" method="GET">
-        <div class="align-items-center">
-          <div>
+        <div class="align-items-center sort-select">
+          <div class="select-input">
             <select class="custom-select" id="inlineFormCustomSelect" name="sortType">
               <option selected>Sort by</option>
               <option value="rank">Rank</option>
@@ -58,8 +58,8 @@
               <option value="playtimehl">Playtime High - Low</option>
             </select>
           </div>
-          <div class="pt-2">
-            <button type="submit" class="btn btn-primary">Sort</button>
+          <div class="mt-2">
+            <button type="submit" class="btn btn-primary sort-button" style="margin: 0 auto">Sort</button>
           </div>
         </div>
       </form>
