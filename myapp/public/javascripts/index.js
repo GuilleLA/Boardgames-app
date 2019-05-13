@@ -56,3 +56,48 @@ function addUsersToMap(myMap) {
     })
     .catch(console.log)
 }
+
+function onClickAddGame(e) {
+  e.preventDefault();
+
+  const gameId = e.target.dataset.gameId;
+
+  e.target.innerText = "Adding..."
+
+  axios.post(`/games/${gameId}/add`)
+    .then((response) => {
+      e.target.innerText = `Done`;
+      e.target.style = 'background-color:grey'
+    })
+    .catch(console.log)
+}
+
+function onClickWishGame(e) {
+  e.preventDefault();
+
+  const gameId = e.target.dataset.gameId;
+
+  e.target.innerText = "Adding..."
+
+  axios.post(`/games/${gameId}/wish`)
+    .then((response) => {
+      e.target.innerText = `Done`;
+      e.target.style = 'background-color:grey'
+    })
+    .catch(console.log)
+}
+
+function onClickFollowUser(e) {
+  e.preventDefault();
+
+  const userId = e.target.dataset.userId;
+
+  e.target.innerText = "Adding..."
+
+  axios.post(`/users/${userId}/follow`)
+    .then((response) => {
+      e.target.innerText = `Done`;
+      e.target.style = 'background-color:grey'
+    })
+    .catch(console.log)
+}
